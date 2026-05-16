@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 18 个词条
+**统计**：共 19 个词条
 
 ---
 
@@ -195,6 +195,17 @@
 
 ## S
 
+- **session** /ˈseʃn/ n. 一场/一段(活动)；会议；会期；(计算机)会话 — a period devoted to an activity; a formal meeting; (computing) a period of user-system interaction
+  - 例句(活动)：a training session / a workout session / Let's do another session tomorrow.
+  - 例句(会议)：The court is in session. (法庭正在开庭。)
+  - 例句(计算机)：Your session has expired, please log in again.
+  - 计算机义 ⭐：用户与系统一段连续交互；login/browser/terminal session；Claude Code session(每次对话即一个独立 session)；session timeout 超时 / session cookie / session ID
+  - 辨析：meeting 会议(强调人聚在一起讨论) vs session 一段专门活动(健身/录音/咨询/写代码都行)；jam session 即兴演奏 ✓
+  - 拆词词源：拉丁语 sessiō "a sitting"，词根 sedēre = to sit 坐
+  - 同根("坐")：sedentary 久坐的 / preside 主持 / reside 居住 / possess / assess
+  - 搭配：hold a session / in session 进行中 / breakout session 分组讨论 / back-to-back sessions 一场接一场
+  - 派生：sessional adj. 会期的 / session musician 录音室乐手
+
 - **slug** /slʌɡ/ n./v. 多义词 — 1) 蛞蝓/鼻涕虫 2) 子弹/实心弹 3) 一记重拳/猛击(v.) 4) **URL slug** 网页 URL 中的短标识 5) 一小杯烈酒 6) 假币/代用币 7) 懒虫/慢吞吞的人 8) 印刷铅条/临时代号
   - 例句(蛞蝓)：Slugs are destroying my lettuce.
   - 例句(子弹)：He took a slug to the shoulder.
@@ -275,4 +286,4 @@
 - **2026-05-13**：latent, isomorphic, hugging, jobpocalypse, jobapalooza
 - **2026-05-14**：overclaim, hype, cross-confirm, flue, slug
 - **2026-05-15**：take-rate, diagnostics, dismissed, fiddle, troubleshooting, journal
-- **2026-05-16**：TOPS, FLOPS
+- **2026-05-16**：TOPS, FLOPS, session
