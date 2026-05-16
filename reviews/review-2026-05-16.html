@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="zh" data-ha-style="teaching">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>单词本 · Study — 交互背单词</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#0f766e; --primary-container:#115e59; --on-primary:#fff;
+  --secondary-container:#f59e0b; --accent-glow:#0f766e;
+  --bg:#f6fbfb; --surface:#f6fbfb;
+  --surface-container-lowest:#ffffff; --surface-container-low:#edf7f5;
+  --surface-container:#e6f2ef; --surface-container-high:#dcebe7;
+  --fg-1:#10201f; --fg-2:#304c49; --fg-muted:#647b78;
+  --border:rgba(15,118,110,.12); --border-strong:rgba(15,118,110,.24);
+  --green:#10b981; --blue:#3b82f6; --yellow:#f59e0b; --red:#ef4444;
+  --font-headline:'Space Grotesk',ui-sans-serif,system-ui,sans-serif;
+  --font-body:'Plus Jakarta Sans',ui-sans-serif,system-ui,sans-serif;
+  --font-mono:'SF Mono','Menlo',ui-monospace,monospace;
+  --space-xs:4px;--space-sm:8px;--space-md:12px;--space-lg:16px;--space-xl:20px;
+  --space-2xl:24px;--space-3xl:32px;--space-4xl:48px;
+  --radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:20px;--radius-2xl:28px;--radius-pill:9999px;
+  --shadow-sm:0 1px 2px rgba(16,32,31,.05);
+  --shadow-md:0 4px 14px rgba(16,32,31,.09);
+  --shadow-lg:0 14px 38px rgba(16,32,31,.16);
+  --gradient-text:linear-gradient(115deg,#0f766e 0%,#f59e0b 100%);
+  --gradient-hero:linear-gradient(135deg,#0f766e 0%,#115e59 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--fg-1);font-family:var(--font-body);-webkit-font-smoothing:antialiased}
+body{min-height:100vh;line-height:1.55;
+  background-image:
+    radial-gradient(circle at 12% 8%,rgba(15,118,110,.07),transparent 42%),
+    radial-gradient(circle at 88% 92%,rgba(245,158,11,.07),transparent 45%);
+  background-attachment:fixed}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input{font-family:inherit}
+:focus-visible{outline:2px solid var(--primary);outline-offset:2px;border-radius:var(--radius-sm)}
+
+.lesson-shell{max-width:1080px;margin:0 auto;padding:var(--space-2xl) var(--space-xl) var(--space-4xl);
+  display:flex;flex-direction:column;gap:var(--space-xl)}
+
+/* header */
+.lesson-header{display:flex;flex-direction:column;gap:var(--space-sm)}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--primary)}
+.lesson-header h1{font-family:var(--font-headline);font-size:clamp(28px,5vw,42px);font-weight:700;
+  letter-spacing:-.02em;line-height:1.1}
+.lesson-header h1 .grad{background:var(--gradient-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.objective{color:var(--fg-2);font-size:15px;max-width:62ch}
+
+/* control bar */
+.try-control{display:flex;flex-wrap:wrap;gap:var(--space-md);align-items:center;
+  background:var(--surface-container-lowest);border:1px solid var(--border);
+  border-radius:var(--radius-xl);padding:var(--space-md);box-shadow:var(--shadow-sm)}
+.seg{display:flex;background:var(--surface-container-low);border-radius:var(--radius-pill);padding:4px;gap:2px}
+.seg button{padding:8px 16px;border-radius:var(--radius-pill);font-size:13.5px;font-weight:600;
+  color:var(--fg-muted);transition:.18s;white-space:nowrap}
+.seg button[aria-pressed="true"]{background:var(--surface-container-lowest);color:var(--primary);box-shadow:var(--shadow-sm)}
+.search{flex:1;min-width:160px;display:flex;align-items:center;gap:var(--space-sm);
+  background:var(--surface-container-low);border:1px solid var(--border);
+  border-radius:var(--radius-pill);padding:8px 14px}
+.search input{flex:1;border:none;background:none;font-size:14px;color:var(--fg-1);outline:none}
+.search svg{flex:none;color:var(--fg-muted)}
+.count-pill{font-size:12.5px;font-weight:600;color:var(--fg-muted);font-family:var(--font-mono);white-space:nowrap}
+
+/* filter rail */
+.step-rail{display:flex;flex-direction:column;gap:var(--space-sm)}
+.chip-row{display:flex;flex-wrap:wrap;gap:var(--space-sm);align-items:center}
+.chip-label{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--fg-muted);margin-right:2px;width:48px;flex:none}
+.chip{padding:5px 12px;border-radius:var(--radius-pill);font-size:12.5px;font-weight:600;
+  background:var(--surface-container-lowest);border:1px solid var(--border);color:var(--fg-2);transition:.16s}
+.chip:hover{border-color:var(--border-strong)}
+.chip[aria-pressed="true"]{background:var(--primary);color:var(--on-primary);border-color:var(--primary)}
+.chip.lt{font-family:var(--font-mono);min-width:34px;text-align:center}
+
+/* stage */
+.lesson-stage{min-height:420px}
+
+/* flashcard */
+.fc-wrap{display:flex;flex-direction:column;align-items:center;gap:var(--space-lg)}
+.flashcard{width:100%;max-width:640px;height:clamp(400px,66vh,540px);
+  perspective:1800px;cursor:pointer}
+.fc-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;
+  transition:transform .55s cubic-bezier(.4,.1,.2,1)}
+.flashcard.flipped .fc-inner{transform:rotateY(180deg)}
+.fc-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  border-radius:var(--radius-2xl);border:1px solid var(--border);
+  background:var(--surface-container-lowest);box-shadow:var(--shadow-lg);overflow:hidden}
+.fc-front{display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:var(--space-3xl);gap:var(--space-lg)}
+.fc-front::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 50% 0%,rgba(15,118,110,.08),transparent 60%);pointer-events:none}
+.fc-badges{display:flex;gap:var(--space-sm);flex-wrap:wrap;justify-content:center}
+.badge{font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:var(--radius-pill);letter-spacing:.02em}
+.badge.pos{background:var(--surface-container);color:var(--fg-2)}
+.badge.thm{color:#fff}
+.badge.thm.tech{background:#0f766e}.badge.thm.action{background:#3b82f6}
+.badge.thm.emotion{background:#c94c00}.badge.thm.other{background:#7b40e0}
+.fc-word{font-family:var(--font-headline);font-weight:700;letter-spacing:-.02em;
+  font-size:clamp(34px,7vw,56px);line-height:1.05;
+  background:var(--gradient-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.fc-hint{font-size:13px;color:var(--fg-muted);display:flex;align-items:center;gap:6px}
+.fc-known-flag{position:absolute;top:16px;right:18px;font-size:12px;font-weight:700;
+  color:var(--green);display:flex;align-items:center;gap:4px}
+.fc-back{transform:rotateY(180deg);display:flex;flex-direction:column;padding:0}
+.fc-back-scroll{overflow-y:auto;padding:var(--space-2xl);display:flex;flex-direction:column;gap:var(--space-lg)}
+.fc-back-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:var(--space-md)}
+.fc-back-word{font-family:var(--font-headline);font-size:26px;font-weight:700;color:var(--fg-1)}
+.fc-phon{font-family:var(--font-mono);font-size:15px;color:var(--primary)}
+.fc-zh{font-size:21px;font-weight:600;color:var(--fg-1);line-height:1.4}
+.fc-en{font-size:14px;color:var(--fg-2);font-style:italic;
+  padding-left:var(--space-md);border-left:3px solid var(--secondary-container)}
+.block-title{font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--primary);margin-bottom:var(--space-xs)}
+.ex-list{display:flex;flex-direction:column;gap:6px}
+.ex-list li{list-style:none;font-size:14px;color:var(--fg-2);padding:8px 12px;
+  background:var(--surface-container-low);border-radius:var(--radius-sm);line-height:1.5}
+.concept-drawer{display:flex;flex-direction:column;gap:var(--space-sm)}
+.note{display:flex;gap:var(--space-md);font-size:13.5px;line-height:1.55}
+.note .nl{flex:none;width:84px;font-weight:700;color:var(--primary);font-size:12px}
+.note .nt{color:var(--fg-2)}
+.note code,.ex-list code{font-family:var(--font-mono);font-size:.88em;
+  background:var(--surface-container);padding:1px 5px;border-radius:5px}
+
+/* card controls */
+.fc-controls{display:flex;align-items:center;gap:var(--space-sm);flex-wrap:wrap;justify-content:center}
+.ctrl-btn{display:flex;align-items:center;gap:6px;padding:10px 18px;border-radius:var(--radius-pill);
+  font-size:13.5px;font-weight:600;background:var(--surface-container-lowest);
+  border:1px solid var(--border);color:var(--fg-2);transition:.16s}
+.ctrl-btn:hover{border-color:var(--primary);color:var(--primary)}
+.ctrl-btn.primary{background:var(--primary);color:#fff;border-color:var(--primary)}
+.ctrl-btn.primary:hover{background:var(--primary-container);color:#fff}
+.ctrl-btn.known[data-on="true"]{background:var(--green);color:#fff;border-color:var(--green)}
+.fc-progress{font-family:var(--font-mono);font-size:13px;font-weight:600;color:var(--fg-muted);
+  min-width:62px;text-align:center}
+
+/* list mode */
+.list-tools{display:flex;justify-content:flex-end;margin-bottom:var(--space-md)}
+.toggle{display:flex;align-items:center;gap:var(--space-sm);font-size:13px;font-weight:600;color:var(--fg-2)}
+.switch{width:42px;height:24px;border-radius:var(--radius-pill);background:var(--surface-container-high);
+  position:relative;transition:.2s;flex:none}
+.switch[aria-pressed="true"]{background:var(--primary)}
+.switch::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;
+  background:#fff;transition:.2s;box-shadow:var(--shadow-sm)}
+.switch[aria-pressed="true"]::after{transform:translateX(18px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:var(--space-md)}
+.mini{text-align:left;background:var(--surface-container-lowest);border:1px solid var(--border);
+  border-radius:var(--radius-lg);padding:var(--space-lg);display:flex;flex-direction:column;gap:6px;
+  transition:.16s;position:relative}
+.mini:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:var(--border-strong)}
+.mini .mw{font-family:var(--font-headline);font-size:18px;font-weight:700;color:var(--fg-1)}
+.mini .mp{font-family:var(--font-mono);font-size:12px;color:var(--primary)}
+.mini .mz{font-size:13.5px;color:var(--fg-2);transition:filter .18s}
+.mini.hide .mz{filter:blur(6px)}
+.mini.hide:hover .mz,.mini.hide:focus-within .mz{filter:none}
+.mini .mtop{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.mini .mknown{font-size:11px;color:var(--green);font-weight:700;flex:none}
+.mini .mthm{width:8px;height:8px;border-radius:50%;flex:none;margin-top:6px}
+.mthm.tech{background:#0f766e}.mthm.action{background:#3b82f6}
+.mthm.emotion{background:#c94c00}.mthm.other{background:#7b40e0}
+
+/* quiz */
+.check-yourself{max-width:560px;margin:0 auto;background:var(--surface-container-lowest);
+  border:1px solid var(--border);border-radius:var(--radius-2xl);padding:var(--space-3xl);
+  box-shadow:var(--shadow-md);display:flex;flex-direction:column;gap:var(--space-lg);text-align:center}
+.quiz-meta{display:flex;justify-content:space-between;font-size:12.5px;font-weight:600;
+  color:var(--fg-muted);font-family:var(--font-mono)}
+.quiz-bar{height:6px;border-radius:var(--radius-pill);background:var(--surface-container-high);overflow:hidden}
+.quiz-bar i{display:block;height:100%;background:var(--gradient-hero);transition:width .3s}
+.quiz-prompt{font-size:13px;color:var(--fg-muted);font-weight:600}
+.quiz-word{font-family:var(--font-headline);font-size:clamp(30px,6vw,46px);font-weight:700;
+  background:var(--gradient-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.quiz-answer{display:flex;flex-direction:column;gap:var(--space-sm);padding:var(--space-lg);
+  background:var(--surface-container-low);border-radius:var(--radius-lg)}
+.quiz-answer .qa-zh{font-size:20px;font-weight:600}
+.quiz-answer .qa-phon{font-family:var(--font-mono);color:var(--primary);font-size:14px}
+.quiz-answer .qa-ex{font-size:13.5px;color:var(--fg-2);font-style:italic}
+.quiz-btns{display:flex;gap:var(--space-md);justify-content:center;flex-wrap:wrap}
+.big-btn{padding:13px 26px;border-radius:var(--radius-pill);font-size:14.5px;font-weight:700;transition:.16s}
+.big-btn.reveal{background:var(--primary);color:#fff;width:100%}
+.big-btn.reveal:hover{background:var(--primary-container)}
+.big-btn.yes{background:var(--green);color:#fff}
+.big-btn.no{background:var(--surface-container);color:var(--fg-2)}
+.big-btn.yes:hover{filter:brightness(1.08)}.big-btn.no:hover{background:var(--surface-container-high)}
+.quiz-score{font-family:var(--font-headline);font-size:52px;font-weight:700;color:var(--primary)}
+
+/* recap */
+.recap-strip{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-lg);
+  background:var(--surface-container-low);border:1px solid var(--border);
+  border-radius:var(--radius-xl);padding:var(--space-lg) var(--space-xl)}
+.recap-strip .rt{font-size:13px;font-weight:700;color:var(--fg-2)}
+.prog-track{flex:1;min-width:140px;height:10px;border-radius:var(--radius-pill);
+  background:var(--surface-container-high);overflow:hidden}
+.prog-track i{display:block;height:100%;background:var(--gradient-hero);transition:width .4s}
+.prog-num{font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--primary)}
+.link-btn{font-size:12.5px;font-weight:600;color:var(--fg-muted);text-decoration:underline;text-underline-offset:3px}
+.link-btn:hover{color:var(--primary)}
+
+.empty{text-align:center;padding:var(--space-4xl) var(--space-xl);color:var(--fg-muted);font-size:15px}
+
+.foot{text-align:center;font-size:12px;color:var(--fg-muted);margin-top:var(--space-md)}
+
+@media(max-width:640px){
+  .lesson-shell{padding:var(--space-lg) var(--space-md) var(--space-3xl)}
+  .chip-label{width:100%;margin-bottom:2px}
+  .note .nl{width:70px}
+  .seg{width:100%}.seg button{flex:1}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+}
+@media(prefers-reduced-motion:reduce){
+  .fc-inner{transition:none}.mini:hover{transform:none}
+}
+</style>
+</head>
+<body>
+<div class="lesson-shell">
+
+  <header class="lesson-header">
+    <span class="eyebrow">单词本 · 交互复习</span>
+    <h1>把生词变成<span class="grad">可翻看的卡片</span></h1>
+    <p class="objective">这里是你贴过的所有英语生词。翻卡片记忆、开自测检验、按字母或主题筛选——每天打开复习几分钟，把"见过"变成"记住"。</p>
+  </header>
+
+  <div class="try-control">
+    <div class="seg" role="group" aria-label="学习模式">
+      <button data-mode="card" aria-pressed="true">🃏 卡片</button>
+      <button data-mode="list" aria-pressed="false">📋 列表</button>
+      <button data-mode="quiz" aria-pressed="false">🎯 自测</button>
+    </div>
+    <label class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="search" id="search" placeholder="搜索单词 / 释义…" aria-label="搜索单词">
+    </label>
+    <span class="count-pill" id="countPill">18 / 18</span>
+  </div>
+
+  <div class="step-rail">
+    <div class="chip-row" id="themeRow">
+      <span class="chip-label">主题</span>
+    </div>
+    <div class="chip-row" id="letterRow">
+      <span class="chip-label">字母</span>
+    </div>
+  </div>
+
+  <main class="lesson-stage" id="stage" aria-live="polite"></main>
+
+  <div class="recap-strip">
+    <span class="rt">已掌握进度</span>
+    <span class="prog-track"><i id="progFill"></i></span>
+    <span class="prog-num" id="progNum">0 / 18</span>
+    <button class="link-btn" id="resetBtn">重置进度</button>
+  </div>
+
+  <p class="foot">数据来自 vocabulary.md · 进度保存在本机浏览器 · 每周六 19:07 会有 Bark 复习提醒</p>
+</div>
+
+<script>
+const WORDS=[
+{w:"cross-confirm",p:"/ˌkrɔːs kənˈfɜːrm/",pos:"v./n.",zh:"交叉确认；相互印证",en:"to verify information by checking against multiple independent sources or parties",letter:"C",theme:"action",
+ ex:["We need to cross-confirm this report with at least two independent sources.","Please cross-confirm the meeting time with both teams."],
+ notes:[
+  {l:"拆词",t:"cross-(交叉) + confirm(确认)"},
+  {l:"同类词",t:"cross-check 交叉核对 · cross-verify · cross-reference 交叉引用 · cross-validate 交叉验证(ML) · cross-examine 交叉盘问"},
+  {l:"名词形",t:"cross-confirmation 交叉确认"},
+  {l:"搭配",t:"cross-confirm with sb · against sth · via sth"},
+  {l:"辨析",t:"confirm 单方确认 · verify 核实证真 · cross-check 口语 · corroborate 佐证(正式) · cross-validate 统计术语"},
+  {l:"高频场景",t:"新闻信源核实、风控/身份验证、分布式系统、商务跨团队对齐"}]},
+{w:"dismissed",p:"/dɪsˈmɪst/",pos:"v.(过去式/分词) / adj.",zh:"被解雇；被驳回；被无视/否定",en:"past tense of dismiss — to fire, to reject a case, or to reject as unimportant",letter:"D",theme:"emotion",
+ ex:["He was dismissed for poor performance.","He dismissed the idea as ridiculous.","The judge dismissed the case for lack of evidence.","Class dismissed! 下课！","Tap the X to dismiss the dialog."],
+ notes:[
+  {l:"dismiss 多义",t:"① 解雇(正式) ② 不予理会/否定(高频隐性义) ③ 法庭驳回 ④ 解散(下课/部队) ⑤ UI 关闭对话框"},
+  {l:"拆词",t:"dis-(远离) + miss-(送/放) → 送走、打发走"},
+  {l:"同根",t:"mit/mis：mission · missile · emit · submit · transmit · commit · permit"},
+  {l:"派生",t:"dismissal 解雇/驳回 · dismissive ⭐ 轻蔑的/不屑一顾的 · dismissively"},
+  {l:"心理学",t:"dismissive-avoidant attachment 回避型依恋"},
+  {l:"辨析",t:"ignore 完全不理(被动) · dismiss 主动判定不值一提(轻蔑) · reject 明确拒绝(中性)"},
+  {l:"易混",t:"dismiss ≠ demise 去世 · dismissed ≠ missed 错过"}]},
+{w:"diagnostics",p:"/ˌdaɪəɡˈnɑːstɪks/",pos:"n.",zh:"诊断学；诊断信息(集合)；故障检测",en:"the practice of identifying problems by analyzing symptoms/errors; the messages a tool emits",letter:"D",theme:"tech",
+ ex:["Cancer diagnostics has advanced rapidly.","The compiler emitted several diagnostics about unused variables.","Run the engine diagnostics. (OBD-II = On-Board Diagnostics)"],
+ notes:[
+  {l:"拆词",t:"dia-(穿透) + gnos-(know 知道) + -tic + -s → 看穿本质"},
+  {l:"同根",t:"know · knowledge · gnostic · agnostic 不可知论 · prognosis 预后 · recognize"},
+  {l:"三态对比",t:"diagnose v.诊断 · diagnosis n.一次诊断结果 · diagnostic adj./判别指标 · diagnostics 诊断学/信息集合"},
+  {l:"派生",t:"misdiagnose 误诊 · diagnostician 诊断专家 · self-diagnostics 自检"},
+  {l:"工程术语",t:"diagnostic message · severity(error/warning/info/hint) · suppress diagnostics 抑制诊断"},
+  {l:"易错",t:"单条用 a diagnostic message；diagnosis 复数是 diagnoses"},
+  {l:"关联",t:"troubleshooting — diagnostics 是诊断信息，troubleshooting 是利用它排查的过程"}]},
+{w:"FLOPS",p:"/flɒps/",pos:"n.(缩写)",zh:"每秒浮点运算次数",en:"FLoating-point OPerations Per Second — the gold-standard measure of compute power",letter:"F",theme:"tech",
+ ex:["The RTX 5090 delivers over 100 TFLOPS.","The supercomputer broke the exaFLOPS barrier."],
+ notes:[
+  {l:"关键",t:"floating-point 浮点数 = 带小数的数(3.14)，比整数运算更耗算力"},
+  {l:"数量级",t:"kFLOPS 千 · MFLOPS 百万 · GFLOPS 十亿 · TFLOPS 万亿(最常见) · PFLOPS 千万亿 · EFLOPS 百亿亿"},
+  {l:"参考值",t:"PS5 ~10 TFLOPS · RTX 4090 ~80 · H100 ~1 PFLOPS · 超算 El Capitan ~1.7 EFLOPS"},
+  {l:"FLOPS vs TOPS",t:"FLOPS 浮点(训练) vs TOPS 整数(推理)；口诀“训练看 FLOPS，推理看 TOPS”"},
+  {l:"⚠️ 陷阱",t:"FLOPS(大写 S = 速度) vs FLOPs(小写 s = 运算总量)"},
+  {l:"金句",t:"More FLOPS, more intelligence. (算力即智能)"}]},
+{w:"fiddle",p:"/ˈfɪdl/",pos:"v./n.",zh:"摆弄/瞎调；小提琴(俗称)；做假账",en:"to touch/adjust restlessly; folk term for violin; to falsify",letter:"F",theme:"action",
+ ex:["Stop fiddling with your phone!","Let me fiddle with the config a bit.","He plays the fiddle in a bluegrass band.","He was caught fiddling expenses."],
+ notes:[
+  {l:"violin/fiddle",t:"同一把琴，古典场合叫 violin，民间/Bluegrass 叫 fiddle"},
+  {l:"习语",t:"as fit as a fiddle 身体倍儿棒 · play second fiddle 当配角 · fiddle while Rome burns 危机时不务正业"},
+  {l:"派生",t:"fiddly ⭐ 繁琐难弄的 · fiddler 拉琴者 · fiddlesticks 胡说！"},
+  {l:"编程工具",t:"JSFiddle · SQLFiddle · CodePen — “随便玩玩代码”的试验场"},
+  {l:"搭配",t:"fiddle with sth ⭐(最高频) · fiddle the books 篡改账本 · tax fiddle 税务作弊"},
+  {l:"辨析",t:"fiddle 无目的乱玩(略贬) · tweak 有目的微调 · tinker 出于兴趣捣鼓 · mess with 警告别乱动"}]},
+{w:"flue",p:"/fluː/",pos:"n.",zh:"烟道；烟囱通道；排烟管",en:"a pipe/duct that carries smoke or exhaust gas to the outside",letter:"F",theme:"other",
+ ex:["Make sure the flue is open before lighting the fire."],
+ notes:[
+  {l:"搭配",t:"flue gas 烟气 · flue gas desulfurization(FGD) 烟气脱硫 · chimney flue · clean the flue"},
+  {l:"⚠️ 同音陷阱",t:"/fluː/ → flu 流感 · flew 飞(过去式) · flue 烟道（三个完全同音）"},
+  {l:"形似词",t:"flute 长笛 · flume 水槽水道 · fluke 侥幸 · fluid 流体 · fluent 流利的"},
+  {l:"词源",t:"中古英语 flewe，原指渔网 → 狭窄通道，16 世纪起表烟囱通道"},
+  {l:"近义",t:"chimney 烟囱(整体) · vent 通风口 · duct 管道 · exhaust 排气"},
+  {l:"记忆点",t:"flue 烟道末尾的 -e 像烟囱顶上的盖子"}]},
+{w:"hype",p:"/haɪp/",pos:"n./v./adj.",zh:"炒作；大肆宣传；(口语)兴奋的",en:"extravagant promotion, often more than deserved; to publicize excessively",letter:"H",theme:"emotion",
+ ex:["The movie didn't live up to the hype.","They hyped the product for months before launch.","I'm so hype for the concert tonight!"],
+ notes:[
+  {l:"派生",t:"hyped 被炒作的/兴奋的 · hype up 炒热 · hyper 亢奋的 · hype train 炒作热潮 · overhype 过度炒作"},
+  {l:"术语",t:"hype cycle 炒作周期 (Gartner 5 阶段：萌芽→期望膨胀→泡沫破灭→复苏→成熟)"},
+  {l:"搭配",t:"believe the hype · live up to the hype · media hype · all hype, no substance"},
+  {l:"词源",t:"1960s 美俚，源自 hypodermic needle 注射针，引申为打鸡血式宣传"},
+  {l:"辨析",t:"hype 炒作(略负面) · buzz 热议(中性) · spin 粉饰操纵(负面)"},
+  {l:"金句",t:"Don't believe the hype. (Public Enemy 1988 名曲)"}]},
+{w:"hugging",p:"/ˈhʌɡɪŋ/",pos:"v.(-ing) / adj.",zh:"拥抱；紧贴；贴身的",en:"present participle of hug; holding tightly or staying very close to sth",letter:"H",theme:"emotion",
+ ex:["The road hugs the coastline for miles.","She sat hugging her knees."],
+ notes:[
+  {l:"搭配",t:"hugging tightly 紧抱 · body-hugging dress 贴身连衣裙 · tree-hugging 抱树的(戏指环保人士) · bear hug 熊抱"},
+  {l:"专有名词",t:"Hugging Face 🤗 — AI 模型/数据集开源社区(“AI 界的 GitHub”)"},
+  {l:"词源",t:"可能源自古诺斯语 hugga “to comfort”"},
+  {l:"近义",t:"embracing · cuddling · clasping"}]},
+{w:"isomorphic",p:"/ˌaɪsəˈmɔːrfɪk/",pos:"adj.",zh:"同构的；结构相同的",en:"having the same form/structure; in CS, code that runs on both server and client",letter:"I",theme:"tech",
+ ex:["Next.js enables isomorphic rendering — the same React code runs on both server and client."],
+ notes:[
+  {l:"拆词",t:"iso-(相同) + -morph-(形状) + -ic → 同形的"},
+  {l:"搭配",t:"isomorphic mapping 同构映射 · isomorphic JavaScript · isomorphic to ..."},
+  {l:"派生",t:"isomorphism (n.) 同构"},
+  {l:"辨析",t:"homomorphic 同态(保持结构) vs isomorphic 同构(同态 + 双射，可逆)"},
+  {l:"反义",t:"heteromorphic · anisomorphic"}]},
+{w:"journal",p:"/ˈdʒɜːrnl/",pos:"n./v.",zh:"日记；学术期刊；日志；账簿",en:"a daily personal record; a scholarly periodical; a log of events",letter:"J",theme:"other",
+ ex:["She keeps a journal.","The paper was published in a peer-reviewed journal."],
+ notes:[
+  {l:"五层含义",t:"① 日记 ② 学术期刊 ③ 技术日志(journalctl, WAL) ④ 会计 journal entry ⑤ 动词 journaling"},
+  {l:"拆词",t:"jour(day 天，法语) + -nal → 每天的记录"},
+  {l:"同源家族",t:"journalist 记者 · journey 旅程(原意“一天的行程”!) · adjourn 休会 · diurnal 昼行的"},
+  {l:"辨析",t:"diary 偏私人情感(更私密) · journal 更宽泛正式；Nature 杂志只能叫 journal"},
+  {l:"搭配",t:"keep a journal ⭐ · peer-reviewed journal · bullet journal 子弹笔记 · gratitude journal"},
+  {l:"发音陷阱",t:"jour 读 /dʒɜːr/ 类似“jer”，不是 /dʒʊər/"},
+  {l:"金句",t:"Publish or perish. (不在 journal 发论文就被淘汰)"}]},
+{w:"jobapalooza",p:"/ˌdʒɑːbəpəˈluːzə/",pos:"n. (informal)",zh:"就业盛况；招聘狂欢",en:"portmanteau of job + Lollapalooza; a huge burst of hiring or job openings",letter:"J",theme:"other",
+ ex:["Is it a jobpocalypse or a jobapalooza? Economists can't agree."],
+ notes:[
+  {l:"构词",t:"混成词 (portmanteau) = job + (Lolla)palooza"},
+  {l:"后缀",t:"-palooza 表“盛事/狂欢”，源自 Lollapalooza 音乐节(1991-)"},
+  {l:"同类造词",t:"shoppalooza 购物狂欢 · foodapalooza 美食盛宴 · codepalooza"},
+  {l:"反义对照",t:"jobpocalypse 就业末日（-pocalypse 灾难 vs -palooza 盛事）"},
+  {l:"语域",t:"informal / 媒体造词，词典查不到"}]},
+{w:"jobpocalypse",p:"/ˈdʒɑːbəˌpɑːkəlɪps/",pos:"n. (informal)",zh:"就业末日；失业大灾难",en:"portmanteau of job + apocalypse; catastrophic large-scale job loss",letter:"J",theme:"other",
+ ex:["Is GenAI bringing on a white-collar jobpocalypse?"],
+ notes:[
+  {l:"构词",t:"混成词 (portmanteau) = job + (apo)calypse"},
+  {l:"后缀",t:"-pocalypse：snowpocalypse 雪灾 · carpocalypse 堵车末日 · infopocalypse"},
+  {l:"反义对照",t:"jobapalooza 就业盛况"},
+  {l:"相关本词",t:"apocalypse 启示录；世界末日（希腊语 apokálupsis “揭示”）"},
+  {l:"语域",t:"informal / 网络科技媒体俚语"}]},
+{w:"latent",p:"/ˈleɪtənt/",pos:"adj.",zh:"潜在的；潜伏的",en:"existing but hidden or dormant, capable of becoming active later",letter:"L",theme:"tech",
+ ex:["The virus can remain latent in the body for years."],
+ notes:[
+  {l:"搭配",t:"latent heat 潜热 · latent variable 潜变量 · latent space 潜空间 · latent period 潜伏期"},
+  {l:"词源",t:"拉丁语 latēre “to lie hidden”；同源 latency 延迟/潜伏期"},
+  {l:"近义",t:"dormant · hidden · concealed · potential"},
+  {l:"反义",t:"active · manifest · overt"}]},
+{w:"overclaim",p:"/ˌoʊvərˈkleɪm/",pos:"v./n.",zh:"夸大宣称；过度声称；虚报",en:"to claim more than is justified or true; an exaggerated claim",letter:"O",theme:"emotion",
+ ex:["The paper overclaims the model's reasoning ability.","He was fined for overclaiming expenses."],
+ notes:[
+  {l:"拆词",t:"over-(过度) + claim(声称)"},
+  {l:"同类 over- 词",t:"overpromise · overstate · overestimate · overhype · oversell · overreach"},
+  {l:"搭配",t:"overclaim the capability of ... · overclaim results · avoid overclaiming"},
+  {l:"高频场景",t:"AI 论文与营销、学术审稿(“the authors overclaim ...”)、报销/保险虚报"},
+  {l:"近义",t:"overstate · exaggerate · overhype · oversell · inflate"},
+  {l:"反义",t:"understate · underclaim · downplay"},
+  {l:"金句",t:"Don't overclaim what your model can do; don't underclaim what it might do."}]},
+{w:"slug",p:"/slʌɡ/",pos:"n./v.",zh:"多义词：蛞蝓 / 子弹 / 重击 / URL 短标识",en:"a slug, a bullet, a hard punch, or a URL-friendly short identifier",letter:"S",theme:"tech",
+ ex:["Slugs are destroying my lettuce.","He took a slug to the shoulder.","The post's slug is `my-first-post`.","Don't be such a slug — get out of bed!"],
+ notes:[
+  {l:"8 个义项",t:"蛞蝓 / 子弹 / 重击(v.) / URL slug / 一小杯酒 / 假币 / 懒虫 / 印刷铅条"},
+  {l:"URL slug",t:"网页 URL 中人类可读的短标识；规则 = 小写 + 空格转连字符 + 去标点"},
+  {l:"派生",t:"sluggish ⭐ 迟缓的/不景气的 · slugify 转 slug 格式 · slugfest 激烈互殴"},
+  {l:"搭配",t:"slug it out 拼死搏斗 · sluggish growth · URL slug / post slug"},
+  {l:"速记",t:"原义都和“一小块/慢吞吞的东西”相关"}]},
+{w:"TOPS",p:"/tɒps/",pos:"n.(缩写)",zh:"每秒万亿次运算",en:"Tera Operations Per Second — a unit of AI chip compute power",letter:"T",theme:"tech",
+ ex:["The new NPU delivers 50 TOPS of AI performance.","Microsoft requires 40+ TOPS for a Copilot+ PC."],
+ notes:[
+  {l:"定义",t:"1 TOPS = 10¹² 次运算/秒 (Tera- = 万亿)"},
+  {l:"参考值",t:"iPhone A18 ~35 · 骁龙 X Elite ~45 · Copilot+ PC 门槛 ≥40 · 特斯拉 FSD ~144"},
+  {l:"对照",t:"TOPS 整数运算(INT8，推理) vs FLOPS 浮点(训练)"},
+  {l:"普通词 tops",t:"① 复数 tank tops 背心 ② 副词“至多”(ten minutes, tops) ③ 顶尖的 ④ 动词三单"}]},
+{w:"troubleshooting",p:"/ˈtrʌblˌʃuːtɪŋ/",pos:"n./v.(-ing)",zh:"故障排查；问题诊断；疑难解答",en:"the systematic process of identifying, diagnosing, and resolving problems",letter:"T",theme:"action",
+ ex:["I spent two hours troubleshooting the build error.","Have you tried the basic troubleshooting steps?"],
+ notes:[
+  {l:"拆词",t:"trouble(麻烦) + shoot(射击) + -ing → 把麻烦逐个打掉"},
+  {l:"⚠️ 不规则",t:"troubleshoot → 过去式/分词 troubleshot 或 troubleshooted（前者略多）"},
+  {l:"三态切换",t:"trouble · troubleshoot(v.) · troubleshooting(n.) · troubleshooter 排错专家"},
+  {l:"辨析",t:"troubleshoot = diagnose + fix · debug 软件调试 · diagnose 找原因 · fix 修好 · patch 打补丁"},
+  {l:"五步法",t:"Identify → Reproduce → Isolate → Fix → Verify"},
+  {l:"金句",t:"99% of programming is troubleshooting; 1% is writing new code."}]},
+{w:"take-rate",p:"/ˈteɪk reɪt/",pos:"n.",zh:"抽成率；佣金率；平台分成比例",en:"% of GMV that a platform keeps as revenue; or % of people who accept an offer",letter:"T",theme:"tech",
+ ex:["Apple's 30% App Store take-rate has been under regulatory scrutiny.","Our upsell take-rate doubled after redesigning the checkout."],
+ notes:[
+  {l:"公式",t:"take-rate = Platform Revenue ÷ GMV (平台收入 ÷ 总交易额)"},
+  {l:"真实参考",t:"Apple App Store 30% · Uber 25-30% · Airbnb ~15% · Stripe 2.9%"},
+  {l:"拆词",t:"take(拿走) + rate(比率) = 平台拿走多少的比率"},
+  {l:"搭配",t:"effective take-rate 有效抽成 · blended take-rate 综合抽成 · take-rate compression"},
+  {l:"易混淆",t:"margin 利润率(利润÷收入) ≠ take-rate (抽成÷GMV)"},
+  {l:"商业洞察",t:"高 take-rate 显示话语权(Apple)但招监管；低 take-rate(Stripe) 靠规模壁垒"}]}
+];
+const THEMES={tech:"AI · 科技",action:"动作 · 流程",emotion:"情绪 · 评价",other:"构词 · 其他"};
+
+const LS_KEY="studywords_known_v1";
+const state={
+  mode:"card",theme:"all",letter:"all",q:"",
+  idx:0,listHide:false,
+  known:new Set(JSON.parse(localStorage.getItem(LS_KEY)||"[]")),
+  view:[],quiz:null
+};
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const fmt=s=>esc(s).replace(/`([^`]+)`/g,"<code>$1</code>");
+function saveKnown(){localStorage.setItem(LS_KEY,JSON.stringify([...state.known]))}
+
+function filtered(){
+  const q=state.q.trim().toLowerCase();
+  return WORDS.filter(w=>{
+    if(state.theme!=="all"&&w.theme!==state.theme)return false;
+    if(state.letter!=="all"&&w.letter!==state.letter)return false;
+    if(q){
+      if(!(w.w.toLowerCase().includes(q)||w.zh.toLowerCase().includes(q)||w.en.toLowerCase().includes(q)))return false;
+    }
+    return true;
+  });
+}
+function rebuildView(){
+  state.view=filtered();
+  if(state.idx>=state.view.length)state.idx=0;
+}
+
+/* ---- filter chips ---- */
+function buildChips(){
+  const tr=$("#themeRow"),lr=$("#letterRow");
+  tr.querySelectorAll(".chip").forEach(c=>c.remove());
+  lr.querySelectorAll(".chip").forEach(c=>c.remove());
+  const mk=(txt,val,kind)=>{
+    const b=document.createElement("button");
+    b.className="chip"+(kind==="lt"?" lt":"");
+    b.textContent=txt;b.dataset.val=val;b.dataset.kind=kind;
+    b.setAttribute("aria-pressed",(kind==="theme"?state.theme:state.letter)===val);
+    b.onclick=()=>{
+      if(kind==="theme")state.theme=val;else state.letter=val;
+      state.idx=0;state.quiz=null;refresh();
+    };
+    return b;
+  };
+  tr.appendChild(mk("全部","all","theme"));
+  Object.keys(THEMES).forEach(k=>tr.appendChild(mk(THEMES[k],k,"theme")));
+  const letters=[...new Set(WORDS.map(w=>w.letter))].sort();
+  lr.appendChild(mk("全部","all","lt"));
+  letters.forEach(L=>lr.appendChild(mk(L,L,"lt")));
+}
+function syncChips(){
+  document.querySelectorAll("#themeRow .chip").forEach(c=>
+    c.setAttribute("aria-pressed",state.theme===c.dataset.val));
+  document.querySelectorAll("#letterRow .chip").forEach(c=>
+    c.setAttribute("aria-pressed",state.letter===c.dataset.val));
+}
+
+/* ---- shared bits ---- */
+function noteHTML(n){
+  return `<div class="note"><span class="nl">${esc(n.l)}</span><span class="nt">${fmt(n.t)}</span></div>`;
+}
+function backHTML(w){
+  return `<div class="fc-back-scroll">
+    <div class="fc-back-head">
+      <span class="fc-back-word">${esc(w.w)}</span>
+      <span class="fc-phon">${esc(w.p)}</span>
+      <span class="badge pos">${esc(w.pos)}</span>
+    </div>
+    <div class="fc-zh">${esc(w.zh)}</div>
+    <div class="fc-en">${esc(w.en)}</div>
+    <div>
+      <div class="block-title">例句 Examples</div>
+      <ul class="ex-list">${w.ex.map(e=>`<li>${fmt(e)}</li>`).join("")}</ul>
+    </div>
+    <div>
+      <div class="block-title">详解 Breakdown</div>
+      <div class="concept-drawer">${w.notes.map(noteHTML).join("")}</div>
+    </div>
+  </div>`;
+}
+
+/* ---- CARD MODE ---- */
+function renderCard(){
+  const stage=$("#stage");
+  if(!state.view.length){stage.innerHTML=`<div class="empty">没有匹配的单词，换个筛选试试。</div>`;return;}
+  const w=state.view[state.idx];
+  const known=state.known.has(w.w);
+  stage.innerHTML=`
+   <div class="fc-wrap">
+     <div class="flashcard" id="flashcard" tabindex="0" role="button"
+          aria-label="单词卡片：${esc(w.w)}，点击或按空格翻转查看释义">
+       <div class="fc-inner">
+         <div class="fc-face fc-front">
+           ${known?'<span class="fc-known-flag">✓ 已掌握</span>':''}
+           <div class="fc-badges">
+             <span class="badge thm ${w.theme}">${esc(THEMES[w.theme])}</span>
+             <span class="badge pos">${esc(w.pos)}</span>
+           </div>
+           <div class="fc-word">${esc(w.w)}</div>
+           <div class="fc-hint">点击翻转，回忆它的意思 ▸</div>
+         </div>
+         <div class="fc-face fc-back">${backHTML(w)}</div>
+       </div>
+     </div>
+     <div class="fc-controls">
+       <button class="ctrl-btn" id="prevBtn" aria-label="上一个">◀ 上一个</button>
+       <span class="fc-progress">${state.idx+1} / ${state.view.length}</span>
+       <button class="ctrl-btn" id="nextBtn" aria-label="下一个">下一个 ▶</button>
+       <button class="ctrl-btn" id="flipBtn">🔄 翻转</button>
+       <button class="ctrl-btn" id="shuffleBtn">🔀 打乱</button>
+       <button class="ctrl-btn known primary" id="knownBtn" data-on="${known}">
+         ${known?"✓ 已掌握":"标记已掌握"}</button>
+     </div>
+   </div>`;
+  const fc=$("#flashcard");
+  const flip=()=>fc.classList.toggle("flipped");
+  fc.onclick=flip;
+  fc.onkeydown=e=>{if(e.key===" "||e.key==="Enter"){e.preventDefault();flip();}};
+  $("#flipBtn").onclick=e=>{e.stopPropagation();flip();};
+  $("#prevBtn").onclick=()=>{state.idx=(state.idx-1+state.view.length)%state.view.length;renderCard();};
+  $("#nextBtn").onclick=()=>{state.idx=(state.idx+1)%state.view.length;renderCard();};
+  $("#shuffleBtn").onclick=()=>{
+    for(let i=state.view.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[state.view[i],state.view[j]]=[state.view[j],state.view[i]];}
+    state.idx=0;renderCard();
+  };
+  $("#knownBtn").onclick=()=>{
+    if(state.known.has(w.w))state.known.delete(w.w);else state.known.add(w.w);
+    saveKnown();renderCard();updateProgress();
+  };
+}
+
+/* ---- LIST MODE ---- */
+function renderList(){
+  const stage=$("#stage");
+  const tools=`<div class="list-tools">
+     <button class="toggle" id="hideToggle">
+       隐藏释义自测<span class="switch" role="switch" aria-pressed="${state.listHide}" aria-label="隐藏释义"></span>
+     </button></div>`;
+  if(!state.view.length){
+    stage.innerHTML=tools+`<div class="empty">没有匹配的单词，换个筛选试试。</div>`;
+    $("#hideToggle").onclick=()=>{state.listHide=!state.listHide;renderList();};
+    return;
+  }
+  const cards=state.view.map((w,i)=>`
+    <button class="mini ${state.listHide?'hide':''}" data-i="${i}"
+            aria-label="查看 ${esc(w.w)} 的卡片">
+      <div class="mtop">
+        <span class="mw">${esc(w.w)}</span>
+        <span class="mthm ${w.theme}" title="${esc(THEMES[w.theme])}"></span>
+      </div>
+      <span class="mp">${esc(w.p)}</span>
+      <span class="mz">${esc(w.pos)} ${esc(w.zh)}</span>
+      ${state.known.has(w.w)?'<span class="mknown">✓ 已掌握</span>':''}
+    </button>`).join("");
+  stage.innerHTML=tools+`<div class="grid">${cards}</div>`;
+  $("#hideToggle").onclick=()=>{state.listHide=!state.listHide;renderList();};
+  stage.querySelectorAll(".mini").forEach(el=>{
+    el.onclick=()=>{state.idx=+el.dataset.i;setMode("card");};
+  });
+}
+
+/* ---- QUIZ MODE ---- */
+function startQuiz(){
+  const pool=filtered().slice();
+  for(let i=pool.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[pool[i],pool[j]]=[pool[j],pool[i]];}
+  state.quiz={pool,i:0,revealed:false,correct:0,wrong:0,done:false};
+}
+function renderQuiz(){
+  const stage=$("#stage");
+  if(!state.quiz)startQuiz();
+  const Q=state.quiz;
+  if(!Q.pool.length){
+    stage.innerHTML=`<div class="check-yourself"><div class="empty">没有匹配的单词，换个筛选再开始自测。</div></div>`;
+    return;
+  }
+  if(Q.done){
+    const total=Q.pool.length,rate=Math.round(Q.correct/total*100);
+    stage.innerHTML=`<div class="check-yourself">
+       <div class="quiz-prompt">自测完成</div>
+       <div class="quiz-score">${Q.correct} / ${total}</div>
+       <div class="rt">正确率 ${rate}%　·　不熟 ${Q.wrong} 个</div>
+       <div class="quiz-btns">
+         <button class="big-btn yes" id="againBtn">🔁 再测一轮</button>
+         <button class="big-btn no" id="toCardBtn">去翻卡片</button>
+       </div></div>`;
+    $("#againBtn").onclick=()=>{startQuiz();renderQuiz();};
+    $("#toCardBtn").onclick=()=>setMode("card");
+    return;
+  }
+  const w=Q.pool[Q.i],total=Q.pool.length;
+  stage.innerHTML=`<div class="check-yourself">
+     <div class="quiz-meta"><span>第 ${Q.i+1} / ${total} 题</span><span>✓ ${Q.correct}　✗ ${Q.wrong}</span></div>
+     <div class="quiz-bar"><i style="width:${Q.i/total*100}%"></i></div>
+     <div class="quiz-prompt">还记得这个词的意思吗？</div>
+     <div class="quiz-word">${esc(w.w)}</div>
+     ${Q.revealed?`
+       <div class="quiz-answer">
+         <span class="qa-phon">${esc(w.p)} ${esc(w.pos)}</span>
+         <span class="qa-zh">${esc(w.zh)}</span>
+         <span class="qa-ex">${fmt(w.ex[0])}</span>
+       </div>
+       <div class="quiz-prompt">刚才答对了吗？</div>
+       <div class="quiz-btns">
+         <button class="big-btn yes" id="qYes">✓ 记得</button>
+         <button class="big-btn no" id="qNo">✗ 不熟</button>
+       </div>`:`
+       <button class="big-btn reveal" id="revealBtn">显示答案</button>`}
+   </div>`;
+  if(Q.revealed){
+    $("#qYes").onclick=()=>{Q.correct++;state.known.add(w.w);saveKnown();nextQuiz();};
+    $("#qNo").onclick=()=>{Q.wrong++;state.known.delete(w.w);saveKnown();nextQuiz();};
+  }else{
+    $("#revealBtn").onclick=()=>{Q.revealed=true;renderQuiz();};
+  }
+}
+function nextQuiz(){
+  const Q=state.quiz;Q.i++;Q.revealed=false;
+  if(Q.i>=Q.pool.length)Q.done=true;
+  renderQuiz();updateProgress();
+}
+
+/* ---- mode / refresh ---- */
+function setMode(m){
+  state.mode=m;
+  document.querySelectorAll(".seg button").forEach(b=>
+    b.setAttribute("aria-pressed",b.dataset.mode===m));
+  if(m==="quiz")state.quiz=null;
+  refresh();
+}
+function renderStage(){
+  if(state.mode==="card")renderCard();
+  else if(state.mode==="list")renderList();
+  else renderQuiz();
+}
+function updateProgress(){
+  const n=state.known.size,t=WORDS.length;
+  $("#progFill").style.width=(n/t*100)+"%";
+  $("#progNum").textContent=`${n} / ${t}`;
+}
+function refresh(){
+  rebuildView();
+  $("#countPill").textContent=`${state.view.length} / ${WORDS.length}`;
+  syncChips();
+  renderStage();
+  updateProgress();
+}
+
+/* ---- init ---- */
+document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>setMode(b.dataset.mode));
+$("#search").addEventListener("input",e=>{state.q=e.target.value;state.idx=0;state.quiz=null;refresh();});
+$("#resetBtn").onclick=()=>{
+  if(confirm("确定清空所有“已掌握”标记吗？")){
+    state.known.clear();saveKnown();refresh();
+  }
+};
+document.addEventListener("keydown",e=>{
+  if(state.mode!=="card")return;
+  if(e.target.tagName==="INPUT")return;
+  if(e.key==="ArrowLeft"){$("#prevBtn")&&$("#prevBtn").click();}
+  else if(e.key==="ArrowRight"){$("#nextBtn")&&$("#nextBtn").click();}
+});
+buildChips();
+refresh();
+</script>
+</body>
+</html>
