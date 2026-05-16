@@ -1,0 +1,278 @@
+# 单词本 / Vocabulary Book
+
+> 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
+> 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
+
+**统计**：共 18 个词条
+
+---
+
+## A
+
+## B
+
+## C
+
+- **cross-confirm** /ˌkrɔːs kənˈfɜːrm/ v./n. 交叉确认；相互印证 — to verify information by checking against multiple independent sources or parties
+  - 例句：We need to cross-confirm this report with at least two independent sources.
+  - 例句：Please cross-confirm the meeting time with both teams.
+  - 拆词：cross-(交叉) + confirm(确认)
+  - 同类 cross- 前缀词：cross-check 交叉核对 / cross-verify / cross-reference 交叉引用 / cross-validate 交叉验证(ML) / cross-examine 交叉盘问(法庭)
+  - 名词形：cross-confirmation 交叉确认 / independent cross-confirmation 独立的交叉确认
+  - 搭配：cross-confirm with sb / against sth / via sth
+  - 辨析：confirm 单方确认 / verify 核实证真 / cross-check 交叉核对(口语) / cross-confirm 多方点头 / corroborate 佐证(正式) / cross-validate 统计学专业术语
+  - 写法：标准带连字符 cross-confirm；不带连字符也常见
+  - 高频场景：新闻信源核实、风控/身份验证、分布式系统、商务跨团队对齐
+
+## D
+
+- **dismissed** /dɪsˈmɪst/ v.(过去式/过去分词) / adj. dismiss 的过去式/分词 — 被解雇；被驳回；被打发走；被(不当回事地)否定/无视
+  - dismiss 多义：① 解雇(正式，比 fire 书面)② **不予理会/否定**(高频隐性义)③ 法庭驳回 ④ 解散(下课/部队)⑤ UI 关闭(对话框/通知)
+  - 例句①：He was dismissed for poor performance.
+  - 例句②：He dismissed the idea as ridiculous. / I felt completely dismissed in the meeting.
+  - 例句③：The judge dismissed the case for lack of evidence. / Case dismissed.
+  - 例句④：Class dismissed! 下课！
+  - 例句⑤：Tap the X to dismiss the dialog. (UI/UX 高频)
+  - 拆词：dis-(远离) + miss-(送/放) → 送走、打发走
+  - 同根 mit/mis：mission, missile, emit, submit, transmit, commit, permit (都和"送/放"相关)
+  - 派生：dismissal n. 解雇/驳回 (unfair dismissal 不当解雇 / summary dismissal 即刻解雇) / **dismissive** adj. 轻蔑的/不屑一顾的 ⭐ / dismissively adv. / dismissiveness n.
+  - 心理学术语：dismissive-avoidant attachment **回避型依恋**(流行心理学高频)
+  - 搭配：dismiss sth as ... / dismiss out of hand 一口回绝 / be dismissed from / feel dismissed 感觉不被当回事 / wrongful dismissal 不当解雇
+  - 辨析：ignore 完全不理(被动) / dismiss 注意到但主动判定不值一提(轻蔑) / reject 明确拒绝(中性) / fire 解雇(口语) / sack (英口)解雇 / brush off 敷衍打发
+  - 易混：dismiss ≠ demise 去世 / dismissed ≠ missed 错过
+  - 高频领域：HR/职场、法庭、UI/UX、心理与沟通
+
+- **diagnostics** /ˌdaɪəɡˈnɑːstɪks/ n. 诊断学；诊断信息(集合)；故障检测 — the practice of identifying problems by analyzing symptoms/errors; the messages a tool emits while doing so
+  - 例句(医)：Cancer diagnostics has advanced rapidly.
+  - 例句(编程)：The compiler emitted several diagnostics about unused variables.
+  - 例句(工程)：Run the engine diagnostics. / OBD-II = On-Board Diagnostics
+  - 拆词：dia-(穿透) + gnos-(know 知道，希腊语) + -tic + -s → "看穿本质" → 诊断
+  - 同根：know, knowledge, gnostic, agnostic 不可知论, prognosis 预后, recognize
+  - 三态对比：diagnose v. 诊断(动作) / diagnosis n. 一次诊断结果(复数 diagnoses) / diagnostic adj.诊断的/n.判别指标 / diagnostics n. 诊断学/诊断信息集合
+  - 派生：misdiagnose 误诊 / diagnostician 诊断专家 / self-diagnostics 自检 / prognostic 预测性的
+  - 工程术语：diagnostic message 诊断信息 / severity (error/warning/info/hint) / LSP textDocument/publishDiagnostics / suppress diagnostics 抑制诊断(如 @ts-expect-error)
+  - 搭配：run diagnostics 运行诊断 / emit diagnostics 发出诊断 / medical diagnostics / AI-powered diagnostics / OBD diagnostics
+  - 易错：单条用 a diagnostic message ❌ a diagnostics；diagnosis 复数是 diagnoses /daɪəɡˈnoʊsiːz/
+  - 高频领域：编译器/IDE/LSP、医学/医疗 AI、车载/工业自检
+  - 关联：[[troubleshooting]] — diagnostics 是诊断信息，troubleshooting 是利用它排查的过程
+
+## E
+
+## F
+
+- **FLOPS** /flɒps/ n.(缩写) 每秒浮点运算次数 — **FL**oating-point **OP**erations **P**er **S**econd；衡量计算机/GPU/超算硬核算力的金标准
+  - 关键：floating-point 浮点数=带小数的数(3.14)，比整数运算更耗算力
+  - 数量级前缀：kFLOPS 千 / MFLOPS 百万 / GFLOPS 十亿 / **TFLOPS** 万亿(最常见) / PFLOPS 千万亿 / EFLOPS 百亿亿(超算前沿)
+  - 例句：The RTX 5090 delivers over 100 TFLOPS. / The supercomputer broke the exaFLOPS barrier.
+  - 参考值：PS5 ~10 TFLOPS / RTX 4090 ~80 / H100(FP16) ~1 PFLOPS / 最快超算 El Capitan ~1.7 EFLOPS
+  - **FLOPS vs TOPS**：FLOPS 浮点(训练/科学计算/GPU/超算) vs [[TOPS]] 整数(推理/NPU/AI PC)；口诀"训练看 FLOPS，推理看 TOPS"
+  - ⚠️ 大小写陷阱：**FLOPS**(大写 S=per Second，速度) vs **FLOPs**(小写 s=复数，运算总量)；口诀"FLOPS 测多快，FLOPs 测多少"
+  - 相关术语：MIPS 每秒指令数 / MACs 乘加运算(1 MAC≈2 FLOPs) / throughput 吞吐量 / latency 延迟
+  - 趣味：小写 flop = 啪嗒落下/惨败扑街(a box-office flop 票房惨败)，与缩写同音常被工程师玩梗
+  - 金句：More FLOPS, more intelligence. (算力即智能，Scaling Law 通俗版)
+
+- **fiddle** /ˈfɪdl/ v./n. 摆弄/瞎调；小提琴(俗称)；做假账 — to touch/adjust restlessly; folk term for violin; to falsify
+  - 例句(摆弄)：Stop fiddling with your phone! / Let me fiddle with the config a bit.
+  - 例句(小提琴)：He plays the fiddle in a bluegrass band.
+  - 例句(作假)：He was caught fiddling expenses. / fiddle the books 篡改账本
+  - violin vs fiddle：同一把琴，古典场合叫 violin，民间/Bluegrass/爱尔兰民谣叫 fiddle；同源(拉丁 vitula)
+  - 习语：**as fit as a fiddle** 身体倍儿棒 / **play second fiddle** 当配角副手 / **fiddle while Rome burns** 危机时刻不务正业(Nero 典故)
+  - 派生：**fiddly** adj. 繁琐难弄的(英式高频，如 a fiddly little screw) ⭐ / fiddler 拉琴者/瞎摆弄者 / fiddling adj. 琐碎的 / fiddlesticks 胡说！(旧)
+  - 编程工具：JSFiddle / SQLFiddle / CodePen — "随便玩玩代码"的在线试验场
+  - 搭配：fiddle with sth ⭐(最高频) / fiddle around / fiddle the books / tax fiddle 税务作弊 / fiddly task
+  - 辨析：fiddle 无目的乱玩(略贬) / tweak 有目的微调 / tinker 出于兴趣捣鼓 / mess with 警告"别乱动" / toy with 把玩犹豫
+  - 词源：中古英语 fithele，与 violin 同源，但走民间口语化路线
+  - 程序员金句：Don't fiddle with what works. 别动能用的东西。
+
+- **flue** /fluː/ n. 烟道；烟囱通道；排烟管 — a pipe/duct that carries smoke or exhaust gas from a fireplace/furnace/boiler to the outside
+  - 例句：Make sure the flue is open before lighting the fire. (生火前确保烟道是打开的。)
+  - 搭配：**flue gas** 烟气(环保电力高频) / flue gas desulfurization (FGD) 烟气脱硫 / chimney flue 烟囱通道 / open/close the flue / clean the flue / flue liner 烟道衬里
+  - ⚠️ 同音词陷阱 /fluː/：**flu** 流感 / **flew** 飞(fly 过去式) / **flue** 烟道（三个完全同音）
+  - 形似词区分：flute 长笛 / flume 水槽水道 / fluke 侥幸 / fluid 流体 / fluent 流利的
+  - 专业小众义：管风琴的 flue pipe 唇片管（vs reed pipe 簧片管）
+  - 词源：中古英语 flewe，原指渔网→狭窄通道，16 世纪起表烟囱通道（与 flow 流动无词源关系）
+  - 近义/相关：chimney 烟囱(整体) / vent 通风口 / duct 管道 / exhaust 排气 / stack 高烟囱
+  - 记忆点：flu 流感拼写更短像"快速感染"；flue 烟道末尾的 -e 像烟囱顶上的盖子
+
+## G
+
+## H
+
+- **hype** /haɪp/ n./v./adj. 炒作；大肆宣传；(口语)兴奋的 — extravagant promotion, often more than deserved; to publicize sth excessively; (slang) excited
+  - 例句(n.)：The movie didn't live up to the hype. (电影没达到宣传中的期待。)
+  - 例句(v.)：They hyped the product for months before launch.
+  - 例句(adj.)：I'm so hype for the concert tonight! (今晚演唱会超激动！)
+  - 派生：hyped (adj.) 被炒作的/兴奋的 / hype up (phr.v.) 炒热、打气 / hyper (adj.) 亢奋的 / hype man 气氛组 / hype train 炒作热潮 / hype beast 潮牌狂热者 / overhype 过度炒作
+  - 术语：**hype cycle** 炒作周期 (Gartner 经典 5 阶段曲线：萌芽→期望膨胀→泡沫破灭→复苏→成熟)
+  - 搭配：believe the hype / live up to the hype / media hype / marketing hype / cut through the hype / all hype, no substance
+  - 词源：1960s 美俚，源自 hypodermic needle（注射针），引申为"打鸡血式宣传"，自带"虚假亢奋"暗示
+  - 辨析：hype 炒作(略负面) / buzz 热议(中性) / spin 粉饰操纵(负面)
+  - 近义：buzz, ballyhoo, fanfare, promote, talk up ｜ 反义：downplay, understate
+  - 关联：[[overclaim]] 夸大声称（同属"夸大宣传"语义场）
+  - 金句：Don't believe the hype. (Public Enemy 1988 名曲，意为"别被忽悠")
+
+- **hugging** /ˈhʌɡɪŋ/ v.(-ing) / adj. 拥抱；紧贴；贴身的 — present participle of hug; holding tightly or staying very close to sth
+  - 例句：The road hugs the coastline for miles. (路紧贴海岸线延伸数英里。)
+  - 例句：She sat hugging her knees. (她抱着膝盖坐着。)
+  - 搭配：hugging tightly 紧抱 / hugging the wall 紧贴墙 / body-hugging dress 贴身连衣裙 / tree-hugging 抱树的(戏指环保人士) / bear hug 熊抱
+  - 专有名词：**Hugging Face** 🤗 — AI 模型/数据集开源社区平台（"AI 界的 GitHub"）
+  - 词源：可能源自古诺斯语 hugga "to comfort"
+  - 近义：embracing, cuddling, clasping
+
+## I
+
+- **isomorphic** /ˌaɪsəˈmɔːrfɪk/ adj. 同构的；结构相同的 — having the same form/structure; in CS, code that runs on both server and client
+  - 例句：Next.js enables isomorphic rendering — the same React code runs on both server and client.
+  - 拆词：iso-(相同) + -morph-(形状) + -ic → "同形的"
+  - 搭配：isomorphic mapping 同构映射 / isomorphic JavaScript 同构 JS / isomorphic to ... 与...同构
+  - 派生：isomorphism (n.) 同构
+  - 辨析：homomorphic 同态（保持结构）vs isomorphic 同构（同态+双射，可逆）
+  - 反义：heteromorphic, anisomorphic
+
+## J
+
+- **journal** /ˈdʒɜːrnl/ n./v. 日记；学术期刊；日志；账簿；写日记 — a daily personal record; a scholarly periodical; a log of events/transactions
+  - 五层含义：① 日记 ② 学术期刊(高频，"a journal"在学术圈默认指期刊) ③ 技术日志(journaling file system, journalctl, 数据库 WAL journal) ④ 会计 journal entry 会计分录 ⑤ 动词 journaling 写日记(wellness 热词)
+  - 例句：She keeps a journal. / The paper was published in a peer-reviewed journal.
+  - 拆词：jour(day 天，法语) + -nal → "每天的记录"
+  - 同源家族：journalist 记者 / journalism 新闻业 / journey 旅程(原意"一天的行程"!) / adjourn 休会 / diurnal 昼行的 / sojourn 旅居
+  - 辨析 diary vs journal：diary 偏私人情感流水账(更私密) / journal 更宽泛正式(可含思考/工作/学术/系统日志)；所有 diary 都是 journal，反之不然；Nature 杂志只能叫 journal
+  - 派生：journaling 写日记(行为) / journalist / journalism / journalistic
+  - 搭配：keep a journal ⭐(养成习惯用 keep) / peer-reviewed journal 同行评审期刊 / journal article 期刊论文 / journal entry / bullet journal 子弹笔记 / gratitude journal 感恩日记 / travel journal
+  - 近义：diary 日记 / log 日志 / logbook / periodical 期刊 / chronicle 编年史 / ledger 总账(会计:journal→ledger)
+  - 发音陷阱：/ˈdʒɜːrnl/ 重音在前，jour 读 /dʒɜːr/ 类似"jer"，不是 /dʒʊər/
+  - 金句：Publish or perish. (学术界名言：不在 journal 发论文就被淘汰)
+
+- **jobapalooza** /ˌdʒɑːbəpəˈluːzə/ n. 就业盛况；招聘狂欢 — *informal*, portmanteau of *job* + *Lollapalooza*; a huge burst of hiring or job openings
+  - 例句：Is it a jobpocalypse or a jobapalooza? Economists can't agree.
+  - 构词：混成词 = job + (Lolla)palooza
+  - 后缀 -palooza 表"盛事/狂欢"，源自 Lollapalooza 音乐节（1991-）；本词亦为古早美俚 "了不起的东西"
+  - 同类造词：shoppalooza 购物狂欢 / foodapalooza 美食盛宴 / bookapalooza / codepalooza
+  - 反义对照：[[jobpocalypse]] 就业末日（-pocalypse 灾难 vs -palooza 盛事）
+  - 语域：informal / 媒体造词，词典查不到
+
+- **jobpocalypse** /ˈdʒɑːbəˌpɑːkəlɪps/ n. 就业末日；失业大灾难 — *informal*, portmanteau of *job* + *apocalypse*; catastrophic large-scale job loss, esp. due to AI/automation
+  - 例句：Is GenAI bringing on a white-collar jobpocalypse? (生成式 AI 是否会带来白领就业末日？)
+  - 构词：混成词 (portmanteau) = job + (apo)calypse
+  - 后缀 -pocalypse 已成高产后缀：snowpocalypse 雪灾 / carpocalypse 堵车末日 / AIpocalypse / infopocalypse / retailpocalypse
+  - 反义对照：[[jobapalooza]] 就业盛况
+  - 语域：informal / 网络科技媒体俚语，正式词典查不到
+  - 相关本词：apocalypse 启示录；世界末日（希腊语 apokálupsis "揭示"）
+
+## K
+
+## L
+
+- **latent** /ˈleɪtənt/ adj. 潜在的；潜伏的 — existing but hidden or dormant, capable of becoming active later
+  - 例句：The virus can remain latent in the body for years. (病毒可在体内潜伏多年。)
+  - 搭配：latent heat 潜热 / latent variable 潜变量 / latent space 潜空间 / latent period 潜伏期
+  - 词源：拉丁语 *latēre* "to lie hidden"；同源 latency（延迟/潜伏期）
+  - 近义：dormant, hidden, concealed, potential ｜ 反义：active, manifest, overt
+
+## M
+
+## N
+
+## O
+
+- **overclaim** /ˌoʊvərˈkleɪm/ v./n. 夸大宣称；过度声称；虚报 — to claim more than is justified or true; an exaggerated claim
+  - 例句：The paper overclaims the model's reasoning ability. (这篇论文夸大了模型的推理能力。)
+  - 例句：He was fined for overclaiming expenses. (他因虚报报销费用被罚款。)
+  - 拆词：over-(过度) + claim(声称) → 过度声称
+  - 同类 over- 前缀词：overpromise / overstate / overestimate / overhype / oversell / overreach
+  - 搭配：overclaim the capability of ... / overclaim results / avoid overclaiming
+  - 高频场景：AI 论文与营销（厂商夸大模型能力）；学术审稿（"the authors overclaim ..."）；报销/保险虚报
+  - 近义：overstate, exaggerate, overhype, oversell, inflate, embellish
+  - 反义：understate, underclaim, downplay
+  - 关联：[[hype]] 炒作（overhype = over + hype）
+  - 金句：Don't overclaim what your model can do; don't underclaim what it might do.
+
+## P
+
+## Q
+
+## R
+
+## S
+
+- **slug** /slʌɡ/ n./v. 多义词 — 1) 蛞蝓/鼻涕虫 2) 子弹/实心弹 3) 一记重拳/猛击(v.) 4) **URL slug** 网页 URL 中的短标识 5) 一小杯烈酒 6) 假币/代用币 7) 懒虫/慢吞吞的人 8) 印刷铅条/临时代号
+  - 例句(蛞蝓)：Slugs are destroying my lettuce.
+  - 例句(子弹)：He took a slug to the shoulder.
+  - 例句(重击)：She slugged him hard. / slug it out 拼死搏斗
+  - 例句(URL)：The post's slug is `my-first-post`. URL: `/posts/how-to-use-claude-code`
+  - 例句(一杯酒)：He poured a slug of whiskey.
+  - 例句(懒虫)：Don't be such a slug — get out of bed!
+  - URL slug 规则：小写 + 空格→连字符 + 去标点 + 长度限制；编程动词 **slugify** = 转 slug 格式（Django 有 SlugField）
+  - 派生：**sluggish** adj. 迟缓的/不景气的(高频！如 sluggish economy/performance) / sluggishness / slugger 重击手/棒球强打者 / slugfest 激烈互殴 / slugify 转 slug
+  - 搭配：slug it out / take a slug of / sluggish growth / URL slug / post slug
+  - 词源：中古英语 slugge "懒人"→ 蛞蝓(慢)→ 子弹(金属块)→ 印刷铅条→ Web URL 标识
+  - 速记：原义都和"一小块/慢吞吞的东西"相关（蛞蝓、子弹、铅条、URL 短串、一小杯）
+
+## T
+
+- **TOPS** /tɒps/ n.(缩写) 每秒万亿次运算 — **T**era **O**perations **P**er **S**econd；衡量 AI 芯片(NPU/GPU)算力的单位
+  - 1 TOPS = 10¹² 次运算/秒（Tera- = 万亿）
+  - 例句：The new NPU delivers 50 TOPS of AI performance.
+  - 例句：Microsoft requires 40+ TOPS for a Copilot+ PC.
+  - 参考值：iPhone A18 ~35 TOPS / 骁龙 X Elite ~45 TOPS / Copilot+ PC 门槛 ≥40 / 特斯拉 FSD ~144
+  - 算力单位对照：TOPS 整数运算(INT8，推理) / [[FLOPS]] 浮点运算(训练) / TFLOPS 万亿浮点 / MIPS 老式 CPU 指标
+  - 注意：TOPS≈推理性能，FLOPS≈训练性能；高 TOPS 不一定等于实际推理更快
+  - 普通词 **tops** (top 的形式)：① 名词复数 tank tops 背心 / spinning tops 陀螺 ② 副词"至多/最多"(句尾口语：It'll take ten minutes, tops.) ③ 形容词"顶尖的"(旧口语：This place is tops!) ④ 动词三单 The bill tops $1,000.
+
+- **troubleshooting** /ˈtrʌblˌʃuːtɪŋ/ n./v.(-ing) 故障排查；问题诊断；疑难解答 — the systematic process of identifying, diagnosing, and resolving problems
+  - 拆词：trouble(麻烦) + shoot(射击) + -ing → 字面"把麻烦逐个打掉"，画面感记忆
+  - 例句：I spent two hours troubleshooting the build error.
+  - 例句：Have you tried the basic troubleshooting steps? (客服话术经典款)
+  - ⚠️ 不规则动词：troubleshoot → 过去式/分词 **troubleshot** 或 **troubleshooted** 两可，前者略多
+  - 三态切换：trouble(麻烦) / troubleshoot(动词排查) / troubleshooting(n.排查) / troubleshooter(排错专家/救火队员)
+  - 搭配：troubleshooting guide 排错指南 ⭐ / basic troubleshooting steps / troubleshoot a problem / walk sb through troubleshooting / go-to troubleshooter
+  - 辨析：troubleshoot = diagnose + fix(完整流程) / debug 软件调试更精细 / diagnose 重在找原因 / fix 只强调修好 / resolve 正式书面 / investigate 调查 / patch 打补丁
+  - 关联：[[diagnostics]] 诊断信息 — 用 diagnostics 来 troubleshoot 问题
+  - 五步法：Identify → Reproduce → Isolate → Fix → Verify
+  - 金句：99% of programming is troubleshooting; 1% is writing new code.
+
+- **take-rate** (also "take rate") /ˈteɪk reɪt/ n. 抽成率；佣金率；平台分成比例；(采纳)接受率 — % of GMV that a platform keeps as revenue; or % of eligible people who accept an offer
+  - 公式①：take-rate = Platform Revenue ÷ GMV (平台净收入 ÷ 总交易额)
+  - 公式②：take-rate = 实际接受人数 ÷ 合格被邀请人数
+  - 真实参考：Apple App Store 30% / Uber 25-30% / Airbnb ~15% / eBay 10-13% / Stripe 2.9%+$0.30
+  - 例句：Apple's 30% App Store take-rate has been under regulatory scrutiny.
+  - 例句：Our upsell take-rate doubled after redesigning the checkout.
+  - 拆词：take(拿走) + rate(比率) = 平台拿走多少的比率 / 多少人接受
+  - 搭配：raise/lower the take-rate / effective take-rate 有效抽成 / blended take-rate 综合抽成 / take-rate compression 抽成被压缩 / marketplace take-rate
+  - 同义/相关：commission rate 佣金率(传统说法) / cut 分成(口语:Apple takes a 30% cut) / rake 抽水(扑克) / platform fee / adoption rate 采纳率 / conversion rate 转化率
+  - 易混淆：margin 利润率(利润÷收入) ≠ take-rate (抽成÷GMV)
+  - 写法：take-rate (作形容词/术语) / take rate (作普通名词) / takerate ❌
+  - 商业洞察：高 take-rate 显示平台话语权(如 Apple)但招致监管反抗；低 take-rate (如 Stripe) 靠规模和网络效应形成壁垒
+  - 高频领域：风投、SaaS、电商、二级市场分析、财报
+  - 关联：[[hype]] [[overclaim]]（科技/投资人讨论中常一同出现）
+
+## U
+
+## V
+
+## W
+
+## X
+
+## Y
+
+## Z
+
+---
+
+## 短语 / Phrases
+
+## 句子 / Sentences
+
+## 词源/笔记 / Etymology & Notes
+
+---
+
+## 新增日志 / Daily Log
+
+> 记录每天新增的单词，供每周六的复习提醒使用。每加一个新词都要在此追加。
+
+- **2026-05-13**：latent, isomorphic, hugging, jobpocalypse, jobapalooza
+- **2026-05-14**：overclaim, hype, cross-confirm, flue, slug
+- **2026-05-15**：take-rate, diagnostics, dismissed, fiddle, troubleshooting, journal
+- **2026-05-16**：TOPS, FLOPS
