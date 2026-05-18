@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 20 个词条
+**统计**：共 21 个词条
 
 ---
 
@@ -268,6 +268,18 @@
 
 ## U
 
+- **unsupervised** /ˌʌnsuˈpɜːrvaɪzd/ adj. 无人监督的；无人看管的；(ML)无监督的 — not watched/guided by a supervisor; (ML) learning from unlabeled data
+  - 例句(日常)：Children should not be left unsupervised near water.
+  - 例句(ML)：K-means is a classic unsupervised algorithm.
+  - 拆词：un-(否定) + supervise(监督) + -d；supervise = super-(在上) + -vise(看，拉丁 videre)
+  - 同根 -vis/-vid-(看)：vision / visible / video / review / evident
+  - ML 三范式：supervised 有监督(数据带标签) / unsupervised 无监督(无标签，自己找模式) / reinforcement 强化(奖惩试错)
+  - 无监督典型任务：clustering 聚类 / dimensionality reduction 降维 / anomaly detection 异常检测
+  - 精细区分：LLM 预训练常称 self-supervised 自监督(从数据自身造标签，如预测下一个词)，非纯 unsupervised
+  - 词族：supervise v. / supervisor 主管 / supervision n. / supervised adj.
+  - 搭配：unsupervised learning / leave sb unsupervised / work unsupervised(能独立做事，含褒义)
+  - 近义：unmonitored, unattended, autonomous ｜ 反义：supervised, monitored, guided
+
 ## V
 
 ## W
@@ -296,4 +308,4 @@
 - **2026-05-14**：overclaim, hype, cross-confirm, flue, slug
 - **2026-05-15**：take-rate, diagnostics, dismissed, fiddle, troubleshooting, journal
 - **2026-05-16**：TOPS, FLOPS, session
-- **2026-05-18**：goat
+- **2026-05-18**：goat, unsupervised
