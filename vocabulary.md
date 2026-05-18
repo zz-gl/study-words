@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 19 个词条
+**统计**：共 20 个词条
 
 ---
 
@@ -95,6 +95,15 @@
   - 记忆点：flu 流感拼写更短像"快速感染"；flue 烟道末尾的 -e 像烟囱顶上的盖子
 
 ## G
+
+- **goat** /ɡoʊt/ n. 山羊；(俚语缩写 GOAT)史上最佳 — the animal; or GOAT = Greatest Of All Time
+  - 例句(山羊)：Goats can climb almost vertical cliffs.
+  - 例句(GOAT)：Messi is the GOAT. / Is LeBron or Jordan the GOAT?
+  - 山羊词汇：billy goat 公羊 / nanny goat 母羊 / kid 小山羊(也指小孩) / goat cheese 山羊奶酪
+  - ⭐ GOAT = Greatest Of All Time，网络/体育圈高频，emoji 用 🐐(缩写正好拼成 goat)；源自 LL Cool J 1990s 专辑名，2010s 社媒爆火
+  - 习语：scapegoat 替罪羊(scape=escape) / get someone's goat 惹恼某人 / act the goat (英)犯傻 / separate the sheep from the goats 区分良莠
+  - ⚠️ 易混：GOAT 大写=史上最佳 vs goat 小写=山羊；别和 gloat 幸灾乐祸混(只差一字母)
+  - 相关：goatee 山羊胡(下巴尖一小撮)
 
 ## H
 
@@ -287,3 +296,4 @@
 - **2026-05-14**：overclaim, hype, cross-confirm, flue, slug
 - **2026-05-15**：take-rate, diagnostics, dismissed, fiddle, troubleshooting, journal
 - **2026-05-16**：TOPS, FLOPS, session
+- **2026-05-18**：goat
