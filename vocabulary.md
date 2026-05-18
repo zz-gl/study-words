@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 21 个词条
+**统计**：共 22 个词条
 
 ---
 
@@ -182,6 +182,15 @@
 
 ## N
 
+- **newsletter** /ˈnuːzˌletər/ n. 时事通讯；(定期)简报；订阅邮件刊物 — a regularly distributed publication (often email) delivering news/updates to subscribers
+  - 例句：Subscribe to our weekly newsletter. / Her Substack newsletter has 50,000 subscribers.
+  - 拆词：news(新闻) + letter(信) → 以信件形式发出的消息
+  - 现代语境 ⭐：随 Substack/Beehiiv/Mailchimp 兴起，成创作者经济(creator economy)核心形式；独立写作者靠付费 newsletter 谋生
+  - 相关词：subscribe/unsubscribe 订阅/退订 · subscriber 订阅者 · open rate 打开率 · issue 一期
+  - 搭配：weekly/monthly newsletter · email newsletter · sign up for the newsletter · company newsletter 公司内刊 · send out a newsletter · newsletter signup
+  - 辨析：newsletter 定期推送订阅者 / bulletin 公告(更短更即时) / digest 文摘(浓缩精选) / magazine 杂志(更厚正式) / blog 博客
+  - 关键区分：blog 读者主动来看 vs newsletter 内容主动推到读者邮箱
+
 ## O
 
 - **overclaim** /ˌoʊvərˈkleɪm/ v./n. 夸大宣称；过度声称；虚报 — to claim more than is justified or true; an exaggerated claim
@@ -309,3 +318,4 @@
 - **2026-05-15**：take-rate, diagnostics, dismissed, fiddle, troubleshooting, journal
 - **2026-05-16**：TOPS, FLOPS, session
 - **2026-05-18**：goat, unsupervised
+- **2026-05-19**：newsletter
