@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 23 个词条
+**统计**：共 26 个词条
 
 ---
 
@@ -12,6 +12,15 @@
 ## B
 
 ## C
+
+- **composer** /kəmˈpoʊzər/ n. 作曲家；创作/编排者；(技术)依赖管理或编辑工具名 — a person who writes music; one who composes; also a software tool name
+  - 例句：Beethoven was a German composer. / Run `composer install` to pull in PHP dependencies.
+  - 三层：① 作曲家(本义) ② 泛指创作/组合者(Gmail 写信窗口也叫 composer) ③ 技术专名：PHP Composer 依赖管理工具 / Cursor Composer AI 多文件编辑（注意 Docker Compose 不带 -r）
+  - 拆词：com-(一起) + pos-(放置，拉丁 ponere) + -er → "把音符放到一起的人"
+  - 同根 pos-/pon-(放置)：compose · expose 暴露 · propose 提议 · impose 强加 · deposit 存放 · postpone 推迟 · component 组件 · opponent 对手
+  - 词族：compose v.创作/构成/使镇定 · composition 作品/作文/构图/成分 · composed adj.镇定的 · composure 沉着
+  - 搭配：classical/film composer · composer install/update (PHP) · the composer of + 作品
+  - ⚠️ 易混：composer 作曲家 ≠ conductor 指挥家
 
 - **cross-confirm** /ˌkrɔːs kənˈfɜːrm/ v./n. 交叉确认；相互印证 — to verify information by checking against multiple independent sources or parties
   - 例句：We need to cross-confirm this report with at least two independent sources.
@@ -23,6 +32,15 @@
   - 辨析：confirm 单方确认 / verify 核实证真 / cross-check 交叉核对(口语) / cross-confirm 多方点头 / corroborate 佐证(正式) / cross-validate 统计学专业术语
   - 写法：标准带连字符 cross-confirm；不带连字符也常见
   - 高频场景：新闻信源核实、风控/身份验证、分布式系统、商务跨团队对齐
+
+## C (续)
+
+- **Cursor** /ˈkɜːrsər/ n. 光标；游标；(专名)AI 代码编辑器 — the movable on-screen indicator; a database pointer; a proper-noun AI code editor
+  - 例句：The cursor blinked at the end of the line.
+  - 三层：① 光标(mouse cursor 鼠标指针 / text cursor 文本光标) ② 数据库 cursor 游标(遍历结果集的指针) ③ Cursor — 基于 VS Code 的 AI 编程编辑器，招牌功能叫 Composer
+  - 拆词：curs-(跑，拉丁 currere) + -or → "奔跑的东西" = 屏幕上的标记
+  - 同根 curr-/curs-(跑)：current 当前的/水流电流 · occur 发生 · recur 复发 · incur 招致 · course 课程/路线 · excursion 短途旅行 · currency 货币
+  - 关联：[[composer]]（Cursor 的 AI 多文件编辑功能就叫 Composer）
 
 ## D
 
@@ -202,6 +220,15 @@
 
 ## O
 
+- **opus** /ˈoʊpəs/ n. (音乐/文学/艺术)作品；大作；(古典乐)作品编号 — a creative work, esp. a musical composition
+  - 例句：This symphony is considered his finest opus.
+  - 三层：① 一部作品(尤指大作) ② 古典乐作品编号 Op.（如 Beethoven, Op. 27）③ magnum opus 代表作/巅峰之作 ⭐
+  - 词源：拉丁语 opus = "work"；**复数 opera 或 opuses** —— 音乐体裁 opera 歌剧就是 opus 的复数(字面="多部作品")
+  - 同根：operate 操作 · cooperate 合作 · opera 歌剧
+  - 现代语境：Opus 音频编解码器(开源免版税) / Claude Opus — Anthropic 模型最高档（Haiku 快 < Sonnet 均衡 < Opus 最强）
+  - 关联：[[composer]] 作曲家创作 opus
+  - 搭配：magnum opus 代表作 · Op. 27 作品 27 号
+
 - **overclaim** /ˌoʊvərˈkleɪm/ v./n. 夸大宣称；过度声称；虚报 — to claim more than is justified or true; an exaggerated claim
   - 例句：The paper overclaims the model's reasoning ability. (这篇论文夸大了模型的推理能力。)
   - 例句：He was fined for overclaiming expenses. (他因虚报报销费用被罚款。)
@@ -327,4 +354,4 @@
 - **2026-05-15**：take-rate, diagnostics, dismissed, fiddle, troubleshooting, journal
 - **2026-05-16**：TOPS, FLOPS, session
 - **2026-05-18**：goat, unsupervised
-- **2026-05-19**：newsletter, episode
+- **2026-05-19**：newsletter, episode, composer, opus, Cursor
