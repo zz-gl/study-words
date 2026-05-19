@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 22 个词条
+**统计**：共 23 个词条
 
 ---
 
@@ -57,6 +57,15 @@
   - 关联：[[troubleshooting]] — diagnostics 是诊断信息，troubleshooting 是利用它排查的过程
 
 ## E
+
+- **episode** /ˈepɪˌsoʊd/ n. (剧集/播客的)一集；一段经历/事件；(医学)一次发作 — one part of a series; a notable event/period; a single occurrence of an illness
+  - 例句(一集)：Have you watched the latest episode? / Season 2, Episode 5 (S2E5)
+  - 例句(经历)：That was an embarrassing episode in my life.
+  - 例句(医学)：an episode of depression / a brief episode of dizziness
+  - 拆词词源：希腊语 epeisódion，原指古希腊戏剧两段合唱间插入的对白；核心意象="较长序列里插入的一个独立片段"
+  - 派生：episodic adj. 分段式的/偶发的(episodic memory 情景记忆 · episodic TV 单元剧) / episodically adv. 间歇地
+  - 搭配：the latest/final episode · pilot episode 试播集 · bonus episode 加更集 · binge-watch episodes 刷剧 · an episode of + 疾病
+  - 辨析：episode 一集/一段插曲 / series 整部剧 / season 一季 / chapter 章节(更重更长) / incident 事件(不强调"序列中一段")
 
 ## F
 
@@ -318,4 +327,4 @@
 - **2026-05-15**：take-rate, diagnostics, dismissed, fiddle, troubleshooting, journal
 - **2026-05-16**：TOPS, FLOPS, session
 - **2026-05-18**：goat, unsupervised
-- **2026-05-19**：newsletter
+- **2026-05-19**：newsletter, episode
