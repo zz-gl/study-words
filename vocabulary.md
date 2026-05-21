@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 26 个词条
+**统计**：共 28 个词条
 
 ---
 
@@ -34,6 +34,18 @@
   - 高频场景：新闻信源核实、风控/身份验证、分布式系统、商务跨团队对齐
 
 ## C (续)
+
+- **contractor** /ˈkɑːntræktər/ n. 承包商；包工头；合同工；独立签约者 — a person/company contracted to perform work; an independent worker hired by contract
+  - 例句：We hired a contractor to build the deck. / I work as an independent contractor.
+  - 三大场景：① 建筑承包(general contractor 总包 / subcontractor 分包) ② **合同工 ⭐**(美国职场 1099 contractor vs W-2 employee；Google 半数员工是 contractor) ③ defense contractor 军工承包商(Lockheed/Palantir)
+  - 拆词：contract(合同) + -or → 签合同揽活的人；contract = con-(一起) + tract(拉) = 把双方拉到一起
+  - 同根 tract-(拉)：attract 吸引 · distract 分散 · extract 抽取 · subtract 减去 · tractor 拖拉机 · abstract 抽象
+  - 词族：contract n./v. · contractor · contractual adj. · subcontract 分包 · subcontractor
+  - 辨析：employee 正式雇员(有福利W-2) / contractor 合同工(独立1099无福利) / consultant 顾问(短期专业建议) / freelancer 自由职业者(口语化的 contractor) / gig worker 零工(Uber 类) / vendor 供应商(公司层面)
+  - contractor vs freelancer：本质相近，contractor 更正式机构化(HR/法律)，freelancer 更日常个人化(自我介绍)
+  - 搭配：independent contractor · general/sub-/defense contractor · work as a contractor · contractor agreement
+  - 法律背景：加州 AB5 法案试图把 Uber/Lyft 司机从 contractor 重分类为 employee
+  - 关联：[[senior]]（同为职场身份/职级词）
 
 - **Cursor** /ˈkɜːrsər/ n. 光标；游标；(专名)AI 代码编辑器 — the movable on-screen indicator; a database pointer; a proper-noun AI code editor
   - 例句：The cursor blinked at the end of the line.
@@ -260,6 +272,17 @@
   - 搭配：hold a session / in session 进行中 / breakout session 分组讨论 / back-to-back sessions 一场接一场
   - 派生：sessional adj. 会期的 / session musician 录音室乐手
 
+- **senior** /ˈsiːniər/ adj./n. 年长的；资深的；高级的；高年级生 — older or higher in rank; in the highest school grade
+  - 例句：a senior engineer / He is ten years my senior. / college senior 大四学生
+  - 四含义：① 职级资深(senior engineer/management) ② 年龄年长(senior citizen 老年人) ③ 学校高年级(美式 freshman→sophomore→junior→senior 大一/二/三/四) ④ n.上司/长者
+  - 拆词词源：拉丁语 senior "older"(比较级)，词根 sen-=老
+  - 同根：senile 衰老的(贬) · senate 参议院(字面"长老会") · senator 参议员 · 西语 Señor 先生
+  - 缩写 Sr./Jr.：父子同名区分，Sr.=Senior 老的那个 · Jr.=Junior 年轻的那个（如 Martin Luther King Sr./Jr.）
+  - 职级梯度：junior → mid-level → senior → staff → principal
+  - 搭配：senior engineer/management/citizen/year · senior to sb 比某人资深 · senior partner 资深合伙人
+  - 辨析：senior 资深/高级(强调资历) · elder 年长(家庭正式) · veteran 老兵/老手 · seasoned 经验丰富
+  - ⚠️ 别直译成"年老"：senior engineer = 高级工程师，不是"年老工程师"
+
 - **slug** /slʌɡ/ n./v. 多义词 — 1) 蛞蝓/鼻涕虫 2) 子弹/实心弹 3) 一记重拳/猛击(v.) 4) **URL slug** 网页 URL 中的短标识 5) 一小杯烈酒 6) 假币/代用币 7) 懒虫/慢吞吞的人 8) 印刷铅条/临时代号
   - 例句(蛞蝓)：Slugs are destroying my lettuce.
   - 例句(子弹)：He took a slug to the shoulder.
@@ -355,3 +378,4 @@
 - **2026-05-16**：TOPS, FLOPS, session
 - **2026-05-18**：goat, unsupervised
 - **2026-05-19**：newsletter, episode, composer, opus, Cursor
+- **2026-05-21**：senior, contractor
