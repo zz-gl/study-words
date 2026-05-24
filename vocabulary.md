@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 34 个词条
+**统计**：共 35 个词条
 
 ---
 
@@ -288,6 +288,17 @@
 
 ## P
 
+- **posterior** /pɑːˈstɪriər/ adj./n. 后面的；后部的；之后的；(贝叶斯)后验；(婉)臀部 — located behind; coming after; the posterior probability
+  - ⭐ 贝叶斯：**posterior 后验** = 结合先验+新证据后更新的概率；posterior ∝ likelihood × prior
+  - 完整定理：P(假设|数据) = P(数据|假设)·P(假设) / P(数据) ＝ posterior = likelihood × [[prior]] / evidence
+  - 三件套到齐：[[prior]] 先验 → [[likelihood]] 似然 → posterior 后验（贝叶斯推断闭环）
+  - 形容词义：解剖 the posterior part 后部(↔anterior 前部) / posterior to 在…之后(正式)
+  - 名词(婉/幽默)：land on his posterior 一屁股坐地上
+  - 拆词词源：post-(之后) + -erior(比较级) → 更靠后的；prior/anterior 的反义；a priori ↔ a posteriori
+  - 同根 post-：postpone 推迟 / postwar 战后 / postscript(P.S.) / postmortem 事后复盘
+  - 词族：posterity 后代子孙 / anterior 前面的(反义)
+  - 搭配：posterior probability/distribution 后验概率/分布 / anterior↔posterior 前↔后
+
 - **prior** /ˈpraɪər/ adj./n. 先前的；优先的；(贝叶斯)先验 — existing/coming before in time, order, or importance
   - 例句：No prior experience is required. / Please arrive 15 minutes prior to the meeting.
   - ⭐ prior to = before（更正式书面）：arrive prior to the meeting / without prior notice 不事先通知
@@ -431,4 +442,4 @@
 - **2026-05-18**：goat, unsupervised
 - **2026-05-19**：newsletter, episode, composer, opus, Cursor
 - **2026-05-21**：senior, contractor
-- **2026-05-24**：bespoke, hook, podcast, caffeinate, prior, likelihood
+- **2026-05-24**：bespoke, hook, podcast, caffeinate, prior, likelihood, posterior
