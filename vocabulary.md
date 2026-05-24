@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 32 个词条
+**统计**：共 34 个词条
 
 ---
 
@@ -235,6 +235,15 @@
 
 ## L
 
+- **likelihood** /ˈlaɪklihʊd/ n. 可能性；(统计)似然 — the chance something happens; (stats) how well a hypothesis explains the data
+  - 例句：In all likelihood, he'll be late. (他十有八九会迟到。) / There's a strong likelihood of rain.
+  - ⭐ 贝叶斯三件套：posterior ∝ likelihood × prior（后验 ∝ 似然 × [[prior]]先验）
+  - 统计义：likelihood = 给定假设/参数下观测到数据的概率；MLE 最大似然估计找让数据最"像样"的参数；ML 训练即最大化训练数据似然
+  - ⚠️ 辨析 likelihood vs probability：probability 固定参数问"数据多可能"P(数据|参数) / likelihood 固定数据问"参数多合理"L(参数|数据)；概率看结果，似然看假设
+  - 拆词：likely(可能的) + -hood(状态后缀) ；-hood 家族 childhood/neighborhood/brotherhood
+  - 词族：likely/unlikely / in all likelihood 十之八九 / maximum likelihood 最大似然 / log-likelihood 对数似然 / likelihood function 似然函数
+  - 近义：probability 概率 / chance 机会(口语) / odds 胜算赔率 / prospect 前景
+
 - **latent** /ˈleɪtənt/ adj. 潜在的；潜伏的 — existing but hidden or dormant, capable of becoming active later
   - 例句：The virus can remain latent in the body for years. (病毒可在体内潜伏多年。)
   - 搭配：latent heat 潜热 / latent variable 潜变量 / latent space 潜空间 / latent period 潜伏期
@@ -278,6 +287,17 @@
   - 金句：Don't overclaim what your model can do; don't underclaim what it might do.
 
 ## P
+
+- **prior** /ˈpraɪər/ adj./n. 先前的；优先的；(贝叶斯)先验 — existing/coming before in time, order, or importance
+  - 例句：No prior experience is required. / Please arrive 15 minutes prior to the meeting.
+  - ⭐ prior to = before（更正式书面）：arrive prior to the meeting / without prior notice 不事先通知
+  - 🤖 贝叶斯：**prior 先验**(看证据前的信念) →(结合 likelihood 似然)→ **posterior 后验**；Update your prior with new evidence.
+  - 名词(口语)：He has priors. 有前科
+  - 拆词词源：拉丁 prior "更早的"，prae(before) 的比较级
+  - 同根：primary 首要 / prime / premier / principal
+  - 词族：priority 优先级 / prioritize 排优先 / a priori 先验地 ↔ a posteriori 后验地
+  - 辨析：prior 正式 / previous 最通用 / former 前任(前者) / preceding 紧接其前 / ex- 前任(口语)
+  - 搭配：prior experience/knowledge/notice / prior approval 事先批准 / prior engagement 已有约定
 
 - **podcast** /ˈpɑːdkæst/ n./v. 播客；做播客 — a digital audio/video program released in episodes that users stream, download, or subscribe to
   - 例句：I listen to podcasts on my commute. / Have you heard the latest episode of that podcast?
@@ -411,4 +431,4 @@
 - **2026-05-18**：goat, unsupervised
 - **2026-05-19**：newsletter, episode, composer, opus, Cursor
 - **2026-05-21**：senior, contractor
-- **2026-05-24**：bespoke, hook, podcast, caffeinate
+- **2026-05-24**：bespoke, hook, podcast, caffeinate, prior, likelihood
