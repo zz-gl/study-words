@@ -3,13 +3,21 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 28 个词条
+**统计**：共 30 个词条
 
 ---
 
 ## A
 
 ## B
+
+- **bespoke** /bɪˈspoʊk/ adj. 定制的；量身定做的；专门打造的 — (esp. British) custom-made, tailored to a specific customer's requirements
+  - 例句：a bespoke suit 量身定做的西装 / We built a bespoke software solution instead of off-the-shelf tools.
+  - 科技语境 ⭐：bespoke software/solution/system 定制软件/方案（区别于现成通用的）
+  - 词源：动词 bespeak 的过去分词 = "预先订购"，字面"这块布已被某人预订"→ 专门为某人做的
+  - 辨析：bespoke 定制(英式高端手工感) / custom(-made) 定制(美式通用) / tailored 量身定制 / made-to-order 按单制作 ｜ 反义 off-the-shelf 现成的 · generic 通用无特色
+  - 语感：bespoke 比 custom 更"英伦范、高级感"；英国人说 bespoke，美国人多说 custom
+  - 搭配：bespoke suit/tailoring · bespoke software/service · bespoke design
 
 ## C
 
@@ -158,6 +166,14 @@
   - 近义：buzz, ballyhoo, fanfare, promote, talk up ｜ 反义：downplay, understate
   - 关联：[[overclaim]] 夸大声称（同属"夸大宣传"语义场）
   - 金句：Don't believe the hype. (Public Enemy 1988 名曲，意为"别被忽悠")
+
+- **hook** /hʊk/ n./v. 钩子；挂钩；(引申)吸引人的记忆点；钩住、吸引 — a curved device for hanging/catching; a catchy attention-grabbing part; (programming) a mount point that runs at a set time
+  - 例句：Hang your coat on the hook. / That song has a catchy hook. (那首歌副歌超洗脑)
+  - 四义：① 钩子/挂钩(fish hook 鱼钩) ② 音乐/营销的抓人记忆点 ③ **编程钩子 ⭐** ④ 拳击勾拳(left hook 左勾拳)
+  - 编程 hook：React Hooks (useState/useEffect) · webhook 网络回调 · git hooks (pre-commit) · lifecycle hooks · Claude Code hooks(工具前后自动执行)
+  - 习语：get hooked on sth 上瘾迷上 / off the hook 脱身摆脱麻烦 / hook up 连接设备或(口语)勾搭 / by hook or by crook 不择手段 / hook, line and sinker 完全上当
+  - 派生：hooked adj. 上瘾的/钩状的 · hook sb in 吸引住某人
+  - 搭配：webhook / git hook / pre-commit hook
 
 - **hugging** /ˈhʌɡɪŋ/ v.(-ing) / adj. 拥抱；紧贴；贴身的 — present participle of hug; holding tightly or staying very close to sth
   - 例句：The road hugs the coastline for miles. (路紧贴海岸线延伸数英里。)
@@ -379,3 +395,4 @@
 - **2026-05-18**：goat, unsupervised
 - **2026-05-19**：newsletter, episode, composer, opus, Cursor
 - **2026-05-21**：senior, contractor
+- **2026-05-24**：bespoke, hook
