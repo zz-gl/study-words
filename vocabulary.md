@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 31 个词条
+**统计**：共 32 个词条
 
 ---
 
@@ -20,6 +20,14 @@
   - 搭配：bespoke suit/tailoring · bespoke software/service · bespoke design
 
 ## C
+
+- **caffeinate** /ˈkæfɪneɪt/ v. 使摄入咖啡因；靠咖啡因提神；(macOS)防止睡眠的命令 — to consume/add caffeine to stay alert; also a macOS CLI tool that keeps the Mac awake
+  - 例句：I need to caffeinate before this meeting. / a heavily caffeinated drink
+  - 💻 macOS 命令 ⭐：`caffeinate` 阻止 Mac 睡眠（"给电脑灌咖啡因别睡"）；`caffeinate -t 3600` 保持唤醒1小时 / `caffeinate ./run.sh` 跑命令期间不睡
+  - 拆词：caffeine(咖啡因) + -ate(使…化)；caffeine ← 法语 café 咖啡
+  - 同类 -ate 动词：activate 激活 / automate 自动化 / animate
+  - 词族：caffeine 咖啡因 / caffeinated 含咖啡因的(亢奋的) / decaf 脱因的 / caffeine crash 咖啡因崩
+  - 搭配：over-caffeinated 咖啡因过量 / need caffeinating / (macOS) caffeinate -t <秒>
 
 - **composer** /kəmˈpoʊzər/ n. 作曲家；创作/编排者；(技术)依赖管理或编辑工具名 — a person who writes music; one who composes; also a software tool name
   - 例句：Beethoven was a German composer. / Run `composer install` to pull in PHP dependencies.
@@ -403,4 +411,4 @@
 - **2026-05-18**：goat, unsupervised
 - **2026-05-19**：newsletter, episode, composer, opus, Cursor
 - **2026-05-21**：senior, contractor
-- **2026-05-24**：bespoke, hook, podcast
+- **2026-05-24**：bespoke, hook, podcast, caffeinate
