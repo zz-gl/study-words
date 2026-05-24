@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 30 个词条
+**统计**：共 31 个词条
 
 ---
 
@@ -271,6 +271,14 @@
 
 ## P
 
+- **podcast** /ˈpɑːdkæst/ n./v. 播客；做播客 — a digital audio/video program released in episodes that users stream, download, or subscribe to
+  - 例句：I listen to podcasts on my commute. / Have you heard the latest episode of that podcast?
+  - 拆词词源：混成词 = iPod + broadcast；2004 年记者 Ben Hammersley 首创；现已不限苹果，但名字留下来了
+  - 同造词法：[[jobpocalypse]]、jobapalooza（portmanteau 混成词）
+  - 派生：podcaster 播客主 / podcasting 播客制作 / host 主播 / guest 嘉宾
+  - 搭配：listen to a podcast / a podcast episode([[episode]]) / launch a podcast 开一档 / be on a podcast 上播客做嘉宾 / true-crime/tech podcast
+  - 辨析：podcast 可订阅分集音频 / radio show 传统定时直播 / audiobook 有声书(不分集连载) / broadcast 广播(父词) / vlog 视频博客
+
 ## Q
 
 ## R
@@ -395,4 +403,4 @@
 - **2026-05-18**：goat, unsupervised
 - **2026-05-19**：newsletter, episode, composer, opus, Cursor
 - **2026-05-21**：senior, contractor
-- **2026-05-24**：bespoke, hook
+- **2026-05-24**：bespoke, hook, podcast
