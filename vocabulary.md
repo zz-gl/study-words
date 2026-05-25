@@ -3,11 +3,20 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 35 个词条
+**统计**：共 36 个词条
 
 ---
 
 ## A
+
+- **affinity** /əˈfɪnəti/ n. 亲和力；密切关系；天然的喜好/投缘；亲缘 — a natural liking/attraction; a close resemblance; (science) binding tendency
+  - 例句：She has a natural affinity for languages. / I feel a strong affinity with him.
+  - 四义：① 投缘/天然喜好(affinity for/with) ② 密切关系/相似性 ③ 🧪 binding affinity 结合亲和力(生化) ④ 💻 CPU affinity 进程绑核 / node/pod affinity (K8s 调度) / session affinity 粘性会话(负载均衡)
+  - 拆词词源：af-(ad- 靠近) + fin(finis 边界，拉丁) + -ity → 边界相接 → 亲近
+  - 同根 fin-(边界/结束)：finish / final / finite 有限的 / define 定义 / confine 限制 / finance
+  - 搭配：affinity for/with/between / natural affinity / binding affinity / affinity group / brand affinity 品牌亲和度
+  - 辨析：affinity 天生合得来/内在相近(更深) / attraction 吸引(泛) / liking 喜欢(弱) / chemistry 来电(口语) / rapport 融洽默契
+  - 近义：rapport, kinship, fondness ｜ 反义：aversion 厌恶, antipathy 反感, repulsion
 
 ## B
 
@@ -443,3 +452,4 @@
 - **2026-05-19**：newsletter, episode, composer, opus, Cursor
 - **2026-05-21**：senior, contractor
 - **2026-05-24**：bespoke, hook, podcast, caffeinate, prior, likelihood, posterior
+- **2026-05-25**：affinity
