@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 36 个词条
+**统计**：共 37 个词条
 
 ---
 
@@ -422,6 +422,16 @@
 
 ## V
 
+- **viable** /ˈvaɪəbl/ adj. 可行的；行得通的；能存活的 — capable of working successfully; feasible; (biology) able to survive
+  - 例句：a viable solution / Is this a financially viable business? / The cells are still viable.
+  - ⭐ 术语 MVP = Minimum Viable Product 最小可行产品（创业/产品圈核心：最小成本做出刚好能验证想法的版本）
+  - 拆词词源：vi-(vita 生命) + -able → 能存活的 → 行得通的
+  - 同根 vi-/vit-(生命)：vital 至关重要 / vitality 活力 / vitamin / survive 幸存 / revive 复苏 / vivid 生动 / vivacious 活泼
+  - 词族：viability 可行性/生存力 / nonviable 不可行的
+  - 辨析：viable 能成功运作/持续(经得起检验) / feasible 做得到(技术逻辑可实现) / practical 实用 / workable 行得通(口语)；一个项目可能 feasible 却不 viable(活不下去/不赚钱)
+  - 搭配：viable option/alternative / commercially/financially viable / viable business model / no longer viable
+  - 近义：feasible, workable, sustainable ｜ 反义：unviable, impractical, doomed
+
 ## W
 
 ## X
@@ -452,4 +462,4 @@
 - **2026-05-19**：newsletter, episode, composer, opus, Cursor
 - **2026-05-21**：senior, contractor
 - **2026-05-24**：bespoke, hook, podcast, caffeinate, prior, likelihood, posterior
-- **2026-05-25**：affinity
+- **2026-05-25**：affinity, viable
