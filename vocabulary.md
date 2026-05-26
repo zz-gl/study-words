@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 37 个词条
+**统计**：共 38 个词条
 
 ---
 
@@ -370,6 +370,15 @@
 
 ## T
 
+- **trilemma** /traɪˈlemə/ n. 三难困境；三元悖论；不可能三角 — a situation with three options where you can usually only have two at once
+  - 例句：The blockchain trilemma says you can't max out decentralization, security, and scalability all at once.
+  - 拆词：tri-(三) + (di)lemma(两难)；仿 dilemma 造词，把 di-(二) 换成 tri-(三)
+  - 系列：dilemma 两难 → trilemma 三难 → quadrilemma 四难(少见)
+  - ⭐ 著名三难：区块链(去中心化/安全/可扩展) / 项目铁三角(Fast·Cheap·Good 三选二) / 不可能三角(固定汇率/资本自由流动/独立货币政策,蒙代尔-弗莱明) / Münchhausen 认识论三难
+  - 辨析：dilemma 两难(两个选项都不好,日常90%用它) / trilemma 三难(三选二,多见于科技/经济/哲学)
+  - 搭配：face a trilemma / the X trilemma / pick two (of three) 三选二
+  - 相关：dilemma 两难 / paradox 悖论 / tradeoff 权衡 / impossible trinity·iron triangle 不可能三角·铁三角
+
 - **TOPS** /tɒps/ n.(缩写) 每秒万亿次运算 — **T**era **O**perations **P**er **S**econd；衡量 AI 芯片(NPU/GPU)算力的单位
   - 1 TOPS = 10¹² 次运算/秒（Tera- = 万亿）
   - 例句：The new NPU delivers 50 TOPS of AI performance.
@@ -463,3 +472,4 @@
 - **2026-05-21**：senior, contractor
 - **2026-05-24**：bespoke, hook, podcast, caffeinate, prior, likelihood, posterior
 - **2026-05-25**：affinity, viable
+- **2026-05-26**：trilemma
