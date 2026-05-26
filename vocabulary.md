@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 38 个词条
+**统计**：共 39 个词条
 
 ---
 
@@ -96,6 +96,16 @@
   - 辨析：ignore 完全不理(被动) / dismiss 注意到但主动判定不值一提(轻蔑) / reject 明确拒绝(中性) / fire 解雇(口语) / sack (英口)解雇 / brush off 敷衍打发
   - 易混：dismiss ≠ demise 去世 / dismissed ≠ missed 错过
   - 高频领域：HR/职场、法庭、UI/UX、心理与沟通
+
+- **diagram** /ˈdaɪəɡræm/ n./v. 示意图；图解；简图；图解(v.) — a simplified labeled drawing showing structure, parts, or how something works
+  - 例句：The diagram shows how the engine works. / Draw a diagram to explain the data flow.
+  - 常见类型：flowchart 流程图 / architecture diagram 架构图 / sequence diagram 时序图(UML) / ER diagram 实体关系图 / Venn diagram 韦恩图 / schematic 电路原理图 / block diagram 框图
+  - 画图工具：Mermaid(文本画图) / draw.io / Excalidraw / PlantUML
+  - 拆词词源：dia-(穿过，希腊) + gram(画/写) → 贯通地画出来；dia- 同 [[diagnostics]]
+  - 同根 -gram(写/画)：telegram 电报 / program / grammar / histogram 直方图 / anagram；近亲 -graph：photograph / graph
+  - 词族：diagrammatic adj. 图解的 / diagrammatically adv.
+  - 辨析：diagram 结构/流程说明(带标注) / chart 数据可视化(bar/pie chart) / graph 坐标图/图论的图 / figure 论文插图(Figure 1) / illustration 插图(写实) / schematic 原理图
+  - 搭配：draw a diagram / as shown in the diagram 如图所示 / labeled diagram / wiring diagram 接线图 / flow diagram
 
 - **diagnostics** /ˌdaɪəɡˈnɑːstɪks/ n. 诊断学；诊断信息(集合)；故障检测 — the practice of identifying problems by analyzing symptoms/errors; the messages a tool emits while doing so
   - 例句(医)：Cancer diagnostics has advanced rapidly.
@@ -472,4 +482,4 @@
 - **2026-05-21**：senior, contractor
 - **2026-05-24**：bespoke, hook, podcast, caffeinate, prior, likelihood, posterior
 - **2026-05-25**：affinity, viable
-- **2026-05-26**：trilemma
+- **2026-05-26**：trilemma, diagram
