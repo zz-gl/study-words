@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 39 个词条
+**统计**：共 40 个词条
 
 ---
 
@@ -269,6 +269,13 @@
   - 词源：拉丁语 *latēre* "to lie hidden"；同源 latency（延迟/潜伏期）
   - 近义：dormant, hidden, concealed, potential ｜ 反义：active, manifest, overt
 
+- **landscape** /ˈlændskeɪp/ n./v./adj. 风景；（领域）格局；做景观设计；（页面）横向 — visible features of land; (figurative) the overall scene of a field; (layout) wider-than-tall orientation
+  - 例句：The Highlands have a dramatic landscape. / The AI landscape changed after GPT-4. / Print this in landscape mode.
+  - 高频搭配（科技/商业）：competitive landscape 竞争格局 / regulatory landscape 监管环境 / threat landscape 威胁全景(网安) / funding landscape 融资环境 / shifting landscape 变化中的格局 / map the landscape 摸清格局
+  - 拆词：land + -scape（一片连成片的景象，源自荷兰语 *landschap*，17 世纪从荷兰风景画传入英语）
+  - -scape 家族：seascape 海景 / cityscape 城市景观 / moonscape 月面 / soundscape 声景 / mindscape 心象
+  - ⚠️ 辨析：landscape（横向，宽>高） vs portrait（纵向）—— 文档/截图方向；landscape（全貌结构） vs scenery（眼前景色） vs environment（环境，含人文）
+
 ## M
 
 ## N
@@ -483,3 +490,4 @@
 - **2026-05-24**：bespoke, hook, podcast, caffeinate, prior, likelihood, posterior
 - **2026-05-25**：affinity, viable
 - **2026-05-26**：trilemma, diagram
+- **2026-06-05**：landscape
