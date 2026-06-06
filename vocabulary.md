@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 42 个词条
+**统计**：共 43 个词条
 
 ---
 
@@ -139,6 +139,15 @@
   - 派生：episodic adj. 分段式的/偶发的(episodic memory 情景记忆 · episodic TV 单元剧) / episodically adv. 间歇地
   - 搭配：the latest/final episode · pilot episode 试播集 · bonus episode 加更集 · binge-watch episodes 刷剧 · an episode of + 疾病
   - 辨析：episode 一集/一段插曲 / series 整部剧 / season 一季 / chapter 章节(更重更长) / incident 事件(不强调"序列中一段")
+
+- **explicit** /ɪkˈsplɪsɪt/ adj. 明确的；直白露骨的；(编程)显式的 — stated clearly with no ambiguity; openly shown (often risqué content); (in code) directly written out rather than inferred
+  - 例句：She gave explicit instructions not to disturb her. / The song was tagged explicit. / Python: "Explicit is better than implicit." (Zen of Python)
+  - 高频搭配：explicit instructions/consent/agreement 明示同意 · explicit content 露骨内容 · make sth explicit 把…说明白 · be explicit about 直言不讳 · **explicitly** stated/mentioned/forbidden（副词更高频）
+  - 拆词/词源：ex-(向外) + plicare(折叠) → "展开" 把折叠藏起来的东西全摊开说
+  - ⭐ plic-/ply-/ploy- 折叠词族：[[implicit]] 隐含的(向内折叠) · complicated 复杂(一起折叠) · complex 复合 · reply 回复(折回) · apply 申请(贴上) · employ 雇用 · deploy 部署(展开兵阵) · multiply 乘(多重折叠)
+  - ⚠️ 核心辨析 explicit vs implicit：明示 vs 暗示。编程的 explicit/implicit type、法律的 explicit/implicit consent、沟通的"直说" vs "暗示" 都靠这对词
+  - 辨析 explicit vs clear vs specific：clear 易懂 / specific 具体细 / explicit **主动消除歧义、把没说的也说出来**，可以很简短但必须直白
+  - 技术语境：TypeScript/Rust 推崇 explicit typing · API 设计原则 explicit > implicit · 行话 "Be explicit" = "把话说死,别让人猜"（文档/Code Review/写 prompt 通用）
 
 ## F
 
@@ -508,4 +517,4 @@
 - **2026-05-25**：affinity, viable
 - **2026-05-26**：trilemma, diagram
 - **2026-06-05**：landscape
-- **2026-06-06**：compound, spawn
+- **2026-06-06**：compound, spawn, explicit
