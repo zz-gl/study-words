@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 40 个词条
+**统计**：共 41 个词条
 
 ---
 
@@ -78,6 +78,14 @@
   - 拆词：curs-(跑，拉丁 currere) + -or → "奔跑的东西" = 屏幕上的标记
   - 同根 curr-/curs-(跑)：current 当前的/水流电流 · occur 发生 · recur 复发 · incur 招致 · course 课程/路线 · excursion 短途旅行 · currency 货币
   - 关联：[[composer]]（Cursor 的 AI 多文件编辑功能就叫 Composer）
+
+- **compound** /ˈkɒmpaʊnd/ (n./adj.) ｜ /kəmˈpaʊnd/ (v.) 化合物；复合的；加剧/混合/按复利计算；(围墙)大院 — a substance/thing made of multiple parts; to make worse by adding; to grow with compounding interest; an enclosed area
+  - 例句：Water is a compound of hydrogen and oxygen. / The delay was compounded by bad weather. / Compound interest is the eighth wonder of the world. (—Einstein)
+  - ⚠️ 发音：名/形重音在前 ˈCOMpound，动词重音在后 comPOUND（典型"名前动后"，类似 record / conduct / permit）
+  - 高频搭配：compound interest 复利 / compound word 复合词 / compound the problem 让问题雪上加霜 / CAGR (compound annual growth rate) 复合年增长率 / chemical compound 化合物 / compound sentence 复合句 / compound fracture 开放性骨折
+  - 拆词：com-(一起) + pōnere(放置) → "放在一起" = 组合；同族 component / composition / [[composer]] / opponent / postpone / decompose
+  - ⚠️ 辨析：element 元素(单一) → compound 化合物(化学结合,固定比例,如 H₂O) → mixture 混合物(物理混合,比例可变,如盐水)；compound 多部分组合(中性) vs complex 内部结构复杂(中性) vs complicated 复杂难处理(偏贬)
+  - ⭐ 投资圈名言：Time + compound = magic — 复利的力量是巴菲特投资哲学核心；动词 compound 本身就是"利滚利"
 
 ## D
 
@@ -491,3 +499,4 @@
 - **2026-05-25**：affinity, viable
 - **2026-05-26**：trilemma, diagram
 - **2026-06-05**：landscape
+- **2026-06-06**：compound
