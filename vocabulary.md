@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 41 个词条
+**统计**：共 42 个词条
 
 ---
 
@@ -393,6 +393,15 @@
   - 词源：中古英语 slugge "懒人"→ 蛞蝓(慢)→ 子弹(金属块)→ 印刷铅条→ Web URL 标识
   - 速记：原义都和"一小块/慢吞吞的东西"相关（蛞蝓、子弹、铅条、URL 短串、一小杯）
 
+- **spawn** /spɔːn/ v./n. 产卵；大量产生；衍生出；(编程)启动子进程/线程；卵；产物 — to produce eggs (fish/frog); to give rise to; (computing) to start a child process from a parent
+  - ⚠️ 拼写提醒：用户曾写作 "spown" — **没有 spown 这个词**，标准拼写就是 spawn
+  - 例句：Salmon swim upstream to spawn. / The iPhone's success spawned countless imitators. / The script spawns a worker process for each task. / AI spawned a whole new industry overnight.
+  - 高频搭配：spawn a process / thread / child 启动子进程 · spawn point (游戏)出生点 · spawn a generation of 催生新一代 · spawn imitators / controversy / debate 引发模仿/争议 · respawn 重生刷新 · spawn camping 蹲点击杀
+  - 拆词/词源：中古英语 *spaunen* ← 古法语 *espandre*（散布、撒出）← 拉丁 *expandere*（外铺，同 expand 同根）；字面"撒出大量卵"→ 引申"大量孕育/派生"
+  - ⚠️ 辨析：create 中性最通用 / generate 偏自动批量 / spawn 强调"派生大量、迅速、像产卵"（含繁衍关系） / fork (编程)从当前进程复制一个一模一样的子进程，spawn 更通用可执行新程序
+  - 关联：编程 subprocess.spawn() · Node.js child_process.spawn() · *nix 进程三件套 fork/spawn/kill
+  - 生物词技术化家族：spawn / fork / migrate / kill / zombie process — 程序员都从生物界借词
+
 ## T
 
 - **trilemma** /traɪˈlemə/ n. 三难困境；三元悖论；不可能三角 — a situation with three options where you can usually only have two at once
@@ -499,4 +508,4 @@
 - **2026-05-25**：affinity, viable
 - **2026-05-26**：trilemma, diagram
 - **2026-06-05**：landscape
-- **2026-06-06**：compound
+- **2026-06-06**：compound, spawn
