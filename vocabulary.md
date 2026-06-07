@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 43 个词条
+**统计**：共 44 个词条
 
 ---
 
@@ -389,6 +389,16 @@
   - 辨析：senior 资深/高级(强调资历) · elder 年长(家庭正式) · veteran 老兵/老手 · seasoned 经验丰富
   - ⚠️ 别直译成"年老"：senior engineer = 高级工程师，不是"年老工程师"
 
+- **slop** /slɒp/ n./v. 泔水；稀汤烂食；溅出；⭐ (AI 时代新义) AI 生成的低质量垃圾内容 — pig swill; thin unappetizing food; to spill carelessly; (2023+ slang) mass-produced low-quality AI content flooding the internet
+  - 例句：The farmer poured slop into the trough. / Don't slop coffee on the table. / The internet is drowning in **AI slop**. ⭐ / Half of those Amazon ebooks are pure slop. / Don't ship slop to production.
+  - ⭐⭐⭐ 当代核心搭配：**AI slop** · slop content/articles/videos · content slop · vibe coding produces slop · don't train on slop（不能用 AI 生成数据再喂 AI，会 model collapse 模型崩溃）
+  - 其它搭配：slop bucket/pail 泔水桶 · slop over 溢出 · slop around 晃荡
+  - 拆词词源：中古英语 sloppe（烂泥）← 原始日耳曼语 slup-（滑、流），同根 slip/slippery/slope；核心意象="黏糊糊没成形" → 食物（稀汤）→ 动作（洒出）→ 21 世纪信息（AI 垃圾）
+  - ⭐ 为什么成 AI 关键词：2023 起 ChatGPT/Midjourney 让人人能批量生成"看起来对、其实空洞"的内容 → SEO 农场、Amazon 电子书、Facebook 虾耶稣图。类比 spam(群发邮件)，slop = AI 量产的"伪装成内容的垃圾"，更阴险
+  - ⚠️ 辨析：spam 群发推销垃圾邮件 · junk 通用废物 · filler 凑数填充（中性） · **slop 特指低质量批量 AI 产出**（AI 时代专属语感）
+  - ⚠️ 别拼错：slop（泔水/垃圾内容） vs **slope**（斜坡/斜率）— 差一个 e 意思天差地别
+  - AI 圈三剑客：slop（产出垃圾）/ hallucination（编造事实幻觉）/ bias（偏见）；反义：signal 高价值 / artisanal 手工 / curated 精选
+
 - **slug** /slʌɡ/ n./v. 多义词 — 1) 蛞蝓/鼻涕虫 2) 子弹/实心弹 3) 一记重拳/猛击(v.) 4) **URL slug** 网页 URL 中的短标识 5) 一小杯烈酒 6) 假币/代用币 7) 懒虫/慢吞吞的人 8) 印刷铅条/临时代号
   - 例句(蛞蝓)：Slugs are destroying my lettuce.
   - 例句(子弹)：He took a slug to the shoulder.
@@ -518,3 +528,4 @@
 - **2026-05-26**：trilemma, diagram
 - **2026-06-05**：landscape
 - **2026-06-06**：compound, spawn, explicit
+- **2026-06-07**：slop
