@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 44 个词条
+**统计**：共 45 个词条
 
 ---
 
@@ -88,6 +88,16 @@
   - ⭐ 投资圈名言：Time + compound = magic — 复利的力量是巴菲特投资哲学核心；动词 compound 本身就是"利滚利"
 
 ## D
+
+- **digest** /daɪˈdʒest/ (v.) ｜ /ˈdaɪdʒest/ (n.) 消化(食物/信息)；浓缩归纳；文摘；(密码学)哈希摘要 — to break down food; to take in info & understand; to condense; a periodic summary; (crypto) fixed-length hash output
+  - 例句：It takes time to digest a heavy meal. / I need a moment to digest what you said. / Subscribe to our weekly digest. / Compare the SHA-256 digest to verify integrity.
+  - ⚠️ 发音：动词重音在后 daɪ-JEST，名词重音在前 DAI-jest（"名前动后"，同 [[compound]] / record / conduct / permit）
+  - 高频搭配：easy/hard to digest 容易/难以消化(信息或食物) · weekly/daily digest 周报/日报 ⭐ newsletter 必备 · executive digest 高管摘要 · Reader's Digest 读者文摘 · **SHA-256/MD5 digest** 哈希摘要 ⭐ 编程高频 · message digest 消息摘要 · digest authentication HTTP 摘要认证
+  - 拆词词源：di-(分开) + gerere(携带搬运) → "分开搬走" = 分解处理；同根 gest- 携带家族：suggest 偷塞建议 / gesture 手势 / register 登记 / congestion 拥堵/充血 / **ingest 摄入(data ingestion)**
+  - ⚠️ 辨析 gist/summary/abstract/digest：gist 核心要点(最口语 the gist is…) · summary 总结(最通用) · abstract 论文摘要 · **digest 定期/系列性浓缩合集**，含"理解吸收"意味
+  - ⚠️ 技术三阶段 ingest → digest → process：ingest 摄入原始数据 · digest 解析压缩成摘要 · process 全流程加工
+  - 派生：digestion 消化 / digestible 易消化/易理解 / indigestion 消化不良 / digestif /diːʒesˈtiːf/ 餐后助消化酒(法语借词)
+  - ⭐ AI 时代复活：各家 newsletter 都叫 "Daily Digest"（Stratechery / The Information / a16z）；行话 "I need time to digest this" = 开会/读论文/看新功能通用
 
 - **dismissed** /dɪsˈmɪst/ v.(过去式/过去分词) / adj. dismiss 的过去式/分词 — 被解雇；被驳回；被打发走；被(不当回事地)否定/无视
   - dismiss 多义：① 解雇(正式，比 fire 书面)② **不予理会/否定**(高频隐性义)③ 法庭驳回 ④ 解散(下课/部队)⑤ UI 关闭(对话框/通知)
@@ -529,3 +539,4 @@
 - **2026-06-05**：landscape
 - **2026-06-06**：compound, spawn, explicit
 - **2026-06-07**：slop
+- **2026-06-08**：digest
