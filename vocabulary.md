@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 45 个词条
+**统计**：共 46 个词条
 
 ---
 
@@ -160,6 +160,14 @@
   - 技术语境：TypeScript/Rust 推崇 explicit typing · API 设计原则 explicit > implicit · 行话 "Be explicit" = "把话说死,别让人猜"（文档/Code Review/写 prompt 通用）
 
 ## F
+
+- **fable** /ˈfeɪbl/ n. 寓言(带道德寓意的短故事,多用动物角色)；神话传说；虚构/谎言 — a short moralizing tale (often with talking animals); a myth/legend; a fabrication
+  - 例句：The Tortoise and the Hare is one of Aesop's most famous fables. / The dragon is the stuff of fable. / His version of events is pure fable. / The moral of the fable is: slow and steady wins the race.
+  - 高频搭配：Aesop's fables 伊索寓言 ⭐ · a fable about/of … · the moral of the fable 寓言的寓意 · animal/modern/cautionary fable 动物/当代/警世寓言
+  - 拆词词源：拉丁 fabula 故事/闲谈 ← fari 说话；fa-/fab-(说) 家族超大：**fabulous** 故事级棒(口语高频) / fame/famous 名声(大家都在说) / affable 易交谈→和蔼 / ineffable 不可言说 / confabulate 闲谈/虚构记忆 / fate 被说出→命运 / preface 前言 / **fabricate** 编造(同根)
+  - ⭐⭐⭐ 四种"故事"辨析（最值钱）：**fable 用动物讲道理** / **[[parable]] 用人讲道理**(圣经浪子回头) / **myth 讲神**(希腊神话) / **legend 讲历史英雄**(亚瑟王/关公) / folktale 民间口传 / **allegory 长篇隐喻作品**(动物农场/天路历程) / fairy tale 魔法童话(白雪公主)
+  - 派生：fabulous 极好的 · fabled 传说中的(the fabled city of Atlantis) · fabulist 寓言作家/说谎者 · fabricate 编造
+  - ⭐ 联系：你的 [[parable-learn]] skill 名字里的 parable 就是 fable 的亲戚(parable 用人/fable 用动物)；经典语料 The Boy Who Cried Wolf 狼来了 · The Ant and the Grasshopper 蚂蚁蚱蜢 · Animal Farm 动物农场(modern political fable/allegory)
 
 - **FLOPS** /flɒps/ n.(缩写) 每秒浮点运算次数 — **FL**oating-point **OP**erations **P**er **S**econd；衡量计算机/GPU/超算硬核算力的金标准
   - 关键：floating-point 浮点数=带小数的数(3.14)，比整数运算更耗算力
@@ -540,3 +548,4 @@
 - **2026-06-06**：compound, spawn, explicit
 - **2026-06-07**：slop
 - **2026-06-08**：digest
+- **2026-06-10**：fable
