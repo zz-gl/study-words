@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 46 个词条
+**统计**：共 47 个词条
 
 ---
 
@@ -347,6 +347,15 @@
   - 关联：[[hype]] 炒作（overhype = over + hype）
   - 金句：Don't overclaim what your model can do; don't underclaim what it might do.
 
+- **outcome** /ˈaʊtkʌm/ n. 结果；成效；(统计)随机试验的可能结果；(医学/教育)结局指标 — the way a thing turns out; the final result of a process; (stats) one of the possible results of an experiment; (clinical/edu) a measured result used to evaluate effectiveness
+  - 例句：The outcome of the meeting was a new partnership. / We can't predict the outcome. / Rolling a die has 6 possible outcomes. / Focus on outcomes, not outputs. ⭐ / The treatment improved patient outcomes.
+  - 高频搭配：the outcome of … · positive/negative/favorable/desired outcome · predict/determine/influence the outcome · regardless of the outcome · **patient outcomes** 患者预后 · **learning outcomes** 学习成效 · **outcome-based** 结果导向 · **business/customer outcomes** ⭐ B2B SaaS 高频 · outcome variable 因变量
+  - 拆词词源：out(出来) + come(来) → "出来的东西" = 结果；out- + 动词高产族：[[income]] 收入 · [[overcome]] 克服 · [[become]] 成为 · [[welcome]] 欢迎 · output 产出 · outlook 前景 · outbreak 爆发 · outburst 突发 · outreach 触达
+  - ⭐⭐⭐ 商业/产品圈最值钱辨析：**input 投入 → output 产出 → outcome 成效 → impact 影响**。output = 你做出来的东西(功能/报告，易量化但未必有价值)；outcome = 对世界产生的改变(留存↑、订单↑)。行话 "Stop measuring outputs, start measuring outcomes."
+  - ⚠️ 同近义辨析：result 通用口语 / outcome 书面"过程后的终局" / consequence 偏被动负面(unintended consequences 意外后果) / effect 因果链中的"果" / outcome 整体局面的"终局"
+  - 统计/AI：sample space 样本空间 = 所有 outcome 集合 · outcome variable = 因变量/target · ⭐ **outcome-based RL** 结果导向强化学习(o1/R1 路线) · outcome alignment(AI 安全)
+  - ⭐ 管理金句：德鲁克 "Focus on outcomes, not activities." · OKR 的 KR (Key Result) ≈ Key Outcome
+
 ## P
 
 - **posterior** /pɑːˈstɪriər/ adj./n. 后面的；后部的；之后的；(贝叶斯)后验；(婉)臀部 — located behind; coming after; the posterior probability
@@ -549,3 +558,4 @@
 - **2026-06-07**：slop
 - **2026-06-08**：digest
 - **2026-06-10**：fable
+- **2026-06-13**：outcome
