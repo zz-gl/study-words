@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 47 个词条
+**统计**：共 48 个词条
 
 ---
 
@@ -160,6 +160,17 @@
   - 技术语境：TypeScript/Rust 推崇 explicit typing · API 设计原则 explicit > implicit · 行话 "Be explicit" = "把话说死,别让人猜"（文档/Code Review/写 prompt 通用）
 
 ## F
+
+- **fallback** /ˈfɔːlbæk/ n./adj. 备用方案；退路；后备值；(系统)降级方案 — an alternative used when the primary fails; (tech) a default mechanism that takes over; (military) a retreat position
+  - 例句：We need a fallback in case the deal collapses. / If the API times out, the code uses a fallback value. / The browser falls back to system fonts when custom fonts fail. / A safety net is your fallback when life throws curveballs.
+  - 通用搭配：a fallback plan/option/strategy · as a fallback 作为后备 · have sth to fall back on 有…可依靠/留条后路 · fall back on old habits 退回老习惯(贬)
+  - ⭐ 编程/系统高频搭配：**fallback value** 备用值(value ?? fallback) · **fallback mechanism** 降级机制 · **font fallback** 字体降级 · **graceful fallback/degradation** 优雅降级 ⭐ 前端经典 · API fallback 主服务挂了切备用 · **LLM fallback** 模型兜底(GPT-5 失败 → 回落 Claude) ⭐ AI 时代新搭 · silent fallback 静默回退
+  - 拆词词源：fall(落/退) + back(向后) = "向后撤退"；源自动词短语 fall back on/to (19 世纪军事用法 撤退到后方阵地 → 引申"依靠")
+  - "动词+back"复合名词家族：feedback 反馈 / setback 挫折 / drawback 缺点 / kickback 回扣 / payback 回报 / flashback 闪回 / **rollback 回滚** / **callback 回调** / comeback 复出
+  - ⭐⭐⭐ 辨析（最值钱）：**fallback** 预先规划好的退路(plan B,中性) vs **backup** 完整备份(偏存储/角色替补) vs **workaround** bug 临时绕过(预期之外,没解决问题) vs **contingency** 应急方案(正式) vs **default** 不设置时的初始值 vs **safety net** 比喻最后兜底 vs **last resort** 走投无路才用
+  - 关键区分：**default 是"不选时用什么" / fallback 是"选了但失败用什么"**。例 `color = userPref ?? systemDefault ?? "black"` userPref 首选,systemDefault 是 default,"black" 是 fallback
+  - 语法化：JS 的 `??` (Nullish Coalescing) 和 CSS font-family 末尾的 sans-serif 都是 fallback 概念的语法体现；2025-2026 生产 AI 系统标配 **multi-LLM fallback chain**(Claude → GPT → 本地)
+  - ⚠️ 情感语境注意：歌词 "You're my fallback" 含贬义 = "我只是你的备胎"
 
 - **fable** /ˈfeɪbl/ n. 寓言(带道德寓意的短故事,多用动物角色)；神话传说；虚构/谎言 — a short moralizing tale (often with talking animals); a myth/legend; a fabrication
   - 例句：The Tortoise and the Hare is one of Aesop's most famous fables. / The dragon is the stuff of fable. / His version of events is pure fable. / The moral of the fable is: slow and steady wins the race.
@@ -559,3 +570,4 @@
 - **2026-06-08**：digest
 - **2026-06-10**：fable
 - **2026-06-13**：outcome
+- **2026-06-19**：fallback
