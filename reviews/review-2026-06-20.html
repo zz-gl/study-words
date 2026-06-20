@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日复习 · 2026-06-20</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#0f766e; --accent:#f59e0b; --bg:#f6fbfb; --surface:#fff;
+  --fg-1:#10201f; --fg-2:#304c49; --fg-muted:#647b78; --border:rgba(15,118,110,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg-1);
+  font-family:'Plus Jakarta Sans',ui-sans-serif,system-ui,sans-serif;
+  line-height:1.6;padding:24px 16px 60px;max-width:720px;margin:0 auto;-webkit-font-smoothing:antialiased}
+header.page{margin-bottom:28px;text-align:center}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--primary)}
+h1.title{font-family:'Space Grotesk',sans-serif;font-size:clamp(26px,7vw,36px);font-weight:700;
+  letter-spacing:-.02em;margin:6px 0 8px;
+  background:linear-gradient(115deg,#0f766e,#f59e0b);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.meta{font-size:13px;color:var(--fg-muted)}
+.stage{margin-bottom:28px}
+.stage-title{display:flex;align-items:center;gap:9px;font-family:'Space Grotesk',sans-serif;
+  font-size:16px;font-weight:600;color:var(--fg-1);margin-bottom:14px;
+  padding-bottom:8px;border-bottom:2px solid var(--border)}
+.stage-count{margin-left:auto;font-size:12px;font-weight:600;color:var(--fg-muted);
+  font-family:'Plus Jakarta Sans',sans-serif}
+.stage-dot{width:11px;height:11px;border-radius:50%;flex:none}
+.stage-dot.new{background:#0f766e} .stage-dot.d1{background:#ef4444}
+.stage-dot.d2{background:#f97316} .stage-dot.d4{background:#f59e0b}
+.stage-dot.d7{background:#eab308} .stage-dot.d15{background:#84cc16}
+.stage-dot.d30{background:#10b981} .stage-dot.d60{background:#14b8a6}
+.stage-dot.d90{background:#3b82f6}
+article.word{background:var(--surface);border:1px solid var(--border);border-radius:18px;
+  padding:18px 20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(16,32,31,.04)}
+.w-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px}
+.w-word{font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:700;letter-spacing:-.01em}
+.w-phon{font-family:'SF Mono',ui-monospace,monospace;font-size:13.5px;color:var(--primary)}
+.w-pos{display:inline-block;font-size:12px;padding:2px 9px;border-radius:999px;
+  background:#e6f2ef;color:var(--primary);font-weight:600;margin-right:6px}
+.w-zh{font-size:18px;font-weight:600;margin-bottom:6px}
+.w-en{font-size:13.5px;color:var(--fg-2);font-style:italic;
+  padding-left:12px;border-left:3px solid var(--accent);margin-bottom:12px}
+.w-subs{list-style:none;display:flex;flex-direction:column;gap:6px;
+  padding-top:12px;border-top:1px dashed var(--border)}
+.w-subs li{font-size:13.5px;color:var(--fg-2);line-height:1.55}
+.w-subs li strong{color:var(--primary);font-weight:600}
+.w-subs code{font-family:'SF Mono',monospace;font-size:.9em;background:#edf7f5;padding:1px 5px;border-radius:5px}
+.empty{text-align:center;color:var(--fg-muted);padding:50px 20px;
+  background:var(--surface);border-radius:18px;border:1px solid var(--border);line-height:2}
+footer.foot{text-align:center;font-size:11.5px;color:var(--fg-muted);margin-top:36px}
+footer.foot a{color:var(--primary);text-decoration:none}
+</style>
+</head>
+<body>
+<header class="page">
+  <div class="eyebrow">艾宾浩斯每日复习</div>
+  <h1 class="title">今日复习 · 06-20</h1>
+  <div class="meta">待复习 5 词 · 生成于 2026-06-20 22:31</div>
+</header>
+<main>
+
+<section class="stage">
+  <h2 class="stage-title"><span class="stage-dot d1"></span>第 1 天复习<span class="stage-count">1 词</span></h2>
+  
+<article class="word">
+  <header class="w-head">
+    <h2 class="w-word">fallback</h2>
+    <span class="w-phon">/ˈfɔːlbæk/</span>
+  </header>
+  <div class="w-zh"><span class="w-pos">n./adj.</span> 备用方案；退路；后备值；(系统)降级方案</div>
+  <div class="w-en">an alternative used when the primary fails; (tech) a default mechanism that takes over; (military) a retreat position</div>
+  <ul class="w-subs"><li>例句：We need a fallback in case the deal collapses. / If the API times out, the code uses a fallback value. / The browser falls back to system fonts when custom fonts fail. / A safety net is your fallback when life throws curveballs.</li>
+<li>通用搭配：a fallback plan/option/strategy · as a fallback 作为后备 · have sth to fall back on 有…可依靠/留条后路 · fall back on old habits 退回老习惯(贬)</li>
+<li>⭐ 编程/系统高频搭配：<strong>fallback value</strong> 备用值(value ?? fallback) · <strong>fallback mechanism</strong> 降级机制 · <strong>font fallback</strong> 字体降级 · <strong>graceful fallback/degradation</strong> 优雅降级 ⭐ 前端经典 · API fallback 主服务挂了切备用 · <strong>LLM fallback</strong> 模型兜底(GPT-5 失败 → 回落 Claude) ⭐ AI 时代新搭 · silent fallback 静默回退</li>
+<li>拆词词源：fall(落/退) + back(向后) = &quot;向后撤退&quot;；源自动词短语 fall back on/to (19 世纪军事用法 撤退到后方阵地 → 引申&quot;依靠&quot;)</li>
+<li>&quot;动词+back&quot;复合名词家族：feedback 反馈 / setback 挫折 / drawback 缺点 / kickback 回扣 / payback 回报 / flashback 闪回 / <strong>rollback 回滚</strong> / <strong>callback 回调</strong> / comeback 复出</li>
+<li>⭐⭐⭐ 辨析（最值钱）：<strong>fallback</strong> 预先规划好的退路(plan B,中性) vs <strong>backup</strong> 完整备份(偏存储/角色替补) vs <strong>workaround</strong> bug 临时绕过(预期之外,没解决问题) vs <strong>contingency</strong> 应急方案(正式) vs <strong>default</strong> 不设置时的初始值 vs <strong>safety net</strong> 比喻最后兜底 vs <strong>last resort</strong> 走投无路才用</li>
+<li>关键区分：<strong>default 是&quot;不选时用什么&quot; / fallback 是&quot;选了但失败用什么&quot;</strong>。例 <code>color = userPref ?? systemDefault ?? &quot;black&quot;</code> userPref 首选,systemDefault 是 default,&quot;black&quot; 是 fallback</li>
+<li>语法化：JS 的 <code>??</code> (Nullish Coalescing) 和 CSS font-family 末尾的 sans-serif 都是 fallback 概念的语法体现；2025-2026 生产 AI 系统标配 <strong>multi-LLM fallback chain</strong>(Claude → GPT → 本地)</li>
+<li>⚠️ 情感语境注意：歌词 &quot;You&#x27;re my fallback&quot; 含贬义 = &quot;我只是你的备胎&quot;</li></ul>
+</article>
+</section>
+
+<section class="stage">
+  <h2 class="stage-title"><span class="stage-dot d7"></span>第 7 天复习<span class="stage-count">1 词</span></h2>
+  
+<article class="word">
+  <header class="w-head">
+    <h2 class="w-word">outcome</h2>
+    <span class="w-phon">/ˈaʊtkʌm/</span>
+  </header>
+  <div class="w-zh"><span class="w-pos">n.</span> 结果；成效；(统计)随机试验的可能结果；(医学/教育)结局指标</div>
+  <div class="w-en">the way a thing turns out; the final result of a process; (stats) one of the possible results of an experiment; (clinical/edu) a measured result used to evaluate effectiveness</div>
+  <ul class="w-subs"><li>例句：The outcome of the meeting was a new partnership. / We can&#x27;t predict the outcome. / Rolling a die has 6 possible outcomes. / Focus on outcomes, not outputs. ⭐ / The treatment improved patient outcomes.</li>
+<li>高频搭配：the outcome of … · positive/negative/favorable/desired outcome · predict/determine/influence the outcome · regardless of the outcome · <strong>patient outcomes</strong> 患者预后 · <strong>learning outcomes</strong> 学习成效 · <strong>outcome-based</strong> 结果导向 · <strong>business/customer outcomes</strong> ⭐ B2B SaaS 高频 · outcome variable 因变量</li>
+<li>拆词词源：out(出来) + come(来) → &quot;出来的东西&quot; = 结果；out- + 动词高产族：<em>income</em> 收入 · <em>overcome</em> 克服 · <em>become</em> 成为 · <em>welcome</em> 欢迎 · output 产出 · outlook 前景 · outbreak 爆发 · outburst 突发 · outreach 触达</li>
+<li>⭐⭐⭐ 商业/产品圈最值钱辨析：<strong>input 投入 → output 产出 → outcome 成效 → impact 影响</strong>。output = 你做出来的东西(功能/报告，易量化但未必有价值)；outcome = 对世界产生的改变(留存↑、订单↑)。行话 &quot;Stop measuring outputs, start measuring outcomes.&quot;</li>
+<li>⚠️ 同近义辨析：result 通用口语 / outcome 书面&quot;过程后的终局&quot; / consequence 偏被动负面(unintended consequences 意外后果) / effect 因果链中的&quot;果&quot; / outcome 整体局面的&quot;终局&quot;</li>
+<li>统计/AI：sample space 样本空间 = 所有 outcome 集合 · outcome variable = 因变量/target · ⭐ <strong>outcome-based RL</strong> 结果导向强化学习(o1/R1 路线) · outcome alignment(AI 安全)</li>
+<li>⭐ 管理金句：德鲁克 &quot;Focus on outcomes, not activities.&quot; · OKR 的 KR (Key Result) ≈ Key Outcome</li></ul>
+</article>
+</section>
+
+<section class="stage">
+  <h2 class="stage-title"><span class="stage-dot d15"></span>第 15 天复习<span class="stage-count">1 词</span></h2>
+  
+<article class="word">
+  <header class="w-head">
+    <h2 class="w-word">landscape</h2>
+    <span class="w-phon">/ˈlændskeɪp/</span>
+  </header>
+  <div class="w-zh"><span class="w-pos">n./v./adj.</span> 风景；（领域）格局；做景观设计；（页面）横向</div>
+  <div class="w-en">visible features of land; (figurative) the overall scene of a field; (layout) wider-than-tall orientation</div>
+  <ul class="w-subs"><li>例句：The Highlands have a dramatic landscape. / The AI landscape changed after GPT-4. / Print this in landscape mode.</li>
+<li>高频搭配（科技/商业）：competitive landscape 竞争格局 / regulatory landscape 监管环境 / threat landscape 威胁全景(网安) / funding landscape 融资环境 / shifting landscape 变化中的格局 / map the landscape 摸清格局</li>
+<li>拆词：land + -scape（一片连成片的景象，源自荷兰语 *landschap*，17 世纪从荷兰风景画传入英语）</li>
+<li>-scape 家族：seascape 海景 / cityscape 城市景观 / moonscape 月面 / soundscape 声景 / mindscape 心象</li>
+<li>⚠️ 辨析：landscape（横向，宽&gt;高） vs portrait（纵向）—— 文档/截图方向；landscape（全貌结构） vs scenery（眼前景色） vs environment（环境，含人文）</li></ul>
+</article>
+</section>
+
+<section class="stage">
+  <h2 class="stage-title"><span class="stage-dot d30"></span>第 30 天复习<span class="stage-count">2 词</span></h2>
+  
+<article class="word">
+  <header class="w-head">
+    <h2 class="w-word">senior</h2>
+    <span class="w-phon">/ˈsiːniər/</span>
+  </header>
+  <div class="w-zh"><span class="w-pos">adj./n.</span> 年长的；资深的；高级的；高年级生</div>
+  <div class="w-en">older or higher in rank; in the highest school grade</div>
+  <ul class="w-subs"><li>例句：a senior engineer / He is ten years my senior. / college senior 大四学生</li>
+<li>四含义：① 职级资深(senior engineer/management) ② 年龄年长(senior citizen 老年人) ③ 学校高年级(美式 freshman→sophomore→junior→senior 大一/二/三/四) ④ n.上司/长者</li>
+<li>拆词词源：拉丁语 senior &quot;older&quot;(比较级)，词根 sen-=老</li>
+<li>同根：senile 衰老的(贬) · senate 参议院(字面&quot;长老会&quot;) · senator 参议员 · 西语 Señor 先生</li>
+<li>缩写 Sr./Jr.：父子同名区分，Sr.=Senior 老的那个 · Jr.=Junior 年轻的那个（如 Martin Luther King Sr./Jr.）</li>
+<li>职级梯度：junior → mid-level → senior → staff → principal</li>
+<li>搭配：senior engineer/management/citizen/year · senior to sb 比某人资深 · senior partner 资深合伙人</li>
+<li>辨析：senior 资深/高级(强调资历) · elder 年长(家庭正式) · veteran 老兵/老手 · seasoned 经验丰富</li>
+<li>⚠️ 别直译成&quot;年老&quot;：senior engineer = 高级工程师，不是&quot;年老工程师&quot;</li></ul>
+</article>
+
+<article class="word">
+  <header class="w-head">
+    <h2 class="w-word">contractor</h2>
+    <span class="w-phon">/ˈkɑːntræktər/</span>
+  </header>
+  <div class="w-zh"><span class="w-pos">n.</span> 承包商；包工头；合同工；独立签约者</div>
+  <div class="w-en">a person/company contracted to perform work; an independent worker hired by contract</div>
+  <ul class="w-subs"><li>例句：We hired a contractor to build the deck. / I work as an independent contractor.</li>
+<li>三大场景：① 建筑承包(general contractor 总包 / subcontractor 分包) ② <strong>合同工 ⭐</strong>(美国职场 1099 contractor vs W-2 employee；Google 半数员工是 contractor) ③ defense contractor 军工承包商(Lockheed/Palantir)</li>
+<li>拆词：contract(合同) + -or → 签合同揽活的人；contract = con-(一起) + tract(拉) = 把双方拉到一起</li>
+<li>同根 tract-(拉)：attract 吸引 · distract 分散 · extract 抽取 · subtract 减去 · tractor 拖拉机 · abstract 抽象</li>
+<li>词族：contract n./v. · contractor · contractual adj. · subcontract 分包 · subcontractor</li>
+<li>辨析：employee 正式雇员(有福利W-2) / contractor 合同工(独立1099无福利) / consultant 顾问(短期专业建议) / freelancer 自由职业者(口语化的 contractor) / gig worker 零工(Uber 类) / vendor 供应商(公司层面)</li>
+<li>contractor vs freelancer：本质相近，contractor 更正式机构化(HR/法律)，freelancer 更日常个人化(自我介绍)</li>
+<li>搭配：independent contractor · general/sub-/defense contractor · work as a contractor · contractor agreement</li>
+<li>法律背景：加州 AB5 法案试图把 Uber/Lyft 司机从 contractor 重分类为 employee</li>
+<li>关联：<em>senior</em>（同为职场身份/职级词）</li></ul>
+</article>
+</section>
+</main>
+<footer class="foot">
+  间隔阶梯 1·2·4·7·15·30·60·90 天 · <a href="https://github.com/zz-gl/study-words">源仓库</a>
+</footer>
+</body>
+</html>
