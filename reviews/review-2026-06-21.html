@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日复习 · 2026-06-21</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#0f766e; --accent:#f59e0b; --bg:#f6fbfb; --surface:#fff;
+  --fg-1:#10201f; --fg-2:#304c49; --fg-muted:#647b78; --border:rgba(15,118,110,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg-1);
+  font-family:'Plus Jakarta Sans',ui-sans-serif,system-ui,sans-serif;
+  line-height:1.6;padding:24px 16px 60px;max-width:720px;margin:0 auto;-webkit-font-smoothing:antialiased}
+header.page{margin-bottom:28px;text-align:center}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--primary)}
+h1.title{font-family:'Space Grotesk',sans-serif;font-size:clamp(26px,7vw,36px);font-weight:700;
+  letter-spacing:-.02em;margin:6px 0 8px;
+  background:linear-gradient(115deg,#0f766e,#f59e0b);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.meta{font-size:13px;color:var(--fg-muted)}
+.stage{margin-bottom:28px}
+.stage-title{display:flex;align-items:center;gap:9px;font-family:'Space Grotesk',sans-serif;
+  font-size:16px;font-weight:600;color:var(--fg-1);margin-bottom:14px;
+  padding-bottom:8px;border-bottom:2px solid var(--border)}
+.stage-count{margin-left:auto;font-size:12px;font-weight:600;color:var(--fg-muted);
+  font-family:'Plus Jakarta Sans',sans-serif}
+.stage-dot{width:11px;height:11px;border-radius:50%;flex:none}
+.stage-dot.new{background:#0f766e} .stage-dot.d1{background:#ef4444}
+.stage-dot.d2{background:#f97316} .stage-dot.d4{background:#f59e0b}
+.stage-dot.d7{background:#eab308} .stage-dot.d15{background:#84cc16}
+.stage-dot.d30{background:#10b981} .stage-dot.d60{background:#14b8a6}
+.stage-dot.d90{background:#3b82f6}
+article.word{background:var(--surface);border:1px solid var(--border);border-radius:18px;
+  padding:18px 20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(16,32,31,.04)}
+.w-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px}
+.w-word{font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:700;letter-spacing:-.01em}
+.w-phon{font-family:'SF Mono',ui-monospace,monospace;font-size:13.5px;color:var(--primary)}
+.w-pos{display:inline-block;font-size:12px;padding:2px 9px;border-radius:999px;
+  background:#e6f2ef;color:var(--primary);font-weight:600;margin-right:6px}
+.w-zh{font-size:18px;font-weight:600;margin-bottom:6px}
+.w-en{font-size:13.5px;color:var(--fg-2);font-style:italic;
+  padding-left:12px;border-left:3px solid var(--accent);margin-bottom:12px}
+.w-subs{list-style:none;display:flex;flex-direction:column;gap:6px;
+  padding-top:12px;border-top:1px dashed var(--border)}
+.w-subs li{font-size:13.5px;color:var(--fg-2);line-height:1.55}
+.w-subs li strong{color:var(--primary);font-weight:600}
+.w-subs code{font-family:'SF Mono',monospace;font-size:.9em;background:#edf7f5;padding:1px 5px;border-radius:5px}
+.empty{text-align:center;color:var(--fg-muted);padding:50px 20px;
+  background:var(--surface);border-radius:18px;border:1px solid var(--border);line-height:2}
+footer.foot{text-align:center;font-size:11.5px;color:var(--fg-muted);margin-top:36px}
+footer.foot a{color:var(--primary);text-decoration:none}
+</style>
+</head>
+<body>
+<header class="page">
+  <div class="eyebrow">艾宾浩斯每日复习</div>
+  <h1 class="title">今日复习 · 06-21</h1>
+  <div class="meta">待复习 4 词 · 今日新学 1 词 · 生成于 2026-06-21 22:30</div>
+</header>
+<main>
+
+<section class="stage">
+  <h2 class="stage-title"><span class="stage-dot d2"></span>第 2 天复习<span class="stage-count">1 词</span></h2>
+  
+<article class="word">
+  <header class="w-head">
+    <h2 class="w-word">fallback</h2>
+    <span class="w-phon">/ˈfɔːlbæk/</span>
+  </header>
+  <div class="w-zh"><span class="w-pos">n./adj.</span> 备用方案；退路；后备值；(系统)降级方案</div>
+  <div class="w-en">an alternative used when the primary fails; (tech) a default mechanism that takes over; (military) a retreat position</div>
+  <ul class="w-subs"><li>例句：We need a fallback in case the deal collapses. / If the API times out, the code uses a fallback value. / The browser falls back to system fonts when custom fonts fail. / A safety net is your fallback when life throws curveballs.</li>
+<li>通用搭配：a fallback plan/option/strategy · as a fallback 作为后备 · have sth to fall back on 有…可依靠/留条后路 · fall back on old habits 退回老习惯(贬)</li>
+<li>⭐ 编程/系统高频搭配：<strong>fallback value</strong> 备用值(value ?? fallback) · <strong>fallback mechanism</strong> 降级机制 · <strong>font fallback</strong> 字体降级 · <strong>graceful fallback/degradation</strong> 优雅降级 ⭐ 前端经典 · API fallback 主服务挂了切备用 · <strong>LLM fallback</strong> 模型兜底(GPT-5 失败 → 回落 Claude) ⭐ AI 时代新搭 · silent fallback 静默回退</li>
+<li>拆词词源：fall(落/退) + back(向后) = &quot;向后撤退&quot;；源自动词短语 fall back on/to (19 世纪军事用法 撤退到后方阵地 → 引申&quot;依靠&quot;)</li>
+<li>&quot;动词+back&quot;复合名词家族：feedback 反馈 / setback 挫折 / drawback 缺点 / kickback 回扣 / payback 回报 / flashback 闪回 / <strong>rollback 回滚</strong> / <strong>callback 回调</strong> / comeback 复出</li>
+<li>⭐⭐⭐ 辨析（最值钱）：<strong>fallback</strong> 预先规划好的退路(plan B,中性) vs <strong>backup</strong> 完整备份(偏存储/角色替补) vs <strong>workaround</strong> bug 临时绕过(预期之外,没解决问题) vs <strong>contingency</strong> 应急方案(正式) vs <strong>default</strong> 不设置时的初始值 vs <strong>safety net</strong> 比喻最后兜底 vs <strong>last resort</strong> 走投无路才用</li>
+<li>关键区分：<strong>default 是&quot;不选时用什么&quot; / fallback 是&quot;选了但失败用什么&quot;</strong>。例 <code>color = userPref ?? systemDefault ?? &quot;black&quot;</code> userPref 首选,systemDefault 是 default,&quot;black&quot; 是 fallback</li>
+<li>语法化：JS 的 <code>??</code> (Nullish Coalescing) 和 CSS font-family 末尾的 sans-serif 都是 fallback 概念的语法体现；2025-2026 生产 AI 系统标配 <strong>multi-LLM fallback chain</strong>(Claude → GPT → 本地)</li>
+<li>⚠️ 情感语境注意：歌词 &quot;You&#x27;re my fallback&quot; 含贬义 = &quot;我只是你的备胎&quot;</li></ul>
+</article>
+</section>
+
+<section class="stage">
+  <h2 class="stage-title"><span class="stage-dot d15"></span>第 15 天复习<span class="stage-count">3 词</span></h2>
+  
+<article class="word">
+  <header class="w-head">
+    <h2 class="w-word">compound</h2>
+    <span class="w-phon">/ˈkɒmpaʊnd/</span>
+  </header>
+  <div class="w-zh"><span class="w-pos">(n./adj.)</span> ｜ /kəmˈpaʊnd/ (v.) 化合物；复合的；加剧/混合/按复利计算；(围墙)大院</div>
+  <div class="w-en">a substance/thing made of multiple parts; to make worse by adding; to grow with compounding interest; an enclosed area</div>
+  <ul class="w-subs"><li>例句：Water is a compound of hydrogen and oxygen. / The delay was compounded by bad weather. / Compound interest is the eighth wonder of the world. (—Einstein)</li>
+<li>⚠️ 发音：名/形重音在前 ˈCOMpound，动词重音在后 comPOUND（典型&quot;名前动后&quot;，类似 record / conduct / permit）</li>
+<li>高频搭配：compound interest 复利 / compound word 复合词 / compound the problem 让问题雪上加霜 / CAGR (compound annual growth rate) 复合年增长率 / chemical compound 化合物 / compound sentence 复合句 / compound fracture 开放性骨折</li>
+<li>拆词：com-(一起) + pōnere(放置) → &quot;放在一起&quot; = 组合；同族 component / composition / <em>composer</em> / opponent / postpone / decompose</li>
+<li>⚠️ 辨析：element 元素(单一) → compound 化合物(化学结合,固定比例,如 H₂O) → mixture 混合物(物理混合,比例可变,如盐水)；compound 多部分组合(中性) vs complex 内部结构复杂(中性) vs complicated 复杂难处理(偏贬)</li>
+<li>⭐ 投资圈名言：Time + compound = magic — 复利的力量是巴菲特投资哲学核心；动词 compound 本身就是&quot;利滚利&quot;</li></ul>
+</article>
+
+<article class="word">
+  <header class="w-head">
+    <h2 class="w-word">spawn</h2>
+    <span class="w-phon">/spɔːn/</span>
+  </header>
+  <div class="w-zh"><span class="w-pos">v./n.</span> 产卵；大量产生；衍生出；(编程)启动子进程/线程；卵；产物</div>
+  <div class="w-en">to produce eggs (fish/frog); to give rise to; (computing) to start a child process from a parent</div>
+  <ul class="w-subs"><li>⚠️ 拼写提醒：用户曾写作 &quot;spown&quot; — <strong>没有 spown 这个词</strong>，标准拼写就是 spawn</li>
+<li>例句：Salmon swim upstream to spawn. / The iPhone&#x27;s success spawned countless imitators. / The script spawns a worker process for each task. / AI spawned a whole new industry overnight.</li>
+<li>高频搭配：spawn a process / thread / child 启动子进程 · spawn point (游戏)出生点 · spawn a generation of 催生新一代 · spawn imitators / controversy / debate 引发模仿/争议 · respawn 重生刷新 · spawn camping 蹲点击杀</li>
+<li>拆词/词源：中古英语 *spaunen* ← 古法语 *espandre*（散布、撒出）← 拉丁 *expandere*（外铺，同 expand 同根）；字面&quot;撒出大量卵&quot;→ 引申&quot;大量孕育/派生&quot;</li>
+<li>⚠️ 辨析：create 中性最通用 / generate 偏自动批量 / spawn 强调&quot;派生大量、迅速、像产卵&quot;（含繁衍关系） / fork (编程)从当前进程复制一个一模一样的子进程，spawn 更通用可执行新程序</li>
+<li>关联：编程 subprocess.spawn() · Node.js child_process.spawn() · *nix 进程三件套 fork/spawn/kill</li>
+<li>生物词技术化家族：spawn / fork / migrate / kill / zombie process — 程序员都从生物界借词</li></ul>
+</article>
+
+<article class="word">
+  <header class="w-head">
+    <h2 class="w-word">explicit</h2>
+    <span class="w-phon">/ɪkˈsplɪsɪt/</span>
+  </header>
+  <div class="w-zh"><span class="w-pos">adj.</span> 明确的；直白露骨的；(编程)显式的</div>
+  <div class="w-en">stated clearly with no ambiguity; openly shown (often risqué content); (in code) directly written out rather than inferred</div>
+  <ul class="w-subs"><li>例句：She gave explicit instructions not to disturb her. / The song was tagged explicit. / Python: &quot;Explicit is better than implicit.&quot; (Zen of Python)</li>
+<li>高频搭配：explicit instructions/consent/agreement 明示同意 · explicit content 露骨内容 · make sth explicit 把…说明白 · be explicit about 直言不讳 · <strong>explicitly</strong> stated/mentioned/forbidden（副词更高频）</li>
+<li>拆词/词源：ex-(向外) + plicare(折叠) → &quot;展开&quot; 把折叠藏起来的东西全摊开说</li>
+<li>⭐ plic-/ply-/ploy- 折叠词族：<em>implicit</em> 隐含的(向内折叠) · complicated 复杂(一起折叠) · complex 复合 · reply 回复(折回) · apply 申请(贴上) · employ 雇用 · deploy 部署(展开兵阵) · multiply 乘(多重折叠)</li>
+<li>⚠️ 核心辨析 explicit vs implicit：明示 vs 暗示。编程的 explicit/implicit type、法律的 explicit/implicit consent、沟通的&quot;直说&quot; vs &quot;暗示&quot; 都靠这对词</li>
+<li>辨析 explicit vs clear vs specific：clear 易懂 / specific 具体细 / explicit <strong>主动消除歧义、把没说的也说出来</strong>，可以很简短但必须直白</li>
+<li>技术语境：TypeScript/Rust 推崇 explicit typing · API 设计原则 explicit &gt; implicit · 行话 &quot;Be explicit&quot; = &quot;把话说死,别让人猜&quot;（文档/Code Review/写 prompt 通用）</li></ul>
+</article>
+</section>
+
+<section class="stage">
+  <h2 class="stage-title"><span class="stage-dot new"></span>今日新学<span class="stage-count">1 词</span></h2>
+  
+<article class="word">
+  <header class="w-head">
+    <h2 class="w-word">shuttle</h2>
+    <span class="w-phon">/ˈʃʌtl/</span>
+  </header>
+  <div class="w-zh"><span class="w-pos">n./v.</span> 班车/穿梭巴士；航天飞机；织布梭子；羽毛球；穿梭往返/反复传递</div>
+  <div class="w-en">a vehicle running short regular trips between two places; a reusable spacecraft; a loom tool that carries thread back &amp; forth; (badminton) shuttlecock; (v.) to move back and forth between two locations frequently</div>
+  <ul class="w-subs"><li>例句：The hotel runs a free shuttle to the airport. / She shuttles between New York and London for work. / Data is shuttled between the CPU and GPU. ⭐ / Diplomats are shuttling between the two governments.</li>
+<li>交通搭配：airport/hotel/campus shuttle · shuttle bus/van/service · shuttle driver · catch/take the shuttle</li>
+<li>航天：<strong>Space Shuttle</strong> 航天飞机(NASA 1981-2011 计划：Columbia/Challenger/Discovery/Atlantis/Endeavour) · shuttle launch/landing/mission · 中国对应&quot;神舟&quot;</li>
+<li>动词搭配：shuttle between A and B · shuttle data/packets/messages 传递 · <strong>shuttle diplomacy 穿梭外交</strong> ⭐ (基辛格 1973 中东战争后发明,特使在敌对双方反复斡旋传话) · shuttle sb back and forth</li>
+<li>⭐ 技术圈：shuttle data between CPU and GPU(深度学习训练核心瓶颈) · memory shuttle · 行话 &quot;The bottleneck isn&#x27;t compute, it&#x27;s shuttling data.&quot;</li>
+<li>拆词词源（很有意思）：古英语 scytel = dart/missile 飞镖 ← scēotan = to shoot 射；同根 shoot/shot/shut(关门=射门栓)/scoot；<strong>原义是织布机上飞速来回穿梭携带纬线的木梭</strong> → 凡&quot;两点间快速来回&quot;都叫 shuttle</li>
+<li><strong>shuttlecock</strong> 羽毛球 = shuttle + cock 公鸡：飞行轨迹快速来回 + 羽毛像公鸡尾羽</li>
+<li>⚠️ 辨析：<strong>shuttle</strong> 两个固定点之间有规律短程往返(班车感) / commute 通勤(家↔公司) / ferry 渡运(水上或大批量) / traverse 横穿(一次性) / bounce 弹来弹去(随机) / oscillate 物理振荡(规律)</li>
+<li>关联：<em>fallback</em> 也是&quot;备用切换&quot;，但 fallback 是失败时切换;shuttle 是常态来回</li></ul>
+</article>
+</section>
+</main>
+<footer class="foot">
+  间隔阶梯 1·2·4·7·15·30·60·90 天 · <a href="https://github.com/zz-gl/study-words">源仓库</a>
+</footer>
+</body>
+</html>
