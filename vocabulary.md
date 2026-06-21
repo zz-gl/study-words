@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 48 个词条
+**统计**：共 49 个词条
 
 ---
 
@@ -427,6 +427,17 @@
   - 辨析：senior 资深/高级(强调资历) · elder 年长(家庭正式) · veteran 老兵/老手 · seasoned 经验丰富
   - ⚠️ 别直译成"年老"：senior engineer = 高级工程师，不是"年老工程师"
 
+- **shuttle** /ˈʃʌtl/ n./v. 班车/穿梭巴士；航天飞机；织布梭子；羽毛球；穿梭往返/反复传递 — a vehicle running short regular trips between two places; a reusable spacecraft; a loom tool that carries thread back & forth; (badminton) shuttlecock; (v.) to move back and forth between two locations frequently
+  - 例句：The hotel runs a free shuttle to the airport. / She shuttles between New York and London for work. / Data is shuttled between the CPU and GPU. ⭐ / Diplomats are shuttling between the two governments.
+  - 交通搭配：airport/hotel/campus shuttle · shuttle bus/van/service · shuttle driver · catch/take the shuttle
+  - 航天：**Space Shuttle** 航天飞机(NASA 1981-2011 计划：Columbia/Challenger/Discovery/Atlantis/Endeavour) · shuttle launch/landing/mission · 中国对应"神舟"
+  - 动词搭配：shuttle between A and B · shuttle data/packets/messages 传递 · **shuttle diplomacy 穿梭外交** ⭐ (基辛格 1973 中东战争后发明,特使在敌对双方反复斡旋传话) · shuttle sb back and forth
+  - ⭐ 技术圈：shuttle data between CPU and GPU(深度学习训练核心瓶颈) · memory shuttle · 行话 "The bottleneck isn't compute, it's shuttling data."
+  - 拆词词源（很有意思）：古英语 scytel = dart/missile 飞镖 ← scēotan = to shoot 射；同根 shoot/shot/shut(关门=射门栓)/scoot；**原义是织布机上飞速来回穿梭携带纬线的木梭** → 凡"两点间快速来回"都叫 shuttle
+  - **shuttlecock** 羽毛球 = shuttle + cock 公鸡：飞行轨迹快速来回 + 羽毛像公鸡尾羽
+  - ⚠️ 辨析：**shuttle** 两个固定点之间有规律短程往返(班车感) / commute 通勤(家↔公司) / ferry 渡运(水上或大批量) / traverse 横穿(一次性) / bounce 弹来弹去(随机) / oscillate 物理振荡(规律)
+  - 关联：[[fallback]] 也是"备用切换"，但 fallback 是失败时切换;shuttle 是常态来回
+
 - **slop** /slɒp/ n./v. 泔水；稀汤烂食；溅出；⭐ (AI 时代新义) AI 生成的低质量垃圾内容 — pig swill; thin unappetizing food; to spill carelessly; (2023+ slang) mass-produced low-quality AI content flooding the internet
   - 例句：The farmer poured slop into the trough. / Don't slop coffee on the table. / The internet is drowning in **AI slop**. ⭐ / Half of those Amazon ebooks are pure slop. / Don't ship slop to production.
   - ⭐⭐⭐ 当代核心搭配：**AI slop** · slop content/articles/videos · content slop · vibe coding produces slop · don't train on slop（不能用 AI 生成数据再喂 AI，会 model collapse 模型崩溃）
@@ -571,3 +582,4 @@
 - **2026-06-10**：fable
 - **2026-06-13**：outcome
 - **2026-06-19**：fallback
+- **2026-06-21**：shuttle
