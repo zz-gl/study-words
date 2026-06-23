@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 49 个词条
+**统计**：共 50 个词条
 
 ---
 
@@ -337,6 +337,18 @@
 
 ## O
 
+- **obsidian** /əbˈsɪdiən/ n./adj./(专名) 黑曜石(火山玻璃)；漆黑发亮的；Obsidian Markdown 笔记应用 — a dark glossy volcanic glass formed by rapid cooling of felsic lava; (literary adj.) glossy black; (proper noun) a popular local-first Markdown note-taking app
+  - 例句：The Aztecs made knives from obsidian. / Her obsidian hair shone in the moonlight. / I keep all my notes in Obsidian with backlinks. ⭐ / Native obsidian blades are sharper than surgical steel.
+  - 词源（笔误成名）：拉丁 Obsidianus，普林尼《博物志》记载罗马人 **Obsius** 在埃塞俄比亚发现此石命名 lapis Obsianus；中世纪抄写员误抄为 Obsidianus 将错就错，没有可拆词根 —— 与 sandwich(伯爵)/silhouette(财长)/guillotine(医生) 同属"专名衍生词"
+  - 物质特性：火山熔岩快速冷却来不及结晶 → 天然玻璃；极脆、**贝壳状断面 conchoidal fracture**、刃口可达**纳米级**(比手术钢更锋利)
+  - 古代用途：玛雅/阿兹特克/印加 制刀/箭头/祭祀刀(macuahuitl 黑曜石剑棒) · 古希腊镜子 · 阿兹特克神明 Tezcatlipoca "冒烟的镜子"
+  - 颜色变种：snowflake obsidian 雪花黑曜石 · rainbow obsidian 彩虹黑曜石 · Apache tears 阿帕奇之泪
+  - 搭配：obsidian blade/knife/arrowhead · obsidian mirror 占卜镜 · volcanic obsidian · 文学化 obsidian eyes/hair/sky(漆黑明亮)
+  - ⚠️ 辨析(黑色岩石/玻璃)：**obsidian** 火山玻璃有光泽贝壳断面 / basalt 玄武岩结晶粗糙 / jet 煤精(有机化石木) / onyx 缟玛瑙带条带 / coal 煤可燃；一句话"黑得发亮+像玻璃+火山产=obsidian"
+  - ⭐ **Obsidian.md** 应用：2020 发布的 local-first 知识库，文件就是普通 Markdown 完全离线；卖点 `[[wikilinks]]` 双向链接(**你单词本里也在用！**) + graph view 图谱；与 Notion(云端协作)/Roam(双链鼻祖云端) 相对的本地派代表
+  - 游戏圈：**Obsidian Entertainment** RPG 老牌厂(Fallout: New Vegas / Pillars of Eternity)
+  - 冷知识：世界最锋利刀刃排序 单晶硅 > 黑曜石(~30 Å) > 手术钢(~60 Å)
+
 - **opus** /ˈoʊpəs/ n. (音乐/文学/艺术)作品；大作；(古典乐)作品编号 — a creative work, esp. a musical composition
   - 例句：This symphony is considered his finest opus.
   - 三层：① 一部作品(尤指大作) ② 古典乐作品编号 Op.（如 Beethoven, Op. 27）③ magnum opus 代表作/巅峰之作 ⭐
@@ -583,3 +595,4 @@
 - **2026-06-13**：outcome
 - **2026-06-19**：fallback
 - **2026-06-21**：shuttle
+- **2026-06-23**：obsidian
