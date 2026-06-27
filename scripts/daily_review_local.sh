@@ -52,7 +52,7 @@ python3 "$BARK_SCRIPT" --key "$BARK_KEY" --title "📚 今日复习" --body "$BO
 
 # 邮件投递（agently-cli 两步确认：先拿 token，再带 token 真发）
 DATE_STR=$(date +%Y-%m-%d)
-SUBJECT="📚 今日复习 · ${DATE_STR} · 待复习 ${DUE} · 新学 ${NEW}"
+SUBJECT="[study-words] 📚 今日复习 · ${DATE_STR} · 待复习 ${DUE} · 新学 ${NEW}"
 TOKEN=$("$AGENTLY" message +send \
   --to "$MAIL_TO" \
   --subject "$SUBJECT" \
