@@ -1,12 +1,14 @@
 #!/bin/bash
-# 每日艾宾浩斯复习（本机版）：算出今日到期/新学单词 → 生成 HTML → push 到 Pages → 发 Bark。
-# 由 launchd (com.zuo.study-words-daily) 每天 19:07 触发；也可手动运行测试。
-# 当天「无到期复习 且 无新词」时不发 Bark，避免打扰。
+# 每日艾宾浩斯复习（本机版）：算出今日到期/新学单词 → 生成 HTML → push 到 Pages → 发 Bark + 邮件。
+# 由 launchd (com.zuo.study-words-daily) 每天 22:30 触发；也可手动运行测试。
+# 当天「无到期复习 且 无新词」时跳过 Bark 与邮件，避免打扰。
 set -uo pipefail
 
 REPO="/Users/zuo/magic/matrix/study-words"
 ENV_FILE="$HOME/.video-mind/.env"
 BARK_SCRIPT="$HOME/.claude/skills/bark-notify/scripts/bark_notify.py"
+AGENTLY="/Users/zuo/.npm-global/bin/agently-cli"
+MAIL_TO="oudizuo_2026@qq.com"
 LOG="$REPO/scripts/daily-review.log"
 
 exec >> "$LOG" 2>&1
@@ -47,4 +49,23 @@ else
 fi
 
 python3 "$BARK_SCRIPT" --key "$BARK_KEY" --title "📚 今日复习" --body "$BODY" --url "$PAGES_URL" --group "英语复习"
+
+# 邮件投递（agently-cli 两步确认：先拿 token，再带 token 真发）
+DATE_STR=$(date +%Y-%m-%d)
+SUBJECT="📚 今日复习 · ${DATE_STR} · 待复习 ${DUE} · 新学 ${NEW}"
+TOKEN=$("$AGENTLY" message +send \
+  --to "$MAIL_TO" \
+  --subject "$SUBJECT" \
+  --body-file "$OUT_PATH" 2>/dev/null | jq -r '.data.confirmation_token // empty')
+
+if [ -n "$TOKEN" ]; then
+  "$AGENTLY" message +send \
+    --to "$MAIL_TO" \
+    --subject "$SUBJECT" \
+    --body-file "$OUT_PATH" \
+    --confirmation-token "$TOKEN" 2>&1 | jq -r '"mail: queued=" + (.data.queued|tostring)' || echo "[WARN] 邮件发送失败"
+else
+  echo "[WARN] 未取到 confirmation_token，邮件未发"
+fi
+
 echo "===== $(date '+%H:%M:%S') 完成 ====="
