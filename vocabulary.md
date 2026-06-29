@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 50 个词条
+**统计**：共 51 个词条
 
 ---
 
@@ -215,6 +215,17 @@
   - 记忆点：flu 流感拼写更短像"快速感染"；flue 烟道末尾的 -e 像烟囱顶上的盖子
 
 ## G
+
+- **glossary** /ˈɡlɒsəri/ (英) ｜ /ˈɡlɑːsəri/ (美) n. 术语表；词汇表(书末或文档附录,按字母排序解释专业术语) — an alphabetical list of terms within a specific subject with brief definitions
+  - 例句：The textbook has a glossary of medical terms at the back. / See the glossary for definitions of acronyms. / We maintain a product glossary so support and engineering speak the same language. / ⭐ Your `vocabulary.md` is essentially a personal English-learning glossary.
+  - 高频搭配：a glossary of terms · at the back of the book is a glossary · see/refer to the glossary · technical/medical/legal/**product glossary** · maintain/compile/build a glossary · glossary entry/lookup
+  - 拆词词源（值钱）：希腊 glōssa 舌头/语言 → 拉丁 glossa 难词旁注；中世纪僧侣在手抄本难词旁写小注 → 汇集成册 glossarium → glossary
+  - ⭐ gloss-/glott-(舌/语言) 词族：**gloss** 旁注/注释(动词还有"掩饰" gloss over 一笔带过 ⚠️ 重要短语) · **glottis** 声门 · **polyglot** 通晓多语者(poly 多+glot 舌) · monoglot 单语者 · isogloss 等语线 · glossolalia 说方言(灵恩派"舌音祷告")
+  - ⭐⭐⭐ 辨析（"词典+释义集"系列最值钱）：**glossary** 某书/某领域专业术语表(小) vs **dictionary** 通用语言词典(大) vs **lexicon** 学术或某语言全部词汇 vs **thesaurus** 同义词词典(按概念组织) vs **vocabulary** 个人/某领域所掌握的词 vs **encyclopedia** 百科(解释事物概念非词义) vs **directory** 名录(列实体) vs **index** 索引(页码定位)
+  - 一句话区分：**dictionary 给所有词；glossary 给"这本书/这个产品/这个领域"特有词**。例：编程书末尾的"Big-O、闭包、协程"=glossary
+  - ⭐ 技术/产品高频：**product glossary** 公司术语表(对齐 LTV/CAC/ARR/churn/cohort 等黑话) · API glossary · i18n glossary 翻译对照 · **RAG 系统的 glossary 文件**(领域术语注入 prompt 让 AI 在该领域更准) · terminology management = glossary 工程化(SDL Trados/Lokalise)
+  - 派生：gloss 注释/光泽(双义异源) · glossarist 词汇表编纂者 · **gloss over** 掩饰/轻描淡写 ⚠️ 高频短语
+  - 关联：你的 [[vocabulary.md]] 既是 personal glossary 也是 vocabulary list
 
 - **goat** /ɡoʊt/ n. 山羊；(俚语缩写 GOAT)史上最佳 — the animal; or GOAT = Greatest Of All Time
   - 例句(山羊)：Goats can climb almost vertical cliffs.
@@ -596,3 +607,4 @@
 - **2026-06-19**：fallback
 - **2026-06-21**：shuttle
 - **2026-06-23**：obsidian
+- **2026-06-29**：glossary
