@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 51 个词条
+**统计**：共 52 个词条
 
 ---
 
@@ -29,6 +29,19 @@
   - 搭配：bespoke suit/tailoring · bespoke software/service · bespoke design
 
 ## C
+
+- **cheatsheet** /ˈtʃiːtʃiːt/ n. 速查表/参考卡(一页纸把核心命令/语法/快捷键浓缩)；(原义)考试小抄 — a concise one-page reference summarizing commands/syntax/shortcuts; (original) a hidden written aid used to cheat in an exam
+  - ⚠️ 三种写法都对：cheatsheet / cheat sheet / cheat-sheet
+  - 例句：I keep a Git cheatsheet taped to my monitor. ⭐ / Here's a Vim cheatsheet for beginners. / She was caught with a cheat sheet during the exam. / Make me a regex cheatsheet I can stick on the wall.
+  - 高频搭配：**Git/Vim/Bash/Python/SQL/Docker cheatsheet** ⭐ · keyboard shortcut cheatsheet · a cheatsheet for sth · printable/handy/all-in-one cheatsheet · download/share/make/refer to a cheatsheet
+  - 拆词：cheat(作弊) + sheet(一张纸) → 字面"作弊纸"；20 世纪后期被技术圈洗白为正面"高密度参考卡"
+  - 同造词族 -sheet：spreadsheet 电子表格(铺开) / balance sheet 资产负债表 / timesheet 工时表 / datasheet 产品参数表
+  - cheat 词源：中古英语 escheat(封建术语:领主收回无继承人的土地) → cheat 通过欺骗夺取财产 → 现代"作弊"；同根 escheat 绝产归公(律师圈)
+  - ⭐⭐⭐ 辨析（参考/速查系列）：**cheatsheet 一页纸最高密度参考**(给已会基础需快速回忆者) / reference card 类似更正式 / quick reference 几页/manual 完整手册几十~几百页 / tutorial 教程带步骤 / [[glossary]] 术语表 / FAQ 高频问答 / playbook/runbook 运维操作手册 / TL;DR 极简摘要几行
+  - ⭐ 著名资源：**cheat.sh**(命令行 `curl cheat.sh/tar`) · **devhints.io**(网页集大成) · OverAPI.com · awesome-cheatsheets · macOS 应用 CheatSheet(长按 ⌘ 显示当前 App 快捷键)
+  - 派生：cheat 作弊/骗子 · cheater · cheating · **cheat code** 游戏作弊码(IDDQD/上上下下左右左右BA) · **cheat day** ⭐ 健身减脂期的"放纵日"
+  - ⭐ 程序员文化里 cheatsheet **不带贬义**完全正面 = 知识浓缩 ≈ 高情商总结；经典格式：一页 A4 / 两栏 / 等宽字体 / 分组配色
+  - AI 时代新用法：ChatGPT cheatsheet · **prompt cheatsheet** 写好 prompt 的模板集 · agent pattern cheatsheet
 
 - **caffeinate** /ˈkæfɪneɪt/ v. 使摄入咖啡因；靠咖啡因提神；(macOS)防止睡眠的命令 — to consume/add caffeine to stay alert; also a macOS CLI tool that keeps the Mac awake
   - 例句：I need to caffeinate before this meeting. / a heavily caffeinated drink
@@ -607,4 +620,4 @@
 - **2026-06-19**：fallback
 - **2026-06-21**：shuttle
 - **2026-06-23**：obsidian
-- **2026-06-29**：glossary
+- **2026-06-29**：glossary, cheatsheet
