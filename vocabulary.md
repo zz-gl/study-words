@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 53 个词条
+**统计**：共 54 个词条
 
 ---
 
@@ -594,6 +594,18 @@
   - 搭配：viable option/alternative / commercially/financially viable / viable business model / no longer viable
   - 近义：feasible, workable, sustainable ｜ 反义：unviable, impractical, doomed
 
+- **vocab** /ˈvoʊkæb/ n. (口语/非正式缩略) 词汇；词汇量 — informal shortening of *vocabulary*; the set of words one knows or a given domain uses
+  - 例句：I need to build my English vocab. / Let's do 20 minutes of vocab review. / Vocab list for chapter 5. / ⭐ Your `vocabulary.md` is a personal vocab book. — 元循环：这本 vocab 里现在就有 "vocab" 这个词
+  - ⚠️ 语域：**口语/学习圈/学生老师之间**用 vocab；**正式写作/论文/雅思托福作文**用全称 vocabulary
+  - 高频搭配：**vocab list/book/notebook** ⭐ · build/expand/grow your vocab · vocab review/drill/quiz · English/SAT/GRE/TOEFL vocab · pick up new vocab · vocab app(Anki/Quizlet/扇贝/多邻国)
+  - 拆词：vocabulary 前 5 字母切一刀（**clipping 截短**造词法）
+  - 词源：vocabulary ← 拉丁 vocabulum 名字/词汇 ← vocare = to call/name 呼喊命名
+  - ⭐ voc-/vok-(叫/声音) 词族：voice / vocal 大声疾呼的 / vocation 天职("被神召唤") / advocate 倡导(为…发声) / provoke 挑衅 / **revoke 撤回** / evoke 唤起 / **invoke 调用/祈求** / convoke 召集 / equivocal 模棱两可(两种声音都能) / vociferous 高声疾呼
+  - ⭐ 英语 clipping 家族（同类截短造词）：**info** ← information · **exam** ← examination · **memo** ← memorandum · **pic** ← picture · **app** ← application · **lab** ← laboratory · **gym** ← gymnasium · **repo** ← repository · **doc(s)** ← document(s) · **demo** ← demonstration · **spec(s)** ← specification(s) · **admin** ← administrator · **legit** ← legitimate · combo/promo/temp/veg 等
+  - 规律：**砍到 3–5 字母、发音顺、拼写像整词**；有的补 -o 结尾(combo/promo/demo) 更轻盈
+  - ⭐⭐⭐ 辨析（词汇/词 系列）：**vocab** 口语缩略 / **vocabulary** 词汇(掌握的 or 整体) / **lexicon** 学术词汇库(mental lexicon 心理词典) / **word** 单词最基本单位 / **term** 术语(含义精确) / [[glossary]] 领域术语表 / **jargon** 行话(外行听不懂) / **slang** 俚语 / **diction** 措辞水平
+  - ⭐ 语言学关键概念：**active vocab vs passive vocab** 主动词汇量(会用) vs 被动词汇量(认识)，被动词汇 ≫ 主动词汇是普遍现象
+
 ## W
 
 ## X
@@ -636,4 +648,4 @@
 - **2026-06-21**：shuttle
 - **2026-06-23**：obsidian
 - **2026-06-29**：glossary, cheatsheet
-- **2026-07-01**：gravity
+- **2026-07-01**：gravity, vocab
