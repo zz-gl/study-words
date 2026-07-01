@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 52 个词条
+**统计**：共 53 个词条
 
 ---
 
@@ -239,6 +239,21 @@
   - ⭐ 技术/产品高频：**product glossary** 公司术语表(对齐 LTV/CAC/ARR/churn/cohort 等黑话) · API glossary · i18n glossary 翻译对照 · **RAG 系统的 glossary 文件**(领域术语注入 prompt 让 AI 在该领域更准) · terminology management = glossary 工程化(SDL Trados/Lokalise)
   - 派生：gloss 注释/光泽(双义异源) · glossarist 词汇表编纂者 · **gloss over** 掩饰/轻描淡写 ⚠️ 高频短语
   - 关联：你的 [[vocabulary.md]] 既是 personal glossary 也是 vocabulary list
+
+- **gravity** /ˈɡrævəti/ n. ① 重力/地心引力(物理) ② **严重性/重大性**(抽象义超高频) ③ 庄重/严肃(神情语气) — the force that attracts objects to Earth's center; the extreme importance/seriousness of a situation; a solemn manner
+  - 例句(物理)：Objects fall because of gravity. / The moon's gravity causes tides. / Zero gravity in orbit. / Specific gravity of water is 1.
+  - ⭐ 例句(严重性)：**She didn't understand the gravity of the situation.** ⭐ 教科书级搭配 / The gravity of his crimes shocked the jury. / We must respond with the gravity it deserves.
+  - 例句(庄重)：He spoke with great gravity.
+  - 物理搭配：the force of gravity · defy gravity · zero/low/micro-gravity · **center of gravity 重心** ⭐(物理+组织双用) · specific gravity 比重 · gravity assist/slingshot 引力弹弓(航天)
+  - ⭐ 抽象义搭配（学英语核心）：**the gravity of the situation/offense/crime/matter/decision** · grasp/realize/understand the gravity · with gravity 郑重地 · fail to appreciate the gravity 没意识到严重性
+  - 拆词词源：拉丁 gravis = heavy 重 → gravitas 重量/庄重；grav- 词族"重"→"重要/严肃/加重"三条线
+  - ⭐⭐⭐ grav- 词族：**grave** ① 严重的(grave danger) ② 坟墓(同形异源) · **gravitas** 庄重威严 ⭐(政界高频形容领导人气场) · **gravitate (toward)** 被吸引/倾向于 ⭐ · **aggravate** 加重(ag-+grav 让事情更严重) · aggrieved 受委屈的 · **engrave** 雕刻(一笔笔压重下去) · gravid 怀孕的 · grief 悲痛(沉重的心情) · grievance 委屈申诉 · gravely ill 病危
+  - 反义家族：[[levity]] 轻浮(拉丁 levis 轻)—— gravity/levity 是拉丁高级对比
+  - ⭐⭐⭐ 辨析（严重程度/分量 系列）：**gravity 抽象正式,事情本身沉重** vs seriousness 中性通用日常口语 vs severity 伤害/病情/惩罚 vs magnitude 规模量级 vs weight 分量(她的话有 weight) vs enormity 严重+道德恶劣 vs solemnity 仪式庄严
+  - 一句话：**gravity 是"事情本身沉重", seriousness 是"你态度认真"**。事情有 gravity，人的态度是 serious
+  - 物理辨析：gravity 重力(地球对物体) / gravitation 引力作用(学术) / gravitational 引力的(gravitational wave 引力波) / weight 重量(=gravity 作用在 mass 上, W=mg) / mass 质量(物体本身不随位置变)
+  - 文化：牛顿的苹果 → law of universal gravitation · 2013 电影 *Gravity* 地心引力 · 音乐剧 Wicked 名曲 *Defying Gravity* · **center of gravity 商业用法**："AI has shifted the center of gravity of software"
+  - ⚠️ 中国学生易漏：只知"重力"义，跟不上 CNN/BBC 的 "the gravity of climate change" 类抽象用法 —— 抽象义才是听力/考试/新闻的最大加分点
 
 - **goat** /ɡoʊt/ n. 山羊；(俚语缩写 GOAT)史上最佳 — the animal; or GOAT = Greatest Of All Time
   - 例句(山羊)：Goats can climb almost vertical cliffs.
@@ -621,3 +636,4 @@
 - **2026-06-21**：shuttle
 - **2026-06-23**：obsidian
 - **2026-06-29**：glossary, cheatsheet
+- **2026-07-01**：gravity
