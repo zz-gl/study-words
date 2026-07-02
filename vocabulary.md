@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 54 个词条
+**统计**：共 55 个词条
 
 ---
 
@@ -59,6 +59,23 @@
   - 词族：compose v.创作/构成/使镇定 · composition 作品/作文/构图/成分 · composed adj.镇定的 · composure 沉着
   - 搭配：classical/film composer · composer install/update (PHP) · the composer of + 作品
   - ⚠️ 易混：composer 作曲家 ≠ conductor 指挥家
+
+- **charter** /ˈtʃɑːrtər/ n./v./adj. 章程/宪章；特许状；包机包船包车；包租；特许成立；特许的 — a formal document establishing an organization/state; a government grant of rights; hire of a whole plane/ship for private use; (v.) to hire exclusively or formally authorize
+  - 例句(章程)：The **UN Charter** was signed in 1945. ⭐ / Magna Carta ('Great Charter') limited royal power in 1215.
+  - 例句(团队)：The team drafted a charter defining its mission and scope. / operate within/beyond our charter 在/超出我们的职责范围
+  - 例句(特许)：**charter school** 特许学校(美国:公办独立运营) / royal charter 皇家特许(BBC/BP 都是) / chartered accountant (CA) 特许会计师
+  - 例句(包租)：We chartered a private jet. / charter flight 包机 / charter bus 大巴包车
+  - ① 章程/宪章高频搭配：UN Charter · Magna Carta · Atlantic Charter · charter of rights · draft/sign/ratify a charter · corporate charter 公司章程 · **team/project charter** ⭐ 敏捷 PM 高频 · **product charter** 产品章程(使命+目标+成功指标)
+  - ② 特许搭配：royal charter · chartered company(东印度公司/哈德逊湾公司) · charter school · chartered accountant/engineer/surveyor(英联邦职业资格 CA/CE/CS)
+  - ③ 包租搭配：charter flight/plane/jet · charter bus · yacht/boat charter · charter a plane/ship/bus
+  - ④ 引申(职场超高频)：operate within our charter · **beyond our charter 超出职责/授权** ⭐ 商务高频 · charter mandate · write the team charter
+  - 拆词词源（值钱）：拉丁 charta = 纸(希腊 khartēs 纸莎草) → 中古法语 chartre → charter；字面 = "写在正式纸上的东西" = 官方文件
+  - ⭐ char-/cart-(纸) 词族：**card** 卡片 · **carton** 硬纸盒 · cartoon 卡通(原义"画在纸板上的初稿") · cartography 地图学 · **chart** 图表(charter 的亲兄弟) · cartel 卡特尔(书面协议) · **carte blanche** 全权委托(法语"空白卡") · cartouche 王名圈
+  - ⭐⭐⭐ 辨析(根本文件系列，最值钱)：**charter 章程/特许(赋权型说"允许做什么")** vs **constitution 宪法(框架型,最高法)** vs bylaws 内部细则 vs articles of incorporation 公司注册章程(与 charter 常互换) vs treaty 条约(国与国) vs covenant 契约(宗教道德色彩) vs accord 协议(谈判) vs manifesto 宣言纲领 vs decree 法令敕令 vs memorandum 备忘录(内部临时)
+  - 一句话：**charter 是"我们要做什么、被允许做什么" = 定义 mission + scope + authority**
+  - ⚠️ 辨析(租赁系列)：**charter 包整架/整艘专属** vs rent 租用(可部分) vs hire 英式租用 vs lease 长期租赁 vs book 预订座位；charter 特点=**独占 + 短期 + 通常带机组/司机**
+  - 派生：chartered 包租的/特许的 · charterer 包租人 · ⭐ **uncharted** adj. 未标注在地图上的/未知的 —— "**uncharted territory** 未知领域"超高频比喻用法(与同根 chart 图表/海图关联)
+  - 文化：Magna Carta 大宪章(1215)西方宪政源头/UN Charter 1945 旧金山签署/Anthropic 的 RSP 有时被称 safety charter/**charter member = founding member** 创始成员元老
 
 - **cross-confirm** /ˌkrɔːs kənˈfɜːrm/ v./n. 交叉确认；相互印证 — to verify information by checking against multiple independent sources or parties
   - 例句：We need to cross-confirm this report with at least two independent sources.
@@ -649,3 +666,4 @@
 - **2026-06-23**：obsidian
 - **2026-06-29**：glossary, cheatsheet
 - **2026-07-01**：gravity, vocab
+- **2026-07-02**：charter
