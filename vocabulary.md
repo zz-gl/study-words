@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 55 个词条
+**统计**：共 57 个词条
 
 ---
 
@@ -19,6 +19,15 @@
   - 近义：rapport, kinship, fondness ｜ 反义：aversion 厌恶, antipathy 反感, repulsion
 
 ## B
+
+- **bedrock** /ˈbedrɒk/ n. 基岩；(比喻)根基/基石/最根本原则 — (geol.) solid rock beneath the soil/sediment layer; (fig.) the most fundamental, unshakeable foundation
+  - 例句：Excavators dug down 12 metres to reach bedrock. / Trust is the **bedrock of** any healthy relationship. / Free speech is a **bedrock principle** of democracy. / AWS is the bedrock on which our infra runs.
+  - ⭐ 核心搭配：**the bedrock of X** X 的基石(bedrock of society/trust/democracy/our strategy) · **bedrock principle/value/belief** 根本原则(比 fundamental 更硬核) · hit/reach bedrock 触底 · built on bedrock 建立在坚实基础上 · **bedrock assumption** 根本假设(辩论/论证高频)
+  - 拆词：bed(底层/床) + rock(岩石) = "床底下那层岩石"→ 基岩 → 引申"绝不可动摇的根基"
+  - -rock/底层复合词族：bedrock 基岩(最硬) · **backbone** 脊梁/中坚 · **cornerstone** 基石/奠基石 · **foundation** 地基/基础(通用) · **groundwork** 前期准备
+  - ⭐⭐⭐ 辨析（最值钱）：**bedrock 最硬最深不可动摇**(原则/价值观/宪法) vs foundation 通用地基可再加固(知识/公司/关系) vs cornerstone 象征性第一块强调开端(政策/战略) vs backbone 内在支撑抽掉就散架(组织/网络/经济) · 记忆窍门：挖到 bedrock 就挖不动了 = 不可让步
+  - 科技圈：**AWS Bedrock**(亚马逊生成式 AI 平台,寓意"AI 应用的基石") · bedrock infrastructure 核心底层设施 · bedrock model 基础模型
+  - 语用杀手锏：想强调"这个绝对不能动摇"就用 bedrock，比 basic/fundamental 档次高 10 倍；写作里用 `bedrock principle` 替代 `basic principle` 立刻升级
 
 - **bespoke** /bɪˈspoʊk/ adj. 定制的；量身定做的；专门打造的 — (esp. British) custom-made, tailored to a specific customer's requirements
   - 例句：a bespoke suit 量身定做的西装 / We built a bespoke software solution instead of off-the-shelf tools.
@@ -201,6 +210,17 @@
   - 关键区分：**default 是"不选时用什么" / fallback 是"选了但失败用什么"**。例 `color = userPref ?? systemDefault ?? "black"` userPref 首选,systemDefault 是 default,"black" 是 fallback
   - 语法化：JS 的 `??` (Nullish Coalescing) 和 CSS font-family 末尾的 sans-serif 都是 fallback 概念的语法体现；2025-2026 生产 AI 系统标配 **multi-LLM fallback chain**(Claude → GPT → 本地)
   - ⚠️ 情感语境注意：歌词 "You're my fallback" 含贬义 = "我只是你的备胎"
+
+- **fallover / failover** /ˈfɔːloʊvər/ n./v. 故障切换/故障转移(主系统挂了自动切到备用) — automatic switching to a redundant/standby system when the primary fails, so service continues uninterrupted
+  - ⚠️ 拼写：**正式技术文档主流写作 `failover`**(fail+over)；`fallover` 存在但常被视为错拼/非正式变体。**推荐记 failover**
+  - 例句：The database cluster performs automatic **failover** within 30 seconds. / We tested failover by unplugging the primary node. / Zero-downtime failover requires shared state.
+  - ⭐ 核心公式：主节点 down → 心跳丢失 → failover 触发 → 备节点接管 → 服务不中断
+  - ⭐ 高频搭配：**automatic failover** 自动切换(主流) · manual failover 手动切换(灾备演练) · **failover cluster** 故障切换集群 · failover time / **RTO**(Recovery Time Objective) · hot/warm/cold failover 热/温/冷备切换 · trigger a failover 触发切换 · failover-aware/-safe(形容词高频)
+  - 拆词：fail(失败) + over(翻过去) = "失败时翻过去(切换)"；与 [[fallback]](fall+back "退回来")构成 SRE 核心一对
+  - ⭐⭐⭐ 动词+方向复合词大家族(超值钱)：**fallback** 备选方案(退) vs **failover** 切换动作(翻) vs **rollback** 回滚(滚回) vs **rollover** 结转/续订(翻) vs **handover** 交接/基站切换(交出) vs **takeover** 接管/收购(接) vs **crossover** 跨界(横跨) · 记忆窍门：`back`=退回 · `over`=翻转/接管 · `out`=输出
+  - ⭐⭐⭐ 辨析（SRE/分布式核心）：**fallback** 备选方案本身(静态 plan B) vs **failover** 切换动作+无缝接管(动态) vs **backup** 数据/系统副本(daily/hot backup) vs **redundancy** 冗余设计(N+1) · 一句话：backup 是有副本 / redundancy 是架构层面多份 / failover 是切换动作 / fallback 是备选方案本身
+  - 面试三指标：**RTO**(允许多久切完) · **RPO**(允许丢多少数据) · 触发条件(心跳超时/健康检查失败/手动)
+  - 常见组合：*When the primary fails, we failover to the fallback cluster.* — failover 和 fallback 同现的经典句
 
 - **fable** /ˈfeɪbl/ n. 寓言(带道德寓意的短故事,多用动物角色)；神话传说；虚构/谎言 — a short moralizing tale (often with talking animals); a myth/legend; a fabrication
   - 例句：The Tortoise and the Hare is one of Aesop's most famous fables. / The dragon is the stuff of fable. / His version of events is pure fable. / The moral of the fable is: slow and steady wins the race.
@@ -667,3 +687,4 @@
 - **2026-06-29**：glossary, cheatsheet
 - **2026-07-01**：gravity, vocab
 - **2026-07-02**：charter
+- **2026-07-06**：bedrock, fallover(failover)
