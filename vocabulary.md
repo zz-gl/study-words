@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 57 个词条
+**统计**：共 58 个词条
 
 ---
 
@@ -425,6 +425,19 @@
   - 游戏圈：**Obsidian Entertainment** RPG 老牌厂(Fallout: New Vegas / Pillars of Eternity)
   - 冷知识：世界最锋利刀刃排序 单晶硅 > 黑曜石(~30 Å) > 手术钢(~60 Å)
 
+- **ontology** /ɒnˈtɒlədʒi/ (US /ɑːnˈtɑːlədʒi/) n. ①本体论/存在论(哲学分支,研究"什么存在") ②(CS/AI)本体/概念体系(领域内实体+关系+属性的形式化机器可读描述) ③一套世界观/概念框架 — (phil.) the branch of metaphysics dealing with the nature of being; (CS/AI) a formal, machine-readable specification of concepts, relations, and rules within a domain; (fig.) an overall conceptual framework
+  - ⚠️ 读音重音在第 2 音节 **on-TO-logy**，不要读成 ON-tology
+  - 例句：Metaphysics includes ontology, the study of being. / We built an ontology of medical terms to power the search engine. / **OWL (Web Ontology Language)** is the W3C standard. / Different scientific paradigms have different ontologies.
+  - ⭐ 技术圈搭配：**domain ontology** 领域本体(医学/法律/生物各自) · **upper ontology** 顶层本体(SUMO/Cyc 跨领域通用) · build/define/maintain an ontology · **ontology alignment/mapping** 本体对齐/映射 · **ontology-driven** 本体驱动的 · **OWL/RDF/SPARQL** 本体三件套(描述语言/数据模型/查询语言) · **ontology population** 本体填充(LLM 从文本抽实体+关系)
+  - 拆词：希腊 **ont-**(ὄν/óntos = "being 存在的东西") + **-logy**(学问) → "关于存在的学问"
+  - ont- 家族：ontology 本体论 · **ontological** adj. 本体论的(**ontological argument** 上帝存在的本体论证明,安瑟伦→笛卡尔→哥德尔) · ontic 存在性的
+  - -logy 家族：biology / psychology / **[[epistemology]]** 认识论 / methodology / etymology 词源学 / terminology 术语学 / axiology 价值论
+  - ⭐⭐⭐ 辨析（最值钱·"知识组织"阶梯）：**[[vocab]]/[[glossary]]** 词表+定义(无结构) → **thesaurus** 词表+同义反义(简单关系) → **taxonomy** 分类树(is-a 层级) → **schema** 数据结构(数据库/JSON,无语义推理) → **ontology** 概念+关系+属性+**推理规则**(machine-readable+inference) → **knowledge graph** = ontology + 大量实例
+  - 一句话锁死：**taxonomy 只回答"这是什么类"，ontology 还回答"这些类之间有什么关系、什么规则" — 多了"推理能力"**
+  - ⭐ 哲学三大件必分清：**ontology** 什么存在?(being/reality) · **[[epistemology]]** 我们怎么知道?(knowledge/justification) · **axiology** 什么是好的?(value/ethics) —— "存-知-值"三大问题构成哲学骨架
+  - 🤖 AI 时代代表项目：**Cyc**(1984 起最古老通用本体, Doug Lenat) · **SUMO**(IEEE 顶层本体) · **Gene Ontology (GO)** 生物学最成功应用 · **Schema.org**(Google/Bing 语义标注) · **ontology-aware RAG** 2025+新方向(多跳推理,治 LLM 幻觉)
+  - 语用杀手锏：想说"某某学科对世界的基本假设"用 **the ontology of X** 比 the worldview of X **更学术更精准**(the ontology of modern physics / the ontology assumed by classical economics)
+
 - **opus** /ˈoʊpəs/ n. (音乐/文学/艺术)作品；大作；(古典乐)作品编号 — a creative work, esp. a musical composition
   - 例句：This symphony is considered his finest opus.
   - 三层：① 一部作品(尤指大作) ② 古典乐作品编号 Op.（如 Beethoven, Op. 27）③ magnum opus 代表作/巅峰之作 ⭐
@@ -688,3 +701,4 @@
 - **2026-07-01**：gravity, vocab
 - **2026-07-02**：charter
 - **2026-07-06**：bedrock, fallover(failover)
+- **2026-07-07**：ontology
