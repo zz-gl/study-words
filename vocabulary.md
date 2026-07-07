@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 58 个词条
+**统计**：共 59 个词条
 
 ---
 
@@ -470,6 +470,20 @@
 
 ## P
 
+- **palantir** /ˈpælənˌtɪər/ n. (Tolkien 造词)远见石；无所不见的监视工具；帕兰提尔科技公司 — a "seeing-stone" from Tolkien's Middle-earth; (fig.) an all-seeing surveillance/analytics tool; **Palantir Technologies**, Peter Thiel 创办的大数据情报公司(NYSE: PLTR)
+  - 复数：palantíri /ˌpælənˈtɪəriː/(保留昆雅语复数，重音移到 -tí-)
+  - 例句(隐喻)：Their dashboard has become a **palantír** into every user's behavior.
+  - 例句(公司)：Palantir's Foundry and Gotham platforms serve intelligence agencies.
+  - 拆词词源：昆雅语 **pal-**(far 远) + **tir-**(watch/see 看守) → "far-seeing"；托尔金(牛津语言学教授)造词
+  - 同根 tir-：**Minas Tirith**(守望之塔)、Sauron 的凝视也是 tir- 意象
+  - 中土词进英语大类：mithril 秘银(密码/Rust 库名)、balrog 破坏性 bug、Gandalf 权限守门服务、Sauron 全景监视
+  - 文化用法：**"a palantír into X"** = 对 X 的上帝视角 / **"looking into the palantír"** = 讽刺过度监视且暗示反被控(Saruman 就是这样堕落)
+  - Palantir 公司：2003 Peter Thiel + CIA In-Q-Tel 孵化；产品 Gotham(政府)/Foundry(企业)/AIP(AI)；2020 DPO 上市；AI 概念暴涨
+  - 争议锚点："palantír 之眼"隐喻在批评者笔下几乎是双关(ICE 追踪 / 反恐监控)
+  - 拼写/发音：正字 palantír 带 í；公司名无音符；两种读音都可 — PAL-un-teer(英美) 或 puh-LAHN-teer(近原音)
+  - 辨析：palantir(文学/科技评论) vs surveillance(通用监视) vs dashboard(中性仪表盘) vs oracle(神谕/预知未来 ↔ palantir 远视当下)
+  - 语域：文学/新闻/科技评论用；大写 Palantir=公司；小写指原义或隐喻；日常不用
+
 - **posterior** /pɑːˈstɪriər/ adj./n. 后面的；后部的；之后的；(贝叶斯)后验；(婉)臀部 — located behind; coming after; the posterior probability
   - ⭐ 贝叶斯：**posterior 后验** = 结合先验+新证据后更新的概率；posterior ∝ likelihood × prior
   - 完整定理：P(假设|数据) = P(数据|假设)·P(假设) / P(数据) ＝ posterior = likelihood × [[prior]] / evidence
@@ -701,4 +715,4 @@
 - **2026-07-01**：gravity, vocab
 - **2026-07-02**：charter
 - **2026-07-06**：bedrock, fallover(failover)
-- **2026-07-07**：ontology
+- **2026-07-07**：ontology, palantir
