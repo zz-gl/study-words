@@ -3,7 +3,7 @@
 > 记录所有学习过的英语单词和短语。按字母顺序排列，自动去重。
 > 格式：**word** /音标/ 词性. 中文释义 — 简短英文释义 — 例句
 
-**统计**：共 59 个词条
+**统计**：共 60 个词条
 
 ---
 
@@ -648,6 +648,20 @@
 
 ## V
 
+- **vault** /vɔːlt/ n./v. 拱顶；金库/保险库；地窖；撑竿跳；(v.) 撑跳/翻越；一跃升至 — an arched roof/structure; a strongroom for valuables; a burial/wine chamber; (sport) pole-vault; (v.) to leap over by pushing off with hands or a pole; (fig.) to jump abruptly upward in rank/fame
+  - 例句(建筑)：the Gothic **vault** of the cathedral / a barrel **vault** 筒形拱
+  - 例句(金库)：The gold is kept in **the bank vault**. / a heavy steel **vault door**
+  - 例句(动词)：He **vaulted (over) the fence** and ran. / She **vaulted into stardom** overnight. / Nvidia **vaulted to the top** of the S&P 500.
+  - 拆词词源：拉丁 **volvere**(转/滚) → 古法语 voute → vault "转出来的弧形"；金库因早期用拱顶石造(抗压 + 防盗)而得名
+  - 🌟 同根 volv-/volu-/volut-(转/滚) 大家族：**revolve** 旋转 / **evolve** 演化 / **involve** 卷入 / **revolt** 造反 / **volume** 卷/体积/音量 / **voluble** 健谈的(话滚滚而出) / **convoluted** 迂回错综的
+  - 动词搭配：**vault over** 撑手跳过 / **vault into** 一跃跻身 / **vault to the top/fame/prominence** 一跃登顶/蹿红
+  - 辨析动词：vault 撑一下借力跳过(有画面感) / [[leap]] 腾跃(高幅度) / jump 普通跳 / hop 单脚小跳；比喻用时保留"轻巧跃升"感
+  - 🔑 现代科技术语 "vault = 密钥/秘密保险库"：**HashiCorp Vault**(secrets 管理) / **Ansible Vault**(配置加密) / **Azure Key Vault** / **1Password/Bitwarden vault**(密码分组) / **Apple Advanced Data Protection**(iCloud 端到端加密)
+  - 🔗 **Obsidian vault** = 一整个笔记知识库(一个文件夹) — 隐喻"你私人的知识金库"；与 [[obsidian]] 一起记
+  - 高频搭配：bank/security **vault** / **vault door** / **vaulted ceiling** 拱形天花板(房产广告高频) / **pole vault** 撑竿跳 / **vault of heaven** 天穹(诗意) / **the family vault** 家族墓穴 / into the vault (比喻)束之高阁
+  - 派生：vaulted adj. 拱形的 / vaulting n. 拱顶结构 / adj. 过分野心的(vaulting ambition, 莎士比亚《麦克白》名句)
+  - 语域提示：小写 vault 通用；大写 Vault 常指具体产品(HashiCorp Vault / Obsidian vault 有时也写 Vault)
+
 - **viable** /ˈvaɪəbl/ adj. 可行的；行得通的；能存活的 — capable of working successfully; feasible; (biology) able to survive
   - 例句：a viable solution / Is this a financially viable business? / The cells are still viable.
   - ⭐ 术语 MVP = Minimum Viable Product 最小可行产品（创业/产品圈核心：最小成本做出刚好能验证想法的版本）
@@ -716,3 +730,4 @@
 - **2026-07-02**：charter
 - **2026-07-06**：bedrock, fallover(failover)
 - **2026-07-07**：ontology, palantir
+- **2026-07-12**：vault
